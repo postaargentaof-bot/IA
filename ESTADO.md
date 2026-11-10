@@ -55,8 +55,9 @@ Público: emprendedores y negocios chicos que venden por WhatsApp e Instagram. H
 
 | # | Tarea | Quién | Bloquea a | Notas |
 |---|---|---|---|---|
-| 1 | Pagar los ~USD 7 pendientes en Meta (cuenta «Velas arg» en período de gracia desde el 9/11) | Dueños | 9 | Meta Business Suite → Facturación y pagos → Pagar ahora. Si falla: habilitar la tarjeta para el exterior o cargar otra |
+| 1 | Pagar los ~USD 7 pendientes en Meta (cuenta «Velas arg» en período de gracia desde el 9/11) | Dueños | 9 | Meta Business Suite → Facturación y pagos → Pagar ahora. Si falla: habilitar la tarjeta para el exterior o cargar otra. **Lo pagan el 11/11** (ARS ~11.200) |
 | 2 | Generar las 20 imágenes con IA y guardarlas en `imagenes/IMG-XX.png` | Dueños | 4 | Prompts en `imagenes/prompts.md` |
+| 3 | Sacar las 6 fotos reales del antes y después (FOTO-A1…D3) y hacer las 3 escenas (FOTO-E1…E3) | Dueños | 4 | Tienen que ser reales; ver `imagenes/prompts.md` |
 | 4 | Volver a armar los PDF y la landing con las imágenes | Claude | 6 | `scripts/README-imagenes.md` |
 | 5 | Probar la planilla en Google Sheets (colores y listas) y la instrucción maestra en ChatGPT gratis | Dueños | — | Antes de vender |
 | 6 | Terminar la tienda nueva: precio del principal a 7.990 y sacar el tachado inventado (84.950) (**decidido: se hace al publicar el HTML propio, en el mismo paso**), HTML propio de landing y upsell, entregables, funnel post-compra, imágenes en Recursos | Claude, con aprobación | 7 | Tienda y productos ya creados (`tienda.md`). Entregables y HTML final esperan a la 4. Borrar a mano en el panel los 3 bonos que inventó la IA de Impultienda. Revisar que no queden testimonios, contadores ni cupos |
