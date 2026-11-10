@@ -56,11 +56,24 @@ precios, fotos.
 «Plantillas del negocio con IA»: calendario de contenidos de 30 días, respuestas de WhatsApp por rubro y
 guiones de videos cortos.
 
-## 3. Test en Meta
+## 3. Test en Meta (actualizado 10/11: presupuesto total USD 25)
 
-- Una campaña CBO de ventas, un conjunto abierto (Argentina, 25–55), 5 anuncios.
-- Presupuesto: 2–3 tickets por día ≈ USD 25–35/día (ajustar al dólar real que se carga).
-- 3 días sin tocar. Veredicto a los 5–7 días o al llegar al tope de USD 200.
+Decisión: Taller Triple se da por cerrado y el presupuesto va al ebook de IA. Hay USD 25 en total.
+
+- Con USD 25 no se valida si el producto vende (1–2 ventas son ruido). Se mide **qué gancho engancha**
+  y si la gente avanza hasta el checkout.
+- Precio de entrada más bajo (ARS 6.990–7.990) para tener más chances de ver ventas con poco gasto.
+- Una campaña de ventas, un conjunto abierto (Argentina, 25–55), **3 anuncios** (no 5: se reparte demasiado).
+- Antes de pagar: difusión orgánica gratis (Instagram, estados de WhatsApp, grupos de emprendedores).
+
+**Criterio fijado antes de gastar:**
+
+| Resultado con USD 25 | Lectura |
+|---|---|
+| 2+ ventas | Señal fuerte: reinvertir lo vendido en el mismo test |
+| 1 venta o 5+ entradas al checkout | Señal: seguir con lo que entre de ventas |
+| CTR > 2% y nadie llega al checkout | El anuncio gusta, falla la landing o el precio |
+| CTR < 1% | El ángulo no engancha: cambiar el gancho, no el producto |
 - UTM en todos los anuncios: `utm_source=facebook&utm_campaign=ia-test1&utm_content={{ad.name}}`.
 - Las ventas se cuentan en Impultienda, no en Meta.
 
