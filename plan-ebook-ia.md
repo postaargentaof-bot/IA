@@ -89,9 +89,9 @@ Decisión: Taller Triple se da por cerrado y el presupuesto va al ebook de IA. H
 - Gasto antes de generar: generar el ebook consume 1 ebook del cupo mensual de IA de Impultienda.
 - Compra de prueba después de armar el checkout y antes de pautar.
 
-## 5. Pendiente de decidir
-- [ ] ¿Se acepta el ángulo «emprendedores que venden por WhatsApp/Instagram» o hay otro público?
-- [ ] ¿Tienda nueva en Impultienda o producto nuevo en «Taller Triple»? (Recomendado: tienda nueva, la marca
-      Taller Triple es de manualidades.)
-- [ ] ¿Qué pasa con la campaña de Taller Triple: sigue hasta USD 40–60 o se pausa?
-- [ ] Presupuesto diario y tope de pérdida para este test.
+## 5. Decidido (10/11/2026)
+- [x] Ángulo: emprendedores que venden por WhatsApp e Instagram.
+- [x] **Tienda nueva** en Impultienda (la marca Taller Triple es de manualidades).
+- [x] Taller Triple se da por cerrado; el presupuesto va al ebook de IA (ver sección 3).
+- [x] Presupuesto: USD 25 en total, **USD 8,33 por día durante 3 días**, sin tocar nada en esos 3 días
+      (regla del kit). Tope de pérdida de este test: los mismos USD 25. Lectura con el criterio de la sección 3.

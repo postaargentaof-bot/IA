@@ -163,35 +163,3 @@ Vista desde arriba de muchas tarjetas de papel de colores (violeta, amarillo, cr
 ```
 Una emprendedora en su mesa de trabajo mirando la pantalla de una compu portátil (contenido borroso) con expresión de sorpresa contenta, una mano en la boca o el mentón. Al lado, una libreta y un mate. Fotografía realista de estilo editorial, luz natural suave de ventana, tonos cálidos con detalles en violeta y amarillo, ambiente de casa argentina real (no de catálogo), profundidad de campo suave. Sin texto, sin letras, sin logos ni marcas en ningún lado; si aparece una pantalla de celular o compu, que el contenido se vea borroso e ilegible. Formato horizontal 3:2.
 ```
-
-## Fotos reales (NO se hacen con IA)
-
-La guía de fotos promete «nunca cambies el producto». Por eso el antes y el después tienen que ser fotos **reales**, sacadas con el celular, siguiendo la misma guía. Guardalas en `imagenes/` con estos nombres:
-
-| Código | Qué foto |
-|---|---|
-| `FOTO-A1` | Jabón · ANTES: con la luz del techo y la cocina de fondo, sin editar |
-| `FOTO-D1` | Jabón · DESPUÉS: junto a la ventana, sobre cartulina, con rebote, editada en Snapseed |
-| `FOTO-A2` | Vela · ANTES |
-| `FOTO-D2` | Vela · DESPUÉS |
-| `FOTO-A3` | Sahumerio · ANTES |
-| `FOTO-D3` | Sahumerio · DESPUÉS |
-
-## Escenas con IA (a partir de la foto real del DESPUÉS)
-
-Subí a ChatGPT la foto del después y pegá el prompt. Revisá que el producto haya quedado **idéntico** (color, forma, tamaño); si cambió, no sirve.
-
-### FOTO-E1 · a partir de FOTO-D1
-```
-Tomá el producto de esta foto y ubicalo sobre una bandeja de mármol blanco en un baño luminoso, con una toalla doblada al costado. Que parezca una foto real de producto, no una ilustración. Mantené el producto exactamente igual: mismo color, forma, tamaño, textura y detalles. No agregues texto ni logos. Formato cuadrado 1:1.
-```
-
-### FOTO-E2 · a partir de FOTO-D2
-```
-Tomá el producto de esta foto y ubicalo sobre una mesa de madera clara, con luz de ventana de costado y una planta desenfocada atrás. Que parezca una foto real de producto, no una ilustración. Mantené el producto exactamente igual: mismo color, forma, tamaño, textura y detalles. No agregues texto ni logos. Formato cuadrado 1:1.
-```
-
-### FOTO-E3 · a partir de FOTO-D3
-```
-Tomá el producto de esta foto y ubicalo sobre un mantel de lino con hierbas secas y una piedra lisa al costado, luz cálida de tarde. Que parezca una foto real de producto, no una ilustración. Mantené el producto exactamente igual: mismo color, forma, tamaño, textura y detalles. No agregues texto ni logos. Formato cuadrado 1:1.
-```

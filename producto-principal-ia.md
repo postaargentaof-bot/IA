@@ -81,7 +81,8 @@ Plan de la semana, lista de pedidos y agenda de contenidos. Tu rutina de 20 minu
 - **Precio de test:** ARS 7.990.
 - **Nada falso:** sin testimonios, contadores ni promesas de facturación.
 
-## Para decidir
-- [ ] ¿Los 4 rubros de ejemplo están bien o cambiamos alguno?
-- [ ] ¿Lo genera la IA de Impultienda y lo editamos, o lo escribimos nosotros y lo subimos?
-- [ ] ¿ChatGPT como herramienta principal?
+## Decidido (10/11/2026)
+- [x] Rubros de ejemplo: ropa, pastelería, uñas y pestañas, y entrenador personal (los que quedaron en el libro).
+- [x] Lo escribimos nosotros en el repo y lo subimos como PDF (no se usa la IA de Impultienda).
+- [x] ChatGPT gratis como herramienta principal; Gemini y Claude como alternativas.
+- [x] Sin versión para el celular por ahora: se entrega solo el PDF.

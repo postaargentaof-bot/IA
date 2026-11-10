@@ -9,7 +9,7 @@ Imágenes en `anuncios/img/` (1080×1350, formato 4:5). Fuente editable: `anunci
 |---|---|
 | Cuenta | Velas arg (antes: regularizar el pago pendiente) |
 | Campaña | `IA · Ventas · CBO` · objetivo Ventas · presupuesto de campaña |
-| Presupuesto | USD 25 en total: USD 12,50/día × 2 días (o USD 25 × 1 día) |
+| Presupuesto | USD 25 en total: **USD 8,33/día × 3 días**, sin tocar nada en esos 3 días (decidido 10/11) |
 | Conjunto | `Test 1 · Argentina abierto` · Argentina · 25–55 · Advantage+ audience · ubicaciones automáticas |
 | Optimización | Compra (píxel de la tienda nueva) |
 | Anuncios | 3 (abajo) |

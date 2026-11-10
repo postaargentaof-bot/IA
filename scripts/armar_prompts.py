@@ -23,15 +23,6 @@ for titulo, ids in grupos:
     for i in ids:
         fmt, donde, desc = IMAGENES[i]
         L += [f"### {i} · {donde}", f"*Formato: {FMT[fmt]}*", "", "```", f"{desc} {ESTILO} Formato {FMT[fmt]}.", "```", ""]
-L += ["## Fotos reales (NO se hacen con IA)", "",
-      "La guía de fotos promete «nunca cambies el producto». Por eso el antes y el después tienen que ser fotos **reales**, sacadas con el celular, siguiendo la misma guía. Guardalas en `imagenes/` con estos nombres:", "",
-      "| Código | Qué foto |", "|---|---|"]
-L += [f"| `{k}` | {v} |" for k, v in REALES.items()]
-L += ["", "## Escenas con IA (a partir de la foto real del DESPUÉS)", "",
-      "Subí a ChatGPT la foto del después y pegá el prompt. Revisá que el producto haya quedado **idéntico** (color, forma, tamaño); si cambió, no sirve.", ""]
-for k, (base, escena) in ESCENAS.items():
-    L += [f"### {k} · a partir de {base}", "```",
-          f"Tomá el producto de esta foto y ubicalo {escena}. Que parezca una foto real de producto, no una ilustración. Mantené el producto exactamente igual: mismo color, forma, tamaño, textura y detalles. No agregues texto ni logos. Formato cuadrado 1:1.",
-          "```", ""]
+# Las fotos reales del antes y después (FOTO-*) se sacaron del bump el 10/11: no se listan.
 open(os.path.join(CARPETA, 'prompts.md'), 'w').write('\n'.join(L))
-print('ok', len(IMAGENES), 'imágenes con IA,', len(REALES), 'reales,', len(ESCENAS), 'escenas')
+print('ok', len(IMAGENES), 'imágenes con IA')

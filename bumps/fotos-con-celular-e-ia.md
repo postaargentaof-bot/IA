@@ -193,22 +193,6 @@ La IA también te puede ayudar a pensar **qué foto sacar**:
 
 ---
 
-## Antes y después
-
-El mismo producto, en tres pasos. Las dos primeras columnas son fotos **reales**, sacadas con el mismo celular; en la tercera, la IA cambió solo el fondo.
-
-| | Antes | Después | Con escena de IA |
-|---|---|---|---|
-| Jabón | [FOTO-A1] | [FOTO-D1] | [FOTO-E1] |
-| Vela | [FOTO-A2] | [FOTO-D2] | [FOTO-E2] |
-| Sahumerio | [FOTO-A3] | [FOTO-D3] | [FOTO-E3] |
-
-Qué cambió en cada paso:
-1. **Antes → Después:** solo luz de ventana, cartulina blanca, rebote con telgopor y 5 ajustes en Snapseed. Sin IA.
-2. **Después → Escena:** el producto es exactamente el mismo; la IA cambió solo el fondo y el ambiente.
-
----
-
 ## Tu sesión de fotos en 30 minutos
 
 - [ ] Limpié la lente

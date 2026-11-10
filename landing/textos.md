@@ -254,7 +254,7 @@
 3. **Versión para el celular.** Sacada de «Qué trae» (10/11): no está hecha.
 4. **Cantidad de páginas.** No la puse porque todavía no hay PDF maquetado. Si querés ponerla, contarla en el PDF final.
 5. **40 instrucciones.** Son los recuadros «COPIÁ Y PEGÁ» del libro, contados hoy. Si se agregan o se sacan, actualizar.
-6. **Bump de fotos.** La sección «Antes y después» todavía tiene los lugares de las fotos vacíos. No la mencioné en el texto del bump. Hay que completarla o sacarla antes de vender.
+6. **Bump de fotos.** La sección «Antes y después» se sacó (10/11) porque no había fotos.
 7. **Preguntas frecuentes.** Pago: Mercado Pago. Se sacaron las preguntas de devolución y de contacto (10/11).
 8. **Upsell.** No puse «solo en esta página» ni ninguna urgencia. Si de verdad no se vende por otro lado, se puede decir «Esta oferta la ves solo ahora», porque sería cierto. Si se va a vender suelto después, no.
 9. **Antes de pautar:** apagar en Impultienda cualquier testimonio, contador o cupo que venga de la plantilla, y hacer la compra de prueba.
