@@ -1,4 +1,6 @@
-# Producto principal · «Tu negocio con IA en 7 días» (borrador 10/11/2026)
+# Producto principal · «La IA hace, vos vendés» (10/11/2026)
+
+**Decidido:** título «La IA hace, vos vendés», subtítulo «Cómo usar la IA en tu emprendimiento en 7 días, aunque no sepas nada de tecnología». Rubros de ejemplo: ropa, pastelería, uñas y pestañas, entrenador personal. Herramienta: ChatGPT gratis. Se escribe en el repo (`ebook/`), no con la IA de Impultienda.
 
 ## La promesa
 En 7 días, con una hora por día, la IA te hace 7 tareas de tu negocio que hoy te comen el tiempo:
