@@ -90,7 +90,6 @@
 > - **La plantilla de la ficha de tu negocio**, para completar.
 > - **Ejemplos en 4 rubros** en cada día: ropa, pastelería, uñas y pestañas, y un entrenador personal. Son negocios armados para enseñar (el libro lo dice), no testimonios. Seguramente el tuyo se parece a alguno.
 > - **Una tarea para tildar** al final de cada día, para saber que lo terminaste.
-> - [**Versión para leer cómoda en el celular.**] ← solo si está hecha antes de publicar
 >
 > En PDF. Te llega por mail apenas se acredita el pago.
 
@@ -158,9 +157,6 @@
 
 **¿Cómo pago?**
 > [Medios de pago tal cual queden configurados en Impultienda: Mercado Pago, tarjeta, transferencia…]
-
-**¿Y si no me sirve?**
-> [Completar con la política de devolución que se decida. Si no hay, no poner esta pregunta.]
 
 **¿Tengo dudas antes de comprar?**
 > [Mail o WhatsApp de contacto.]
@@ -259,10 +255,10 @@
 
 1. **Título de la landing.** En `producto-principal-ia.md` quedaron dos: «La IA hace, vos vendés» (decidido para el libro) y «Tu negocio con IA en 7 días» (de la sección de landing, anterior). Usé el decidido. Si querés el otro, va como título y «La IA hace, vos vendés» como nombre del producto.
 2. **«7 días» con Día 0.** El libro tiene 8 días (0 al 7). Lo dije abierto en la landing para que nadie se sienta engañado.
-3. **Versión para el celular.** Está prometida en el plan, pero no está hecha en el repo. Si no se hace antes de publicar, se borra la línea de «Qué trae».
+3. **Versión para el celular.** Sacada de «Qué trae» (10/11): no está hecha.
 4. **Cantidad de páginas.** No la puse porque todavía no hay PDF maquetado. Si querés ponerla, contarla en el PDF final.
 5. **40 instrucciones.** Son los recuadros «COPIÁ Y PEGÁ» del libro, contados hoy. Si se agregan o se sacan, actualizar.
 6. **Bump de fotos.** La sección «Antes y después» todavía tiene los lugares de las fotos vacíos. No la mencioné en el texto del bump. Hay que completarla o sacarla antes de vender.
-7. **Devolución, medios de pago y contacto.** Quedaron entre corchetes en las preguntas frecuentes: completar con lo real o sacar la pregunta.
+7. **Medios de pago y contacto.** Quedaron entre corchetes en las preguntas frecuentes: completar con lo real o sacar la pregunta. La pregunta de devolución se sacó (10/11).
 8. **Upsell.** No puse «solo en esta página» ni ninguna urgencia. Si de verdad no se vende por otro lado, se puede decir «Esta oferta la ves solo ahora», porque sería cierto. Si se va a vender suelto después, no.
 9. **Antes de pautar:** apagar en Impultienda cualquier testimonio, contador o cupo que venga de la plantilla, y hacer la compra de prueba.
