@@ -2,7 +2,6 @@
 
 > Borrador para revisar. Todavía no se cargó nada en Impultienda.
 > Fuentes: `producto-principal-ia.md`, `plan-ebook-ia.md`, `ebook/`, `bumps/` y `upsell/00-intro-y-maestra.md`.
-> Lo que está entre **[corchetes]** es algo que hay que confirmar antes de publicar (ver «Para revisar» al final).
 
 **La oferta**
 
