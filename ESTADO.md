@@ -67,10 +67,10 @@ Público: emprendedores y negocios chicos que venden por WhatsApp e Instagram. H
 | 4 | Volver a armar los PDF y la landing con las imágenes | Claude | 6 | `scripts/README-imagenes.md` |
 | 5 | Probar la planilla en Google Sheets (colores y listas) y la instrucción maestra en ChatGPT gratis | Dueños | — | Antes de vender |
 | 6 | Terminar la tienda nueva: precio del principal a 7.990 y sacar el tachado inventado (84.950) (**decidido: se hace al publicar el HTML propio, en el mismo paso**), HTML propio de landing y upsell, entregables, funnel post-compra, imágenes en Recursos | Claude, con aprobación | 7 | Tienda y productos ya creados (`tienda.md`). Entregables y HTML final esperan a la 4. Borrar a mano en el panel los 3 bonos que inventó la IA de Impultienda. Revisar que no queden testimonios, contadores ni cupos |
+| 6b | Pasar el mail de contacto para la garantía | Dueños | 6 | Lo agregan el 11/11. Después sumar la garantía y el mail a `landing/landing.html`, al checkout y al mail de entrega |
 | 6c | Borrar en el panel el downsell del funnel post-compra (está en 0 %), los 3 bonos inventados, y revisar en Diseño de checkout los sellos y que «Días de garantía» diga 7 | Dueños | 6 | Links en `tienda.md` |
 | 6d | Conectar Mercado Pago en la tienda nueva | Dueños | 7 | https://impultienda.ar/dashboard/la-ia-hace/configuracion?tab=pagos |
-| 6b | Pasar el mail de contacto para la garantía | Dueños | 6 | Lo agregan el 11/11. Después sumar la garantía y el mail a `landing/landing.html`, al checkout y al mail de entrega |
-| 7 | Píxel de Meta en la tienda nueva + compra de prueba + evento Compra visible en el Administrador de eventos | Dueños + Claude | 9 | |
+| 7 | Compra de prueba + evento Compra visible en el Administrador de eventos | Dueños + Claude | 9 | El píxel ya está cargado y verificado (10/11). Espera Mercado Pago (6d) y los entregables |
 | 8 | Leer todo (ebook, bumps, upsell, landing) y marcar cambios | Dueños | — | Se puede hacer en paralelo |
 | 9 | Crear la campaña en Meta y prenderla | Claude, con el «sí» de los dueños | 10 | Estructura en `anuncios/anuncios.md` |
 | 10 | Leer el test con el criterio de `plan-ebook-ia.md` y decidir | Chat principal | — | Las ventas se cuentan en Impultienda, no en Meta |
