@@ -1,0 +1,113 @@
+<!doctype html><html lang="es"><head><meta charset="utf-8">
+<style>
+:root{--v:#5B3FD1;--vd:#2E1F73;--am:#FFD84D;--cr:#FFF8EC;--tx:#1E1A2E;--wa:#E7FFDB;--gr:#ECE5DD}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Inter,sans-serif;background:#888;color:var(--tx)}
+.s{width:1080px;height:1350px;position:relative;overflow:hidden;margin:20px}
+.brand{position:absolute;left:72px;right:72px;bottom:56px;display:flex;justify-content:space-between;align-items:center;font-size:30px;font-weight:700}
+.pill{background:var(--am);color:var(--vd);padding:16px 30px;border-radius:999px;font-weight:800;font-size:32px}
+h1{font-weight:900;letter-spacing:-2px;line-height:1.02}
+/* Anuncio 1 */
+#a1{background:var(--gr)}
+#a1 .top{background:var(--vd);color:#fff;padding:72px 72px 60px}
+#a1 h1{font-size:84px}
+#a1 h1 em{font-style:normal;color:var(--am)}
+#a1 .chat{padding:44px 72px;display:flex;flex-direction:column;gap:18px}
+.b{max-width:640px;background:#fff;border-radius:22px;padding:22px 30px;font-size:36px;box-shadow:0 2px 0 rgba(0,0,0,.08);position:relative}
+.b small{display:block;text-align:right;font-size:22px;color:#8a8a8a;margin-top:6px}
+.b.me{align-self:flex-end;background:var(--wa)}
+#a1 .brand{color:var(--vd)}
+/* Carrusel */
+.c{background:var(--cr)}
+.c .num{font-size:30px;font-weight:800;color:var(--v);letter-spacing:4px;text-transform:uppercase}
+.c .wrap{position:absolute;inset:96px 72px 170px}
+.c h2{font-size:76px;font-weight:900;letter-spacing:-2px;line-height:1.04;margin:24px 0 40px}
+.dia{display:flex;gap:30px;align-items:flex-start;margin-bottom:34px}
+.dia b{flex:none;width:118px;height:118px;border-radius:28px;background:var(--v);color:#fff;font-size:30px;font-weight:800;display:flex;flex-direction:column;align-items:center;justify-content:center;line-height:1}
+.dia b span{font-size:56px;font-weight:900}
+.dia div{font-size:38px;line-height:1.25;padding-top:8px}
+.dia div strong{display:block;font-size:42px}
+.c .brand{color:var(--vd)}
+#c1{background:var(--v);color:#fff}
+#c1 .book{position:absolute;right:-30px;top:660px;width:540px;height:700px;background:var(--cr);border-radius:18px;transform:rotate(-6deg);box-shadow:0 30px 60px rgba(0,0,0,.35);padding:60px 50px;color:var(--vd)}
+#c1 .book h3{font-size:72px;font-weight:900;line-height:1;letter-spacing:-2px}
+#c1 .book p{font-size:28px;margin-top:26px;line-height:1.3}
+#c1 .book .bar{position:absolute;left:0;top:0;bottom:0;width:26px;background:var(--am);border-radius:18px 0 0 18px}
+#c1 .wrap{position:absolute;left:72px;top:96px;width:900px}
+#c1 h1{font-size:104px}
+#c1 .lead{font-size:42px;margin-top:34px;line-height:1.25;opacity:.92;max-width:760px}
+#c1 .brand{color:#fff}
+#c5 ul{list-style:none;font-size:42px;line-height:1.3}
+#c5 li{padding:22px 0;border-bottom:3px solid #E8DFF8;display:flex;gap:22px}
+#c5 li:before{content:"";flex:none;width:40px;height:40px;margin-top:6px;border-radius:10px;background:var(--v)}
+#c5 .precio{margin-top:50px;font-size:44px;font-weight:700}
+#c5 .precio span{font-size:96px;font-weight:900;color:var(--v);display:block;letter-spacing:-2px}
+/* Anuncio 3 */
+#a3{background:var(--am)}
+#a3 .wrap{position:absolute;left:72px;right:72px;top:110px}
+#a3 h1{font-size:110px;color:var(--vd)}
+#a3 h1 u{text-decoration:none;background:#fff;padding:0 14px;border-radius:14px}
+#a3 .audio{margin-top:70px;background:var(--wa);border-radius:28px;padding:30px 36px;display:flex;align-items:center;gap:28px;width:760px;box-shadow:0 4px 0 rgba(0,0,0,.1)}
+#a3 .play{width:76px;height:76px;border-radius:50%;background:#25A35A;flex:none;position:relative}
+#a3 .play:after{content:"";position:absolute;left:30px;top:22px;border-left:26px solid #fff;border-top:16px solid transparent;border-bottom:16px solid transparent}
+#a3 .wave{display:flex;gap:7px;align-items:center;height:70px}
+#a3 .wave i{display:block;width:9px;border-radius:5px;background:#7FB88F}
+#a3 .sub{margin-top:60px;font-size:44px;line-height:1.3;color:var(--vd);font-weight:600}
+#a3 .brand{color:var(--vd)}
+#a3 .pill{background:var(--vd);color:#fff}
+</style></head><body>
+
+<div class="s" id="a1">
+  <div class="top"><h1>Contestás los mismos mensajes <em>todos los días.</em></h1></div>
+  <div class="chat">
+    <div class="b">¿Precio?<small>10:02</small></div>
+    <div class="b me">¡Hola! El precio es…<small>10:05</small></div>
+    <div class="b">Hola, ¿hacés envíos?<small>10:31</small></div>
+    <div class="b me">¡Hola! Sí, hacemos envíos a…<small>10:40</small></div>
+    <div class="b">¿Precio?<small>11:15</small></div>
+    <div class="b">¿Tenés en talle M?<small>11:16</small></div>
+  </div>
+  <div class="brand"><span>La IA hace, vos vendés</span><span class="pill">En 7 días</span></div>
+</div>
+
+<div class="s" id="c1">
+  <div class="wrap"><h1>Tu negocio con IA en 7 días</h1>
+  <p class="lead">Para emprendedores que venden por WhatsApp e Instagram. Aunque no sepas nada de tecnología.</p></div>
+  <div class="book"><div class="bar"></div><h3>La IA hace, vos vendés</h3><p>Cómo usar la IA en tu emprendimiento en 7 días, aunque no sepas nada de tecnología</p></div>
+  <div class="brand"><span>Deslizá para ver qué trae →</span></div>
+</div>
+
+<div class="s c" id="c2"><div class="wrap">
+  <div class="num">Lo que vas a hacer</div><h2>Una hora por día.<br>Una tarea por día.</h2>
+  <div class="dia"><b>DÍA<span>0</span></b><div><strong>La ficha de tu negocio</strong>Para que la IA hable como vos, con tus precios.</div></div>
+  <div class="dia"><b>DÍA<span>1</span></b><div><strong>WhatsApp</strong>Tus 15 respuestas listas, se mandan con dos toques.</div></div>
+  <div class="dia"><b>DÍA<span>2</span></b><div><strong>Instagram</strong>30 ideas y una semana de posteos escritos.</div></div>
+</div><div class="brand"><span>La IA hace, vos vendés</span><span>2/5</span></div></div>
+
+<div class="s c" id="c3"><div class="wrap">
+  <div class="num">Lo que vas a hacer</div><h2>Vender más con lo que ya tenés</h2>
+  <div class="dia"><b>DÍA<span>3</span></b><div><strong>Recuperar ventas</strong>Qué escribirle al que preguntó y no compró.</div></div>
+  <div class="dia"><b>DÍA<span>4</span></b><div><strong>Tus números</strong>Cuánto te cuesta de verdad y a cuánto venderlo.</div></div>
+  <div class="dia"><b>DÍA<span>5</span></b><div><strong>Clientes difíciles</strong>Reclamos, cancelaciones y el que regatea.</div></div>
+</div><div class="brand"><span>La IA hace, vos vendés</span><span>3/5</span></div></div>
+
+<div class="s c" id="c4"><div class="wrap">
+  <div class="num">Lo que vas a hacer</div><h2>Y que se vuelva costumbre</h2>
+  <div class="dia"><b>DÍA<span>6</span></b><div><strong>Promos e ideas</strong>Tu calendario del año y promos que no te hacen perder plata.</div></div>
+  <div class="dia"><b>DÍA<span>7</span></b><div><strong>Tu semana en orden</strong>Pedidos, agenda y una rutina de 20 minutos por día.</div></div>
+</div><div class="brand"><span>La IA hace, vos vendés</span><span>4/5</span></div></div>
+
+<div class="s c" id="c5"><div class="wrap">
+  <div class="num">Qué trae</div><h2>Todo listo para copiar y pegar</h2>
+  <ul><li>Ebook en PDF de más de 50 páginas</li><li>Versión para leer en el celular</li><li>Instrucciones para copiar y pegar en cada día</li><li>Con ChatGPT gratis: no pagás nada más</li></ul>
+  <p class="precio">Todo por<span>$7.990</span></p>
+</div><div class="brand"><span>La IA hace, vos vendés</span><span class="pill">Lo quiero</span></div></div>
+
+<div class="s" id="a3"><div class="wrap">
+  <h1>Si sabés mandar un <u>audio</u>, sabés usar la IA.</h1>
+  <div class="audio"><div class="play"></div><div class="wave">
+  <i style="height:20px"></i><i style="height:44px"></i><i style="height:30px"></i><i style="height:62px"></i><i style="height:38px"></i><i style="height:54px"></i><i style="height:24px"></i><i style="height:48px"></i><i style="height:66px"></i><i style="height:32px"></i><i style="height:52px"></i><i style="height:22px"></i><i style="height:44px"></i><i style="height:60px"></i><i style="height:28px"></i><i style="height:40px"></i><i style="height:18px"></i><i style="height:50px"></i><i style="height:34px"></i><i style="height:56px"></i><i style="height:26px"></i><i style="height:42px"></i><i style="height:20px"></i><i style="height:36px"></i>
+  </div></div>
+  <p class="sub">Le contás tu negocio, ella te escribe las respuestas de WhatsApp, los posteos y los presupuestos. Vos revisás y mandás.</p>
+</div><div class="brand"><span>La IA hace, vos vendés</span><span class="pill">7 días · $7.990</span></div></div>
+</body></html>
