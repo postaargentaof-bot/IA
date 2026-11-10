@@ -156,10 +156,7 @@
 > Por mail, apenas se acredita el pago. Es un PDF que podés guardar en el celular o imprimir.
 
 **¿Cómo pago?**
-> [Medios de pago tal cual queden configurados en Impultienda: Mercado Pago, tarjeta, transferencia…]
-
-**¿Tengo dudas antes de comprar?**
-> [Mail o WhatsApp de contacto.]
+> Con Mercado Pago.
 
 ---
 
@@ -210,7 +207,7 @@
 
 ### Texto de confianza debajo del botón de pago
 
-> Pago seguro con [pasarela]. El libro y lo que sumes te llegan por mail apenas se acredita el pago.
+> Pagás con Mercado Pago. El libro y lo que sumes te llegan por mail apenas se acredita el pago.
 
 ---
 
@@ -259,6 +256,6 @@
 4. **Cantidad de páginas.** No la puse porque todavía no hay PDF maquetado. Si querés ponerla, contarla en el PDF final.
 5. **40 instrucciones.** Son los recuadros «COPIÁ Y PEGÁ» del libro, contados hoy. Si se agregan o se sacan, actualizar.
 6. **Bump de fotos.** La sección «Antes y después» todavía tiene los lugares de las fotos vacíos. No la mencioné en el texto del bump. Hay que completarla o sacarla antes de vender.
-7. **Medios de pago y contacto.** Quedaron entre corchetes en las preguntas frecuentes: completar con lo real o sacar la pregunta. La pregunta de devolución se sacó (10/11).
+7. **Preguntas frecuentes.** Pago: Mercado Pago. Se sacaron las preguntas de devolución y de contacto (10/11).
 8. **Upsell.** No puse «solo en esta página» ni ninguna urgencia. Si de verdad no se vende por otro lado, se puede decir «Esta oferta la ves solo ahora», porque sería cierto. Si se va a vender suelto después, no.
 9. **Antes de pautar:** apagar en Impultienda cualquier testimonio, contador o cupo que venga de la plantilla, y hacer la compra de prueba.
