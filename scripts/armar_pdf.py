@@ -3,6 +3,8 @@ Uso: python3 scripts/armar_pdf.py config.json
 """
 import json, re, subprocess, sys, tempfile, os, html
 import markdown
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+from imagenes import slot
 from pypdf import PdfWriter, PdfReader
 
 cfg = json.load(open(sys.argv[1]))
@@ -35,6 +37,14 @@ blockquote.copy.largo{break-inside:auto}
 li.task{list-style:none;margin-left:-5mm}
 .ph{display:inline-block;width:100%;height:24mm;border:.5mm dashed #B9AEE8;border-radius:2mm;background:#FAF8FF;color:#8A7FC0;font-size:8pt;text-align:center;line-height:24mm}
 em{color:#4a4560}
+.img{width:100%;border-radius:3mm;object-fit:cover;display:block;margin:1mm 0 5mm}
+.ph-img{background:linear-gradient(135deg,#ECE6FF 0%,#FFF3D1 100%);display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:4mm;border:.4mm dashed #C9BDF3}
+.ph-id{background:#5B3FD1;color:#fff;font-size:7pt;font-weight:800;letter-spacing:.6pt;padding:.8mm 2.4mm;border-radius:1.2mm}
+.ph-txt{font-size:7.5pt;color:#6E6590;margin-top:2mm;max-width:85%;line-height:1.35}
+.avatar{width:12mm!important;height:12mm!important;aspect-ratio:1/1!important;border-radius:50%;display:inline-flex!important;vertical-align:middle;margin:0 2.5mm 0 0!important;padding:0!important;float:left}
+.avatar .ph-txt{display:none}.avatar .ph-id{font-size:4.5pt;padding:.4mm .8mm}
+p.persona{min-height:13mm}
+.opener{margin-top:1mm}
 .toc h1{break-before:auto}
 """
 
@@ -43,13 +53,18 @@ COVER = """<!doctype html><html><head><meta charset="utf-8"><style>
 body{margin:0;font-family:Inter,sans-serif}
 .c{width:148mm;height:210mm;background:%(bg)s;color:#fff;position:relative;overflow:hidden}
 .bar{position:absolute;left:0;top:0;bottom:0;width:7mm;background:#FFD84D}
-.k{position:absolute;left:18mm;top:22mm;font-size:8.5pt;font-weight:800;letter-spacing:2pt;text-transform:uppercase;color:#FFD84D}
-h1{position:absolute;left:18mm;right:14mm;top:34mm;margin:0;font-size:%(fs)spt;line-height:.98;font-weight:900;letter-spacing:-1.5pt}
+.k{position:absolute;left:18mm;top:124mm;font-size:8.5pt;font-weight:800;letter-spacing:2pt;text-transform:uppercase;color:#FFD84D}
+h1{position:absolute;left:18mm;right:14mm;top:131mm;margin:0;font-size:%(fs)spt;line-height:.98;font-weight:900;letter-spacing:-1.5pt}
 .s{position:absolute;left:18mm;right:18mm;top:%(stop)smm;font-size:12.5pt;line-height:1.35;opacity:.95}
 .b{position:absolute;left:18mm;bottom:18mm;right:18mm;font-size:9pt;opacity:.85;border-top:.4mm solid rgba(255,255,255,.35);padding-top:4mm}
-.dots{position:absolute;right:-20mm;bottom:40mm;width:90mm;height:90mm;border-radius:50%%;background:rgba(255,216,77,.16)}
-.dots2{position:absolute;right:20mm;bottom:70mm;width:30mm;height:30mm;border-radius:50%%;background:rgba(255,255,255,.08)}
-</style></head><body><div class="c"><div class="bar"></div><div class="dots"></div><div class="dots2"></div>
+.ci{position:absolute;left:0;right:0;top:0;height:118mm}
+.ci .img{width:100%%!important;height:118mm!important;aspect-ratio:auto!important;margin:0!important;border-radius:0!important;object-fit:cover}
+.ci .ph-img{background:linear-gradient(160deg,#8C76F0 0%%,#FFE38A 100%%);border:none}
+.ci .ph-id{font-size:10pt;padding:1.5mm 4mm}.ci .ph-txt{font-size:9pt;color:#3B2E80;max-width:70%%}
+.fade{position:absolute;left:0;right:0;top:88mm;height:31mm;background:linear-gradient(to bottom,rgba(0,0,0,0),%(bg)s)}
+.ph-img{display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;font-family:Inter,sans-serif}
+.ph-id{background:#5B3FD1;color:#fff;font-weight:800;border-radius:1.5mm}.ph-txt{margin-top:2mm;line-height:1.35}
+</style></head><body><div class="c"><div class="ci">%(img)s</div><div class="fade"></div><div class="bar"></div>
 <div class="k">%(kicker)s</div><h1>%(title)s</h1><div class="s">%(sub)s</div><div class="b">%(bottom)s</div></div></body></html>"""
 
 def fix_lists(text):
@@ -67,10 +82,10 @@ def fix_lists(text):
 def md_to_html(text, first):
     text = fix_lists(text)
     text = re.sub(r'^- \[ \] ', '- @@CB@@ ', text, flags=re.M)
-    text = text.replace('[FOTO]', '@@FOTO@@')
+    text = re.sub(r'\[(FOTO-[ADE]\d)\]', r'@@\1@@', text)
     h = markdown.markdown(text, extensions=['tables', 'sane_lists'])
     h = h.replace('<li>@@CB@@ ', '<li class="task"><span class="cb"></span>')
-    h = h.replace('@@FOTO@@', '<span class="ph">foto</span>')
+    h = re.sub(r'@@(FOTO-[ADE]\d)@@', lambda m: slot(m.group(1), 'tabla'), h)
     def bq(m):
         inner = m.group(1)
         plain = re.sub('<[^>]+>', '', inner).strip()
@@ -84,6 +99,16 @@ def md_to_html(text, first):
             cls += ' largo'
         return f'<blockquote class="{cls}">{inner}</blockquote>'
     h = re.sub(r'<blockquote>(.*?)</blockquote>', bq, h, flags=re.S)
+    for tag in ('h1', 'h2'):
+        def op(m):
+            txt = re.sub('<[^>]+>', '', m.group(2))
+            for k, v in cfg.get('openers', {}).items():
+                if txt.strip().startswith(k):
+                    return m.group(0) + slot(v, 'opener')
+            return m.group(0)
+        h = re.sub(rf'<({tag})>(.*?)</{tag}>', op, h)
+    for emo, iid in cfg.get('avatars', {}).items():
+        h = re.sub(rf'<p><strong>{emo}\ufe0f?\s*', lambda m: '<p class="persona">' + slot(iid, 'avatar') + '<strong>', h)
     if first:
         h = h.replace('<h1>', '<h1 class="first">', 1)
     return h
@@ -115,6 +140,7 @@ doc = f'<!doctype html><html lang="es"><head><meta charset="utf-8"><style>{CSS}<
 cfg['footer_html'] = ('<div style="width:100%;font-family:Inter,sans-serif;font-size:7pt;color:#8A84A0;'
                       'padding:0 14mm;display:flex;justify-content:space-between">'
                       f'<span>{html.escape(cfg["footer"])}</span><span class="pageNumber"></span></div>')
+cfg['cover']['img'] = slot(cfg['cover']['image'])
 cover = COVER % cfg['cover']
 tmpd = cfg['tmp']
 render(cover, f'{tmpd}/cover.pdf', False)

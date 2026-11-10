@@ -195,13 +195,13 @@ La IA también te puede ayudar a pensar **qué foto sacar**:
 
 ## Antes y después
 
-*[Esta sección se completa con fotos reales: el mismo producto fotografiado de la forma «antes» (luz de techo, fondo de cocina, sin editar) y «después» (luz de ventana, fondo infinito, editada en Snapseed), y un tercer paso con el fondo cambiado por IA. Se usan productos propios: jabones de glicerina, velas de soja y conos de sahumerio.]*
+El mismo producto, en tres pasos. Las dos primeras columnas son fotos **reales**, sacadas con el mismo celular; en la tercera, la IA cambió solo el fondo.
 
 | | Antes | Después | Con escena de IA |
 |---|---|---|---|
-| Jabón | [FOTO] | [FOTO] | [FOTO] |
-| Vela | [FOTO] | [FOTO] | [FOTO] |
-| Sahumerio | [FOTO] | [FOTO] | [FOTO] |
+| Jabón | [FOTO-A1] | [FOTO-D1] | [FOTO-E1] |
+| Vela | [FOTO-A2] | [FOTO-D2] | [FOTO-E2] |
+| Sahumerio | [FOTO-A3] | [FOTO-D3] | [FOTO-E3] |
 
 Qué cambió en cada paso:
 1. **Antes → Después:** solo luz de ventana, cartulina blanca, rebote con telgopor y 5 ajustes en Snapseed. Sin IA.
