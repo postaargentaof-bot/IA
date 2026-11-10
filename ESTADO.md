@@ -26,6 +26,8 @@ Público: emprendedores y negocios chicos que venden por WhatsApp e Instagram. H
 
 | Fecha | Decisión | Por qué |
 |---|---|---|
+| 10/11 | Se ofrece garantía de devolución (días y condiciones a definir). Hay que sumarla a la landing propia y al checkout | Lo decidieron los dueños; reemplaza a «sin preguntas de devolución» en ese punto |
+| 10/11 | Funnel post-compra sin descuentos: upsell a 12.990 y sin downsell | Más simple y el precio cobrado es el de la landing |
 | 10/11 | El precio del principal pasa a 7.990 sin tachado recién al publicar el HTML propio de la landing (opción 1 de `tienda.md`); hasta entonces queda 16.990 con 84.950 tachado | La plantilla obliga a tener tachado y no se inventa uno; mientras tanto nadie puede comprar (no hay pasarela) |
 | 10/11 | Diseño de PDF y landing con lugares para imágenes de IA (IMG-01…31); se generan después | Que quede lindo sin frenar el resto |
 | 10/11 | Sin versión para el celular (PDF A5, que se lee bien en el celular) | No estaba hecha |
@@ -61,7 +63,7 @@ Público: emprendedores y negocios chicos que venden por WhatsApp e Instagram. H
 | 4 | Volver a armar los PDF y la landing con las imágenes | Claude | 6 | `scripts/README-imagenes.md` |
 | 5 | Probar la planilla en Google Sheets (colores y listas) y la instrucción maestra en ChatGPT gratis | Dueños | — | Antes de vender |
 | 6 | Terminar la tienda nueva: precio del principal a 7.990 y sacar el tachado inventado (84.950) (**decidido: se hace al publicar el HTML propio, en el mismo paso**), HTML propio de landing y upsell, entregables, funnel post-compra, imágenes en Recursos | Claude, con aprobación | 7 | Tienda y productos ya creados (`tienda.md`). Entregables y HTML final esperan a la 4. Borrar a mano en el panel los 3 bonos que inventó la IA de Impultienda. Revisar que no queden testimonios, contadores ni cupos |
-| 6b | Decidir el funnel post-compra: Impultienda pone 15 % de descuento al upsell y suma un downsell con 40 % | Dueños | 6 | Ver `tienda.md` |
+| 6b | Definir la garantía: cuántos días y cómo se pide la devolución | Dueños | 6 | Funnel ya decidido (sin descuentos). Después hay que sumar la garantía a `landing/landing.html` y al checkout |
 | 7 | Píxel de Meta en la tienda nueva + compra de prueba + evento Compra visible en el Administrador de eventos | Dueños + Claude | 9 | |
 | 8 | Leer todo (ebook, bumps, upsell, landing) y marcar cambios | Dueños | — | Se puede hacer en paralelo |
 | 9 | Crear la campaña en Meta y prenderla | Claude, con el «sí» de los dueños | 10 | Estructura en `anuncios/anuncios.md` |
