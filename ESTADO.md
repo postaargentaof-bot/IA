@@ -26,6 +26,8 @@ Público: emprendedores y negocios chicos que venden por WhatsApp e Instagram. H
 
 | Fecha | Decisión | Por qué |
 |---|---|---|
+| 10/11 | En la tienda nueva se usa el píxel «velas» (`1439230865058805`) de la cuenta «Velas arg», copiado desde Taller Triple | Es el único píxel de la cuenta y ya tiene token; Taller Triple está cerrada |
+| 10/11 | Checkout sin barra de compradores ni reloj en los bumps; barra superior «Pago seguro con Mercado Pago» | Nada de urgencias ni números simulados |
 | 10/11 | Garantía de 7 días, sin preguntas: se pide por mail y la devolución se hace a mano desde Mercado Pago. Va en la landing propia, el checkout y el mail de entrega | Lo decidieron los dueños; vuelve a haber un contacto (mail) en la landing |
 | 10/11 | Funnel post-compra sin descuentos: upsell a 12.990 y sin downsell | Más simple y el precio cobrado es el de la landing |
 | 10/11 | El precio del principal pasa a 7.990 sin tachado recién al publicar el HTML propio de la landing (opción 1 de `tienda.md`); hasta entonces queda 16.990 con 84.950 tachado | La plantilla obliga a tener tachado y no se inventa uno; mientras tanto nadie puede comprar (no hay pasarela) |
@@ -52,7 +54,7 @@ Público: emprendedores y negocios chicos que venden por WhatsApp e Instagram. H
 - Cómo se regeneran PDF, landing y prompts: `scripts/README-imagenes.md`
 - Tienda nueva en Impultienda creada (parte de la tarea 6): `la-ia-hace.impultienda.ar`, 4 productos cargados con sus ids. Detalle y pendientes en `tienda.md`
 - Garantía de 7 días sin preguntas en `landing/landing.html` (mail como [MAIL]); no publicada
-- Lectura de la tienda nueva: Mercado Pago sin conectar (link en `tienda.md`), píxel «velas» de «Velas arg» listo para copiar desde Taller Triple, checkout y funnel revisados; cambios propuestos en `tienda.md`, esperando el «sí»
+- Tienda nueva: funnel post-compra creado (upsell 12.990, sin descuento; el downsell quedó en 0 % hasta que los dueños lo borren en el panel), checkout sin barra de compradores ni reloj de bumps, píxel «velas» cargado y verificado. Detalle e ids en `tienda.md`
 - Revisión de la landing publicada de la tienda nueva: lista de lo falso o que no es de la oferta (testimonios, garantía, cuenta regresiva, cupos, bonos inventados, precio) en `tienda.md`. No se arregló todavía
 
 ## 5 · Falta ⏳ (en orden)
@@ -65,6 +67,8 @@ Público: emprendedores y negocios chicos que venden por WhatsApp e Instagram. H
 | 4 | Volver a armar los PDF y la landing con las imágenes | Claude | 6 | `scripts/README-imagenes.md` |
 | 5 | Probar la planilla en Google Sheets (colores y listas) y la instrucción maestra en ChatGPT gratis | Dueños | — | Antes de vender |
 | 6 | Terminar la tienda nueva: precio del principal a 7.990 y sacar el tachado inventado (84.950) (**decidido: se hace al publicar el HTML propio, en el mismo paso**), HTML propio de landing y upsell, entregables, funnel post-compra, imágenes en Recursos | Claude, con aprobación | 7 | Tienda y productos ya creados (`tienda.md`). Entregables y HTML final esperan a la 4. Borrar a mano en el panel los 3 bonos que inventó la IA de Impultienda. Revisar que no queden testimonios, contadores ni cupos |
+| 6c | Borrar en el panel el downsell del funnel post-compra (está en 0 %), los 3 bonos inventados, y revisar en Diseño de checkout los sellos y que «Días de garantía» diga 7 | Dueños | 6 | Links en `tienda.md` |
+| 6d | Conectar Mercado Pago en la tienda nueva | Dueños | 7 | https://impultienda.ar/dashboard/la-ia-hace/configuracion?tab=pagos |
 | 6b | Pasar el mail de contacto para la garantía | Dueños | 6 | Lo agregan el 11/11. Después sumar la garantía y el mail a `landing/landing.html`, al checkout y al mail de entrega |
 | 7 | Píxel de Meta en la tienda nueva + compra de prueba + evento Compra visible en el Administrador de eventos | Dueños + Claude | 9 | |
 | 8 | Leer todo (ebook, bumps, upsell, landing) y marcar cambios | Dueños | — | Se puede hacer en paralelo |

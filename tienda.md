@@ -10,7 +10,7 @@
 | La IA hace, vos vendés | principal | **16.990 con 84.950 tachado (los dos los puso Impultienda). Va a 7.990 sin tachado al publicar el HTML propio (decidido 10/11)** | `4abc74e9-f00f-4f67-9dee-9116c50c3342` | Sin entregable |
 | Fotos de producto con el celular + IA | bump | 4.990, sin tachado | `b9fdc983-7333-42a8-af33-e337a1a72000` | Sin entregable |
 | La planilla lista para usar | bump | 3.990, sin tachado | `1ae61a84-4d03-4c6f-914c-9715aa6e46ab` | Sin entregable |
-| Las 200 instrucciones | upsell solo post-compra | 12.990, sin tachado | `a34739b2-a354-4260-9ed5-5af5b188889f` | Sin entregable, funnel sin crear |
+| Las 200 instrucciones | upsell solo post-compra | 12.990, sin tachado | `a34739b2-a354-4260-9ed5-5af5b188889f` | Sin entregable. En el funnel post-compra (abajo) |
 | Respuestas listas para WhatsApp | bono (inventado) | — | `2ed41ee7-80b2-4ea1-b7c7-0668677204ae` | Borrar en el panel |
 | Calendario de publicaciones de 30 días | bono (inventado) | — | `15dbebb7-d05e-4651-a3bd-5eb94b9b1079` | Borrar en el panel |
 | Plantillas de presupuestos y precios | bono (inventado) | — | `1312a1bd-d4a2-47e3-8975-4dae1305e527` | Borrar en el panel |
@@ -85,12 +85,17 @@ Casi todo esto desaparece al publicar el HTML propio (`landing/landing.html`), s
 - **Funnel post-compra:** no existe. El conector lo crea con 15 % al upsell y un downsell con 40 %; el descuento se puede
   poner en 0 %, pero el downsell **no se borra desde el conector**: se borra en el panel (tacho de su tarjeta).
 
-### Propuesto, esperando el «sí» de los dueños
-1. Crear el funnel post-compra y poner el upsell en 0 % (12.990).
-2. Downsell: borrarlo los dueños en el panel (recomendado) o ponerlo en 0 % mientras tanto.
-3. Checkout: ocultar la barra de compradores; timer de los bumps en 0 (oculto); sellos en estilo «Clásico» (el estilo
-   «Sellos» trae «Contenido aprobado · Oficialmente»); barra superior con el texto «Pago seguro con Mercado Pago».
-4. Píxel: copiar «velas» `1439230865058805` desde Taller Triple, con su token.
+### Aplicado en Impultienda con el «sí» de los dueños (10/11)
+1. **Funnel post-compra «Las 200 instrucciones»** (`e60d55c4-4d41-4c1d-855f-de97ba191121`), ACTIVO, «Disparar siempre».
+   - Upsell (oferta `624d1055-8a29-47ce-9471-45c5a43d9b97`): 0 % → ARS 12.990.
+   - Downsell (oferta `07de2e4b-2ccf-4c09-a124-3f2a0003704f`): 0 % → ARS 12.990. **Lo borran los dueños en el panel**
+     (tacho de su tarjeta): https://impultienda.ar/dashboard/la-ia-hace/marketing/post-compra/e60d55c4-4d41-4c1d-855f-de97ba191121?tab=upsells
+   - Página: la plantilla de Impultienda con el nombre y la descripción del producto, hasta subir `landing/postcompra.html`.
+2. **Checkout:** barra de compradores oculta; timer del bloque de bumps en 0 (oculto; antes: automático); barra superior con
+   «Pago seguro con Mercado Pago» (antes: la de siempre). Sellos: se pidió «Clásico» y quedó en «automático» (no se pudo
+   confirmar que sea el mismo): **revisar en Diseño de checkout** que no aparezca el sello «Contenido aprobado · Oficialmente».
+3. **Píxel «velas» `1439230865058805`** copiado desde Taller Triple con su token. Impultienda verificó que carga en la tienda
+   publicada y que Meta acepta el token. En Meta no se tocó nada.
 
 ## Pendiente
 
