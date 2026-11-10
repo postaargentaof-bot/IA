@@ -244,7 +244,7 @@
 > No, gracias. Me quedo solo con lo que compré.
 
 **Aclaración chiquita**
-> [Si la pasarela permite cobrar con un clic: «Se cobra con el mismo medio de pago, sin volver a cargar la tarjeta». Si no, sacar esta línea.] Te llega por mail junto con el libro.
+> Te llega por mail junto con el libro.
 
 ---
 
