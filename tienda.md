@@ -7,7 +7,7 @@
 
 | Producto | Rol | Precio hoy | id | Estado |
 |---|---|---|---|---|
-| La IA hace, vos vendés | principal | **16.990 con 84.950 tachado (los dos los puso Impultienda). Va a 7.990 sin tachado: esperando decisión, ver abajo** | `4abc74e9-f00f-4f67-9dee-9116c50c3342` | Sin entregable |
+| La IA hace, vos vendés | principal | **16.990 con 84.950 tachado (los dos los puso Impultienda). Va a 7.990 sin tachado al publicar el HTML propio (decidido 10/11)** | `4abc74e9-f00f-4f67-9dee-9116c50c3342` | Sin entregable |
 | Fotos de producto con el celular + IA | bump | 4.990, sin tachado | `b9fdc983-7333-42a8-af33-e337a1a72000` | Sin entregable |
 | La planilla lista para usar | bump | 3.990, sin tachado | `1ae61a84-4d03-4c6f-914c-9715aa6e46ab` | Sin entregable |
 | Las 200 instrucciones | upsell solo post-compra | 12.990, sin tachado | `a34739b2-a354-4260-9ed5-5af5b188889f` | Sin entregable, funnel sin crear |
@@ -21,7 +21,7 @@ Hoy la tienda **no puede cobrar** (no hay Mercado Pago conectado) y ningún prod
 
 Con la landing de plantilla, Impultienda no deja sacar el tachado (el conector rechaza «sin tachado»: «quedaría 0 tachado»).
 Además el checkout muestra el tachado del principal y, en el total, le suma el «valor» de los bonos. No existe pausar la tienda
-ni modo mantenimiento (solo «Eliminar tienda», que la archiva). Opciones:
+ni modo mantenimiento (solo «Eliminar tienda», que la archiva). Opciones (**elegida el 10/11: la 1**):
 
 1. **Esperar y cambiar el precio cuando se publique el HTML propio** (`landing/landing.html`). Con HTML propio la regla del
    tachado obligatorio no aplica; ahí se pone 7.990 sin tachado. Mientras tanto nadie puede comprar (no hay pasarela).
@@ -65,7 +65,7 @@ Casi todo esto desaparece al publicar el HTML propio (`landing/landing.html`), s
 
 ## Pendiente
 
-- Decidir cómo se corrige el precio del principal (opciones arriba) y aplicarlo con el «sí» de los dueños.
+- Precio del principal: en el mismo paso en que se publique el HTML propio, pasar a 7.990 sin tachado (con el «sí» de los dueños).
 - Borrar en el panel (Diseño de ebooks) los 3 bonos inventados. El conector no borra ebooks.
 - Sacar todo lo de la lista de arriba (o publicar el HTML propio) y revisar Diseño de checkout: garantía, barra de compradores y barra superior.
 - Landing: publicar `landing/landing.html` (HTML propio). Todavía tiene los recuadros de las imágenes IMG-xx.
