@@ -177,6 +177,10 @@ DIAS = [
 ]
 NEG = [('IMG-02', 'Caro', 'Ropa por Instagram · Lanús'), ('IMG-03', 'Mati', 'Tortas por encargo · Morón'),
        ('IMG-04', 'Sol', 'Uñas y pestañas · Rosario'), ('IMG-05', 'Fede', 'Entrenador personal · Córdoba')]
+# Mail de contacto para la garantía: lo pasan los dueños el 11/11. Reemplazar acá y volver a armar.
+MAIL = '[MAIL]'
+GARANTIA = f'Si no te sirve, escribinos a {MAIL} dentro de los 7 días y te devolvemos la plata. Sin preguntas.'
+
 FAQ = [
     ('¿Necesito saber de computación?', 'No. Si sabés mandar un mensaje por WhatsApp, alcanza. El libro te explica desde cómo abrir la cuenta (son 5 minutos) y cómo pedirle las cosas a la IA.'),
     ('¿Lo puedo hacer desde el celular?', 'Sí. ChatGPT tiene app para el celular y hasta le podés hablar en vez de escribir. WhatsApp Business e Instagram también son del celular. Para el Día 4 (los números) es más cómodo con una compu, pero no es obligatorio.'),
@@ -190,6 +194,7 @@ FAQ = [
     ('¿Es seguro poner los datos de mi negocio en la IA?', 'Ponés lo mismo que ya tenés publicado en tu Instagram: qué vendés, precios, envíos y horarios. El libro te explica qué no tenés que pegar nunca: datos personales de tus clientes, contraseñas y datos bancarios.'),
     ('¿Cómo me llega?', 'Por mail, apenas se acredita el pago. Es un PDF que podés guardar en el celular o imprimir.'),
     ('¿Cómo pago?', 'Con Mercado Pago.'),
+    ('¿Y si no me sirve?', 'Tenés 7 días de garantía, sin preguntas: escribinos a ' + MAIL + ' dentro de los 7 días desde la compra y te devolvemos la plata.'),
 ]
 
 def boton(txt=None):
@@ -284,6 +289,7 @@ LANDING = f"""<!doctype html><html lang="es"><head><meta charset="utf-8">
   <div><b>La IA se equivoca.</b> Por eso la regla del libro es: la IA escribe el borrador, vos lo revisás. Precios, cuentas y fechas, siempre los confirmás vos.</div>
   <div><b>Lo tenés que hacer.</b> Es una hora por día. Si lo leés y no hacés las tareas, no cambia nada.</div>
   <div><b>No te prometemos ventas.</b> Te prometemos las respuestas, los posteos y los números armados. Lo que vendas depende de tu producto y de vos.</div>
+  <div style="grid-column:1/-1"><b>Garantía de 7 días.</b> {html.escape(GARANTIA)}</div>
  </div>
 </div></section>
 
@@ -296,7 +302,7 @@ LANDING = f"""<!doctype html><html lang="es"><head><meta charset="utf-8">
  {img('IMG-15')}
  <p>La IA no va a hacer crecer tu negocio sola. Lo que hace es sacarte de encima el trabajo repetido, para que el tiempo que te queda lo uses en lo que solo vos podés hacer: tu producto, tu trato con los clientes, tus ideas.</p>
  <div class="lema">La IA hace. Vos vendés.</div>
- {boton()}<p class="nota">Pagás con Mercado Pago. Te llega por mail apenas se acredita el pago.</p>
+ {boton()}<p class="nota">Pagás con Mercado Pago. Te llega por mail apenas se acredita el pago. Garantía de 7 días sin preguntas.</p>
 </div></section>
 
 <footer><div class="w">{'' if PREVIEW else '{{legal_footer}}'}</div></footer>

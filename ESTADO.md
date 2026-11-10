@@ -51,6 +51,8 @@ Público: emprendedores y negocios chicos que venden por WhatsApp e Instagram. H
 - Lista de prompts de imágenes: `imagenes/prompts.md`
 - Cómo se regeneran PDF, landing y prompts: `scripts/README-imagenes.md`
 - Tienda nueva en Impultienda creada (parte de la tarea 6): `la-ia-hace.impultienda.ar`, 4 productos cargados con sus ids. Detalle y pendientes en `tienda.md`
+- Garantía de 7 días sin preguntas en `landing/landing.html` (mail como [MAIL]); no publicada
+- Lectura de la tienda nueva: Mercado Pago sin conectar (link en `tienda.md`), píxel «velas» de «Velas arg» listo para copiar desde Taller Triple, checkout y funnel revisados; cambios propuestos en `tienda.md`, esperando el «sí»
 - Revisión de la landing publicada de la tienda nueva: lista de lo falso o que no es de la oferta (testimonios, garantía, cuenta regresiva, cupos, bonos inventados, precio) en `tienda.md`. No se arregló todavía
 
 ## 5 · Falta ⏳ (en orden)

@@ -63,6 +63,35 @@ lo marcado con (*) es lo que la plantilla muestra de entrada según la documenta
 
 Casi todo esto desaparece al publicar el HTML propio (`landing/landing.html`), salvo lo del checkout (garantía, barras, tachado y bonos), que depende de los productos y de Diseño de checkout.
 
+## Revisión del 10/11 (tarde): lo que NO depende de las imágenes
+
+### Hecho en el repo
+- `landing/landing.html` (y `landing/preview/`): garantía de 7 días sin preguntas en «Lo que tenés que saber», en la FAQ
+  («¿Y si no me sirve?») y en la nota del botón final. El mail queda como **[MAIL]**: se completa en `MAIL = '[MAIL]'` de
+  `scripts/armar_landing.py` y se vuelve a armar (`python3 scripts/armar_landing.py`). No se publicó.
+- `landing/postcompra.html`: el texto está bien (sin descuentos ni urgencias, botones `data-pp-accept` / `data-pp-decline`,
+  precio con `{price}`). **No se sube todavía:** tiene el recuadro de IMG-31 y la tapa como `RECURSO:tapa-200.png`, que hay
+  que subir a Recursos. Mientras tanto la oferta usa la plantilla de Impultienda con el nombre y la descripción del producto.
+
+### Leído (sin escribir)
+- **Mercado Pago:** no conectado; es la única pasarela compatible con la tienda en ARS. Se conecta con el botón de Mercado
+  Pago (inicio de sesión de Mercado Pago, sin pegar credenciales) en https://impultienda.ar/dashboard/la-ia-hace/configuracion?tab=pagos
+- **Píxel:** la tienda no tiene. La cuenta «Velas arg» (1611303950747523) tiene un solo píxel: «velas» `1439230865058805`
+  (activo, último evento 9/11), que ya está cargado con su token de conversiones en Taller Triple. Se puede copiar a esta
+  tienda con su token sin tocar nada en Meta. Las compras de las dos tiendas caerían en el mismo píxel (Taller Triple está cerrada).
+- **Checkout:** sin bloques arriba ni abajo. El conector no lee el resto del diseño, así que lo que sigue se aplica a ciegas
+  y la respuesta devuelve el valor anterior. Los textos de los sellos (incluida la garantía) son fijos: el sello dice la
+  garantía con sus días, y la frase «sin preguntas» con el mail solo se puede agregar como bloque de texto.
+- **Funnel post-compra:** no existe. El conector lo crea con 15 % al upsell y un downsell con 40 %; el descuento se puede
+  poner en 0 %, pero el downsell **no se borra desde el conector**: se borra en el panel (tacho de su tarjeta).
+
+### Propuesto, esperando el «sí» de los dueños
+1. Crear el funnel post-compra y poner el upsell en 0 % (12.990).
+2. Downsell: borrarlo los dueños en el panel (recomendado) o ponerlo en 0 % mientras tanto.
+3. Checkout: ocultar la barra de compradores; timer de los bumps en 0 (oculto); sellos en estilo «Clásico» (el estilo
+   «Sellos» trae «Contenido aprobado · Oficialmente»); barra superior con el texto «Pago seguro con Mercado Pago».
+4. Píxel: copiar «velas» `1439230865058805` desde Taller Triple, con su token.
+
 ## Pendiente
 
 - Precio del principal: en el mismo paso en que se publique el HTML propio, pasar a 7.990 sin tachado (con el «sí» de los dueños).
@@ -70,5 +99,7 @@ Casi todo esto desaparece al publicar el HTML propio (`landing/landing.html`), s
 - Sacar todo lo de la lista de arriba (o publicar el HTML propio) y revisar Diseño de checkout: garantía, barra de compradores y barra superior.
 - Landing: publicar `landing/landing.html` (HTML propio). Todavía tiene los recuadros de las imágenes IMG-xx.
 - Entregables: los PDF de `pdf/` tienen los recuadros de las imágenes sin completar; se suben cuando estén las imágenes.
-- Funnel post-compra: el modo de Impultienda aplica 15 % de descuento al upsell y suma un downsell con 40 %. A decidir.
-- Mercado Pago, píxel de Meta, compra de prueba.
+- Funnel post-compra: decidido sin descuento y sin downsell (10/11). Ver «Propuesto» arriba.
+- Mercado Pago (lo conectan los dueños, link arriba), píxel (propuesto arriba), compra de prueba.
+- Cuando llegue el mail (11/11): completar [MAIL] en la landing, sumar un bloque de texto con la garantía al checkout y revisar el mail de entrega.
+- Revisar en el panel (Diseño de checkout) que «Días de garantía» diga 7.
