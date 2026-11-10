@@ -47,6 +47,7 @@ Público: emprendedores y negocios chicos que venden por WhatsApp e Instagram. H
 - 3 anuncios con imágenes y textos: `anuncios/anuncios.md` + `anuncios/img/`
 - Lista de prompts de imágenes: `imagenes/prompts.md`
 - Cómo se regeneran PDF, landing y prompts: `scripts/README-imagenes.md`
+- Tienda nueva en Impultienda creada (parte de la tarea 6): `la-ia-hace.impultienda.ar`, 4 productos cargados con sus ids. Detalle y pendientes en `tienda.md`
 
 ## 5 · Falta ⏳ (en orden)
 
@@ -57,7 +58,8 @@ Público: emprendedores y negocios chicos que venden por WhatsApp e Instagram. H
 | 3 | Sacar las 6 fotos reales del antes y después (FOTO-A1…D3) y hacer las 3 escenas (FOTO-E1…E3) | Dueños | 4 | Tienen que ser reales; ver `imagenes/prompts.md` |
 | 4 | Volver a armar los PDF y la landing con las imágenes | Claude | 6 | `scripts/README-imagenes.md` |
 | 5 | Probar la planilla en Google Sheets (colores y listas) y la instrucción maestra en ChatGPT gratis | Dueños | — | Antes de vender |
-| 6 | Crear la tienda nueva en Impultienda: productos, precios, entregables, HTML de la landing y del upsell, imágenes en Recursos | Claude, con aprobación | 7 | Tienda actual: «Taller Triple» (no usar para esto). Revisar que no queden testimonios, contadores ni cupos de la plantilla |
+| 6 | Terminar la tienda nueva: precio del principal a 7.990 y sacar el tachado inventado (84.950), HTML propio de landing y upsell, entregables, funnel post-compra, imágenes en Recursos | Claude, con aprobación | 7 | Tienda y productos ya creados (`tienda.md`). Entregables y HTML final esperan a la 4. Borrar a mano en el panel los 3 bonos que inventó la IA de Impultienda. Revisar que no queden testimonios, contadores ni cupos |
+| 6b | Decidir el funnel post-compra: Impultienda pone 15 % de descuento al upsell y suma un downsell con 40 % | Dueños | 6 | Ver `tienda.md` |
 | 7 | Píxel de Meta en la tienda nueva + compra de prueba + evento Compra visible en el Administrador de eventos | Dueños + Claude | 9 | |
 | 8 | Leer todo (ebook, bumps, upsell, landing) y marcar cambios | Dueños | — | Se puede hacer en paralelo |
 | 9 | Crear la campaña en Meta y prenderla | Claude, con el «sí» de los dueños | 10 | Estructura en `anuncios/anuncios.md` |
@@ -65,7 +67,7 @@ Público: emprendedores y negocios chicos que venden por WhatsApp e Instagram. H
 
 ## 6 · Datos útiles
 
-- Impultienda: tienda actual «Taller Triple» (`2839f946-6210-4e03-a620-44aa105606b1`), plan Max, ARS, Mercado Pago.
+- Impultienda: tienda nueva «La IA hace» (`e36e2cbd-c356-48a0-85cb-259a02de2282`, `la-ia-hace.impultienda.ar`). Tienda vieja «Taller Triple» (`2839f946-6210-4e03-a620-44aa105606b1`), plan Max, ARS, Mercado Pago — no usar para esto.
 - Meta: cuenta publicitaria «Velas arg» (`1611303950747523`), en USD.
 - La carpeta del kit (`kit-ebooks-cortex.zip`, `EMPEZA-ACA.md`) está sin instalar; se puede instalar más adelante.
 
