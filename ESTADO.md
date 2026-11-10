@@ -26,6 +26,7 @@ Público: emprendedores y negocios chicos que venden por WhatsApp e Instagram. H
 
 | Fecha | Decisión | Por qué |
 |---|---|---|
+| 10/11 | Sin fotos reales del antes y después (FOTO-*): la sección se sacó del bump de fotos. La tarea 3 ya no existe | Ya estaba decidido (commit 5d3ab8c); ESTADO lo seguía listando |
 | 10/11 | En la tienda nueva se usa el píxel «velas» (`1439230865058805`) de la cuenta «Velas arg», copiado desde Taller Triple | Es el único píxel de la cuenta y ya tiene token; Taller Triple está cerrada |
 | 10/11 | Checkout sin barra de compradores ni reloj en los bumps; barra superior «Pago seguro con Mercado Pago» | Nada de urgencias ni números simulados |
 | 10/11 | Garantía de 7 días, sin preguntas: se pide por mail y la devolución se hace a mano desde Mercado Pago. Va en la landing propia, el checkout y el mail de entrega | Lo decidieron los dueños; vuelve a haber un contacto (mail) en la landing |
@@ -63,8 +64,7 @@ Público: emprendedores y negocios chicos que venden por WhatsApp e Instagram. H
 | # | Tarea | Quién | Bloquea a | Notas |
 |---|---|---|---|---|
 | 1 | Pagar los ~USD 7 pendientes en Meta (cuenta «Velas arg» en período de gracia desde el 9/11) | Dueños | 9 | Meta Business Suite → Facturación y pagos → Pagar ahora. Si falla: habilitar la tarjeta para el exterior o cargar otra. **Lo pagan el 11/11** (ARS ~11.200) |
-| 3 | Sacar las 6 fotos reales del antes y después (FOTO-A1…D3) y hacer las 3 escenas (FOTO-E1…E3) | Dueños | 4 | Tienen que ser reales; ver `imagenes/prompts.md` |
-| 4 | Volver a armar los PDF y la landing con las imágenes | Claude | 6 | **Desbloqueada** (las imágenes ya están). Las FOTO-xx reales todavía no: quedan sus recuadros hasta la tarea 3. `scripts/README-imagenes.md` |
+| 4 | Volver a armar los PDF y la landing con las imágenes | Claude | 6 | **Desbloqueada** (las imágenes ya están). `scripts/README-imagenes.md` |
 | 5 | Probar la planilla en Google Sheets (colores y listas) y la instrucción maestra en ChatGPT gratis | Dueños | — | Antes de vender |
 | 6 | Terminar la tienda nueva: precio del principal a 7.990 y sacar el tachado inventado (84.950) (**decidido: se hace al publicar el HTML propio, en el mismo paso**), HTML propio de landing y upsell, entregables, funnel post-compra, imágenes en Recursos | Claude, con aprobación | 7 | Tienda y productos ya creados (`tienda.md`). Entregables y HTML final esperan a la 4. Borrar a mano en el panel los 3 bonos que inventó la IA de Impultienda. Revisar que no queden testimonios, contadores ni cupos |
 | 6b | Pasar el mail de contacto para la garantía | Dueños | 6 | Lo agregan el 11/11. Después sumar la garantía y el mail a `landing/landing.html`, al checkout y al mail de entrega |
