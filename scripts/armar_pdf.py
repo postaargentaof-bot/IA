@@ -4,11 +4,17 @@ Uso: python3 scripts/armar_pdf.py config.json
 import json, re, subprocess, sys, tempfile, os, html
 import markdown
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+import imagenes
 from imagenes import slot
 from pypdf import PdfWriter, PdfReader
 
 cfg = json.load(open(sys.argv[1]))
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+# Carpeta temporal propia de cada corrida (antes era una ruta fija de otra sesión).
+cfg['tmp'] = tempfile.mkdtemp(prefix='armar_pdf_')
+# En el PDF van copias JPEG livianas (las PNG pesan ~2 MB cada una y el PDF pasaba los 15 MB).
+imagenes.FUENTE = lambda id_, p: 'file://' + imagenes.jpg(id_, os.path.join(cfg['tmp'], 'img'),
+                                                          cfg.get('img_lado', 1400), cfg.get('img_calidad', 80))
 
 CSS = r"""
 @page { size: 148mm 210mm; margin: 16mm 14mm 18mm 14mm; }
@@ -136,6 +142,25 @@ for i, ch in enumerate(cfg['chapters']):
         pat, repl = (pat, '') if isinstance(pat, str) else pat
         t = re.sub(pat, repl, t, flags=re.M | re.S)
     body += md_to_html(t, i == 0)
+# El cierre (desde el bloque anterior a la última línea divisoria) va junto, para que la última
+# página no quede con una sola frase suelta.
+_i = body.rfind('<hr')
+if _i > 0:
+    _j = max(body.rfind('</p>', 0, _i), body.rfind('</blockquote>', 0, _i), body.rfind('</ul>', 0, _i))
+    if body.startswith('</blockquote>', _j):
+        _k = body.rfind('<blockquote', 0, _j)
+    elif body.startswith('</ul>', _j):
+        _k = body.rfind('<ul', 0, _j)
+    else:
+        _k = body.rfind('<p', 0, _j)
+    if body.startswith('<blockquote', _k) and len(re.sub('<[^>]+>', '', body[_k:_j])) > 600:
+        # cuadro largo: se parte y solo su último párrafo baja con el cierre
+        _cls = re.match(r'<blockquote class="([^"]*)"', body[_k:]).group(1)
+        _k = body.rfind('<p', _k, _j)
+        body = body[:_k] + f'</blockquote><blockquote class="{_cls}" style="margin-top:0">' + body[_k:]
+        _k = body.rfind('<blockquote', 0, _k + 60)
+    if _k > 0 and len(re.sub('<[^>]+>', '', body[_k:])) < 1500:
+        body = body[:_k] + '<div style="break-inside:avoid">' + body[_k:] + '</div>'
 doc = f'<!doctype html><html lang="es"><head><meta charset="utf-8"><style>{CSS}</style></head><body>{body}</body></html>'
 cfg['footer_html'] = ('<div style="width:100%;font-family:Inter,sans-serif;font-size:7pt;color:#8A84A0;'
                       'padding:0 14mm;display:flex;justify-content:space-between">'

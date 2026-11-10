@@ -102,8 +102,8 @@ Casi todo esto desaparece al publicar el HTML propio (`landing/landing.html`), s
 - Precio del principal: en el mismo paso en que se publique el HTML propio, pasar a 7.990 sin tachado (con el «sí» de los dueños).
 - Borrar en el panel (Diseño de ebooks) los 3 bonos inventados. El conector no borra ebooks.
 - Sacar todo lo de la lista de arriba (o publicar el HTML propio) y revisar Diseño de checkout: garantía, barra de compradores y barra superior.
-- Landing: publicar `landing/landing.html` (HTML propio). Todavía tiene los recuadros de las imágenes IMG-xx.
-- Entregables: los PDF de `pdf/` tienen los recuadros de las imágenes sin completar; se suben cuando estén las imágenes.
+- Landing: publicar `landing/landing.html` (HTML propio). Ya tiene las imágenes (10/11), con `src="RECURSO:<archivo>"`: subir a Recursos los archivos de `landing/assets/`, cargar las direcciones en `imagenes/urls.json` y volver a armar.
+- Entregables: los PDF de `pdf/` ya están completos con las imágenes (10/11); falta subirlos.
 - Funnel post-compra: decidido sin descuento y sin downsell (10/11). Ver «Propuesto» arriba.
 - Mercado Pago (lo conectan los dueños, link arriba), píxel (propuesto arriba), compra de prueba.
 - Cuando llegue el mail (11/11): completar [MAIL] en la landing, sumar un bloque de texto con la garantía al checkout y revisar el mail de entrega.

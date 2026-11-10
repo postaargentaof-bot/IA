@@ -4,9 +4,10 @@ Uso:
   python3 scripts/armar_landing.py            -> landing/landing.html y landing/postcompra.html
   python3 scripts/armar_landing.py --preview  -> landing/preview/*.html (imágenes locales, tokens con valores de ejemplo)
 
-Las imágenes salen de scripts/imagenes.py. Para la versión de Impultienda, las direcciones de
-cada imagen se cargan en imagenes/urls.json ({"IMG-01": "https://...", ...}) después de subirlas
-a Diseño de tienda → Recursos. Las que no tengan dirección salen como recuadro.
+Las imágenes salen de scripts/imagenes.py; se copian livianas (JPEG) a landing/assets/IMG-xx.jpg.
+Para la versión de Impultienda, las direcciones de cada imagen y mockup se cargan en
+imagenes/urls.json ({"IMG-01": "https://...", "tapa-ebook.png": "https://...", ...}) después de
+subirlas a Diseño de tienda → Recursos. Mientras no tengan dirección salen como RECURSO:<archivo>.
 Los mockups (tapas y páginas del libro) salen de los PDF reales: landing/assets/.
 """
 import os, sys, json, subprocess, html
@@ -30,25 +31,40 @@ def pdf_png(pdf, page, name, res=110):
     subprocess.run(['pdftoppm', '-r', str(res), '-png', '-singlefile', '-f', str(page), '-l', str(page),
                     os.path.join(ROOT, 'pdf', pdf), dst[:-4]], check=True, stderr=subprocess.DEVNULL)
     return name
+def pagina(pdf, texto):
+    """Número de página (1…) del PDF que tiene `texto` al principio (las páginas se corren al cambiar el libro)."""
+    from pypdf import PdfReader
+    for i, pg in enumerate(PdfReader(os.path.join(ROOT, 'pdf', pdf)).pages):
+        if texto in (pg.extract_text() or '')[:80]:
+            return i + 1
+    raise SystemExit(f'No encontré la página que empieza con «{texto}» en {pdf}')
+EB = 'la-ia-hace-vos-vendes.pdf'
 MOCK = {
-    'tapa': pdf_png('la-ia-hace-vos-vendes.pdf', 1, 'tapa-ebook.png'),
-    'p1': pdf_png('la-ia-hace-vos-vendes.pdf', 9, 'pagina-ficha.png'),
-    'p2': pdf_png('la-ia-hace-vos-vendes.pdf', 20, 'pagina-whatsapp.png'),
-    'p3': pdf_png('la-ia-hace-vos-vendes.pdf', 52, 'pagina-numeros.png'),
+    'tapa': pdf_png(EB, 1, 'tapa-ebook.png'),
+    'p1': pdf_png(EB, pagina(EB, 'Día 0 · La ficha'), 'pagina-ficha.png'),
+    'p2': pdf_png(EB, pagina(EB, 'Bajá WhatsApp Business'), 'pagina-whatsapp.png'),
+    'p3': pdf_png(EB, pagina(EB, 'La cobraba $45.000'), 'pagina-numeros.png'),
     't200': pdf_png('las-200-instrucciones.pdf', 1, 'tapa-200.png'),
 }
+# Copias livianas de las fotos para la web (las que se suben a Recursos de Impultienda).
+USADAS = ['IMG-01', 'IMG-02', 'IMG-03', 'IMG-04', 'IMG-05', 'IMG-07', 'IMG-08', 'IMG-09', 'IMG-10',
+          'IMG-11', 'IMG-12', 'IMG-13', 'IMG-14', 'IMG-15', 'IMG-31']
+for _id in USADAS:
+    imagenes.jpg(_id, ASSETS, 1600, 82)
 def asset(name):
     if PREVIEW:
-        return 'file://' + os.path.join(ASSETS, name)
+        return '../assets/' + name  # relativo: la vista previa anda en cualquier compu con el repo
     return URLS.get(name, f'RECURSO:{name}')
 
 def img(id_, cls=''):
-    if PREVIEW:
-        return imagenes.slot(id_, cls)
-    if id_ in URLS:
-        w, h = imagenes.PROPORCION[IMAGENES[id_][0]]
-        return f'<img class="img {cls}" style="aspect-ratio:{w}/{h}" src="{URLS[id_]}" alt="">'
-    return imagenes.slot(id_, cls)
+    """La foto. En la versión de Impultienda, sin dirección cargada en urls.json sale como
+    RECURSO:IMG-xx.jpg (el archivo está en landing/assets/): se reemplaza al subirla a Recursos."""
+    w, h = imagenes.PROPORCION[IMAGENES[id_][0]]
+    nombre = f'{id_}.jpg'
+    if not os.path.exists(os.path.join(ASSETS, nombre)):
+        return imagenes.slot(id_, cls)  # no hay imagen: recuadro con el código
+    src = asset(nombre) if PREVIEW else URLS.get(id_, URLS.get(nombre, f'RECURSO:{nombre}'))
+    return f'<img class="img {cls}" style="aspect-ratio:{w}/{h}" src="{src}" alt="">'
 
 PRICE = '$7.990' if PREVIEW else '{{price}}'
 

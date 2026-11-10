@@ -14,7 +14,7 @@ Testear un ebook propio sobre cómo usar la IA en un emprendimiento, después de
 
 | Pieza | Nombre | Precio | Archivo |
 |---|---|---|---|
-| Principal | La IA hace, vos vendés | ARS 7.990 | `pdf/la-ia-hace-vos-vendes.pdf` (71 págs.) |
+| Principal | La IA hace, vos vendés | ARS 7.990 | `pdf/la-ia-hace-vos-vendes.pdf` (69 págs.) |
 | Bump 1 | Fotos de producto con el celular + IA | ARS 4.990 | `pdf/bump-fotos-con-celular-e-ia.pdf` |
 | Bump 2 | La planilla lista para usar | ARS 3.990 | `bumps/planilla-de-tu-negocio.xlsx` |
 | Upsell post-compra | Las 200 instrucciones | ARS 12.990 | `pdf/las-200-instrucciones.pdf` |
@@ -26,6 +26,9 @@ Público: emprendedores y negocios chicos que venden por WhatsApp e Instagram. H
 
 | Fecha | Decisión | Por qué |
 |---|---|---|
+| 10/11 | En los PDF las imágenes van como copias JPEG livianas (1400 px, calidad 80); las PNG originales quedan en `imagenes/` sin tocar | Con las PNG (~2,2 MB cada una) el ebook pasaba los 15 MB; así pesa 3,3 MB |
+| 10/11 | En `landing/landing.html` y `postcompra.html` (versión Impultienda) las fotos ya van como `<img>` con `src="RECURSO:IMG-xx.jpg"`, igual que las tapas (`RECURSO:tapa-ebook.png`). Los archivos a subir a Recursos están en `landing/assets/`. Al subirlos se cargan las direcciones en `imagenes/urls.json` y se vuelve a armar | Las imágenes existen: no tiene sentido dejar recuadros; falta solo la dirección pública |
+| 10/11 | La vista previa (`landing/preview/`) usa rutas relativas (`../assets/`) | Antes eran rutas `file://` de la compu donde se armó y no se veían en otra |
 | 10/11 | Sin fotos reales del antes y después (FOTO-*): la sección se sacó del bump de fotos. La tarea 3 ya no existe | Ya estaba decidido (commit 5d3ab8c); ESTADO lo seguía listando |
 | 10/11 | En la tienda nueva se usa el píxel «velas» (`1439230865058805`) de la cuenta «Velas arg», copiado desde Taller Triple | Es el único píxel de la cuenta y ya tiene token; Taller Triple está cerrada |
 | 10/11 | Checkout sin barra de compradores ni reloj en los bumps; barra superior «Pago seguro con Mercado Pago» | Nada de urgencias ni números simulados |
@@ -54,6 +57,8 @@ Público: emprendedores y negocios chicos que venden por WhatsApp e Instagram. H
 - Lista de prompts de imágenes: `imagenes/prompts.md`
 - Las 20 imágenes con IA (IMG-01…15, 20…22, 30, 31), aprobadas por Toto el 10/11: `imagenes/IMG-XX.png`
 - Cómo se regeneran PDF, landing y prompts: `scripts/README-imagenes.md`
+- **Tarea 4 (10/11):** PDF y landing rearmados con las 20 imágenes. Sin ningún recuadro IMG-xx ni FOTO-xx en los 3 PDF ni en los 4 HTML. Revisados con capturas (páginas con imágenes, tapas, landing en compu y celular, post-compra): sin imágenes cortadas, deformadas ni tapando texto. Se arregló: la última página del ebook y del bump quedaba con una sola frase suelta, y el subtítulo de la tapa del bump estaba pegado a la línea de abajo. Los mockups de la landing salen ahora de páginas buscadas por texto (las páginas se habían corrido). `[MAIL]` sigue sin completar (lo pasan el 11/11)
+- **Peso de los PDF (10/11):** `la-ia-hace-vos-vendes.pdf` 3,3 MB (69 págs.) · `bump-fotos-con-celular-e-ia.pdf` 0,7 MB (14 págs.) · `las-200-instrucciones.pdf` 1,0 MB (68 págs.). Todos lejos de los 15 MB
 - Tienda nueva en Impultienda creada (parte de la tarea 6): `la-ia-hace.impultienda.ar`, 4 productos cargados con sus ids. Detalle y pendientes en `tienda.md`
 - Garantía de 7 días sin preguntas en `landing/landing.html` (mail como [MAIL]); no publicada
 - Tienda nueva: funnel post-compra creado (upsell 12.990, sin descuento; el downsell quedó en 0 % hasta que los dueños lo borren en el panel), checkout sin barra de compradores ni reloj de bumps, píxel «velas» cargado y verificado. Detalle e ids en `tienda.md`
@@ -64,9 +69,8 @@ Público: emprendedores y negocios chicos que venden por WhatsApp e Instagram. H
 | # | Tarea | Quién | Bloquea a | Notas |
 |---|---|---|---|---|
 | 1 | Pagar los ~USD 7 pendientes en Meta (cuenta «Velas arg» en período de gracia desde el 9/11) | Dueños | 9 | Meta Business Suite → Facturación y pagos → Pagar ahora. Si falla: habilitar la tarjeta para el exterior o cargar otra. **Lo pagan el 11/11** (ARS ~11.200) |
-| 4 | Volver a armar los PDF y la landing con las imágenes | Claude | 6 | **Desbloqueada** (las imágenes ya están). `scripts/README-imagenes.md` |
 | 5 | Probar la planilla en Google Sheets (colores y listas) y la instrucción maestra en ChatGPT gratis | Dueños | — | Antes de vender |
-| 6 | Terminar la tienda nueva: precio del principal a 7.990 y sacar el tachado inventado (84.950) (**decidido: se hace al publicar el HTML propio, en el mismo paso**), HTML propio de landing y upsell, entregables, funnel post-compra, imágenes en Recursos | Claude, con aprobación | 7 | Tienda y productos ya creados (`tienda.md`). Entregables y HTML final esperan a la 4. Borrar a mano en el panel los 3 bonos que inventó la IA de Impultienda. Revisar que no queden testimonios, contadores ni cupos |
+| 6 | Terminar la tienda nueva: precio del principal a 7.990 y sacar el tachado inventado (84.950) (**decidido: se hace al publicar el HTML propio, en el mismo paso**), HTML propio de landing y upsell, entregables, funnel post-compra, imágenes en Recursos | Claude, con aprobación | 7 | Tienda y productos ya creados (`tienda.md`). PDF y HTML listos (tarea 4 hecha): subir a Recursos los archivos de `landing/assets/` (15 fotos IMG-xx.jpg + tapas y páginas .png), cargar sus direcciones en `imagenes/urls.json` y volver a armar con `python3 scripts/armar_landing.py`. Borrar a mano en el panel los 3 bonos que inventó la IA de Impultienda. Revisar que no queden testimonios, contadores ni cupos |
 | 6b | Pasar el mail de contacto para la garantía | Dueños | 6 | Lo agregan el 11/11. Después sumar la garantía y el mail a `landing/landing.html`, al checkout y al mail de entrega |
 | 6c | Borrar en el panel el downsell del funnel post-compra (está en 0 %), los 3 bonos inventados, y revisar en Diseño de checkout los sellos y que «Días de garantía» diga 7 | Dueños | 6 | Links en `tienda.md` |
 | 6d | Conectar Mercado Pago en la tienda nueva | Dueños | 7 | https://impultienda.ar/dashboard/la-ia-hace/configuracion?tab=pagos |

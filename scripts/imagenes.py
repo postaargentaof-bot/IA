@@ -85,6 +85,25 @@ def archivo(id_):
     return None
 
 
+def jpg(id_, carpeta, max_lado=1400, calidad=80):
+    """Copia liviana (JPEG) de la imagen, para los PDF y la web. Devuelve la ruta o None."""
+    p = archivo(id_)
+    if not p:
+        return None
+    os.makedirs(carpeta, exist_ok=True)
+    dst = os.path.join(carpeta, f'{id_}.jpg')
+    if not os.path.exists(dst) or os.path.getmtime(dst) < os.path.getmtime(p):
+        from PIL import Image
+        im = Image.open(p).convert('RGB')
+        im.thumbnail((max_lado, max_lado), Image.LANCZOS)
+        im.save(dst, 'JPEG', quality=calidad, optimize=True, progressive=True)
+    return dst
+
+
+# Si se define, slot() la usa para la dirección de la imagen: FUENTE(id_, ruta_original) -> src
+FUENTE = None
+
+
 def slot(id_, clase='', url_base=None, alto=None):
     """HTML de la imagen si existe; si no, un recuadro con el ID y qué va."""
     if id_ in IMAGENES:
@@ -97,7 +116,10 @@ def slot(id_, clase='', url_base=None, alto=None):
     p = archivo(id_)
     estilo = f'aspect-ratio:{w}/{h};' + (f'height:{alto};width:auto;' if alto else '')
     if p:
-        src = (url_base + os.path.basename(p)) if url_base else 'file://' + p
+        if FUENTE:
+            src = FUENTE(id_, p)
+        else:
+            src = (url_base + os.path.basename(p)) if url_base else 'file://' + p
         return f'<img class="img {clase}" style="{estilo}" src="{src}" alt="">'
     corto = html.escape(donde if id_.startswith('FOTO') else desc.split('.')[0])
     return (f'<div class="img ph-img {clase}" style="{estilo}"><span class="ph-id">{id_}</span>'
