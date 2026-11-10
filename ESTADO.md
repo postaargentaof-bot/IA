@@ -51,6 +51,7 @@ Público: emprendedores y negocios chicos que venden por WhatsApp e Instagram. H
 - Landing con diseño (HTML propio para Impultienda): `landing/landing.html` + upsell post-compra `landing/postcompra.html`. Vista previa: `landing/preview/`
 - 3 anuncios con imágenes y textos: `anuncios/anuncios.md` + `anuncios/img/`
 - Lista de prompts de imágenes: `imagenes/prompts.md`
+- Las 20 imágenes con IA (IMG-01…15, 20…22, 30, 31), aprobadas por Toto el 10/11: `imagenes/IMG-XX.png`
 - Cómo se regeneran PDF, landing y prompts: `scripts/README-imagenes.md`
 - Tienda nueva en Impultienda creada (parte de la tarea 6): `la-ia-hace.impultienda.ar`, 4 productos cargados con sus ids. Detalle y pendientes en `tienda.md`
 - Garantía de 7 días sin preguntas en `landing/landing.html` (mail como [MAIL]); no publicada
@@ -62,9 +63,8 @@ Público: emprendedores y negocios chicos que venden por WhatsApp e Instagram. H
 | # | Tarea | Quién | Bloquea a | Notas |
 |---|---|---|---|---|
 | 1 | Pagar los ~USD 7 pendientes en Meta (cuenta «Velas arg» en período de gracia desde el 9/11) | Dueños | 9 | Meta Business Suite → Facturación y pagos → Pagar ahora. Si falla: habilitar la tarjeta para el exterior o cargar otra. **Lo pagan el 11/11** (ARS ~11.200) |
-| 2 | Generar las 20 imágenes con IA y guardarlas en `imagenes/IMG-XX.png` | Toto | 4 | Arranca el 11/11 con ChatGPT pago (sin gasto extra). Prompts en `imagenes/prompts.md`. Se suben a la rama por GitHub (imagenes → Add file → Upload files) |
 | 3 | Sacar las 6 fotos reales del antes y después (FOTO-A1…D3) y hacer las 3 escenas (FOTO-E1…E3) | Dueños | 4 | Tienen que ser reales; ver `imagenes/prompts.md` |
-| 4 | Volver a armar los PDF y la landing con las imágenes | Claude | 6 | `scripts/README-imagenes.md` |
+| 4 | Volver a armar los PDF y la landing con las imágenes | Claude | 6 | **Desbloqueada** (las imágenes ya están). Las FOTO-xx reales todavía no: quedan sus recuadros hasta la tarea 3. `scripts/README-imagenes.md` |
 | 5 | Probar la planilla en Google Sheets (colores y listas) y la instrucción maestra en ChatGPT gratis | Dueños | — | Antes de vender |
 | 6 | Terminar la tienda nueva: precio del principal a 7.990 y sacar el tachado inventado (84.950) (**decidido: se hace al publicar el HTML propio, en el mismo paso**), HTML propio de landing y upsell, entregables, funnel post-compra, imágenes en Recursos | Claude, con aprobación | 7 | Tienda y productos ya creados (`tienda.md`). Entregables y HTML final esperan a la 4. Borrar a mano en el panel los 3 bonos que inventó la IA de Impultienda. Revisar que no queden testimonios, contadores ni cupos |
 | 6b | Pasar el mail de contacto para la garantía | Dueños | 6 | Lo agregan el 11/11. Después sumar la garantía y el mail a `landing/landing.html`, al checkout y al mail de entrega |
