@@ -31,7 +31,7 @@ Imágenes en `anuncios/img/` (1080×1350, formato 4:5). Fuente editable: `anunci
 >
 > 7 días, una tarea por día, con ChatGPT gratis. Aunque no sepas nada de tecnología.
 >
-> 📘 Ebook en PDF + versión para el celular · $7.990
+> 📘 Ebook en PDF · te llega por mail · $7.990
 
 **Título:** Dejá de contestar lo mismo todo el día
 **Descripción:** Ebook · 7 días · $7.990
@@ -78,7 +78,7 @@ Imágenes en `anuncios/img/` (1080×1350, formato 4:5). Fuente editable: `anunci
 >
 > «La IA hace, vos vendés» te lleva de la mano en 7 días, con ChatGPT gratis y todo listo para copiar y pegar.
 >
-> 📘 $7.990 · PDF + versión para el celular
+> 📘 Ebook en PDF · $7.990
 
 **Título:** La IA explicada para emprendedores
 **Descripción:** Sin saber de tecnología · $7.990
