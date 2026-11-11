@@ -2,7 +2,7 @@
 
 > Archivo principal del proyecto. **Todo chat lo lee al arrancar y lo actualiza al terminar.**
 > Rama de trabajo: `claude/dazzling-euler-7bk40o` (no `main`). Siempre `git pull --rebase` antes de `git push`: hay varios chats subiendo a la misma rama.
-> Última actualización: 10/11/2026.
+> Última actualización: 11/11/2026.
 
 ## 1 · Qué estamos haciendo
 
@@ -14,6 +14,7 @@ Testear un ebook propio sobre cómo usar la IA en un emprendimiento, después de
 
 | Pieza | Nombre | Precio | Archivo |
 |---|---|---|---|
+| 11/11 | Mail de contacto de la garantía: `tallertriplearg@gmail.com` (el mismo de Taller Triple / velas) | Lo eligieron los dueños; ya lo leen. Se aceptó que muestre otra marca |
 | Principal | La IA hace, vos vendés | ARS 7.990 | `pdf/la-ia-hace-vos-vendes.pdf` (69 págs.) |
 | Bump 1 | Fotos de producto con el celular + IA | ARS 4.990 | `pdf/bump-fotos-con-celular-e-ia.pdf` |
 | Bump 2 | La planilla lista para usar | ARS 3.990 | `bumps/planilla-de-tu-negocio.xlsx` |
@@ -60,7 +61,7 @@ Público: emprendedores y negocios chicos que venden por WhatsApp e Instagram. H
 - **Tarea 4 (10/11):** PDF y landing rearmados con las 20 imágenes. Sin ningún recuadro IMG-xx ni FOTO-xx en los 3 PDF ni en los 4 HTML. Revisados con capturas (páginas con imágenes, tapas, landing en compu y celular, post-compra): sin imágenes cortadas, deformadas ni tapando texto. Se arregló: la última página del ebook y del bump quedaba con una sola frase suelta, y el subtítulo de la tapa del bump estaba pegado a la línea de abajo. Los mockups de la landing salen ahora de páginas buscadas por texto (las páginas se habían corrido). `[MAIL]` sigue sin completar (lo pasan el 11/11)
 - **Peso de los PDF (10/11):** `la-ia-hace-vos-vendes.pdf` 3,3 MB (69 págs.) · `bump-fotos-con-celular-e-ia.pdf` 0,7 MB (14 págs.) · `las-200-instrucciones.pdf` 1,0 MB (68 págs.). Todos lejos de los 15 MB
 - Tienda nueva en Impultienda creada (parte de la tarea 6): `la-ia-hace.impultienda.ar`, 4 productos cargados con sus ids. Detalle y pendientes en `tienda.md`
-- Garantía de 7 días sin preguntas en `landing/landing.html` (mail como [MAIL]); no publicada
+- Garantía de 7 días sin preguntas en `landing/landing.html`, con el mail `tallertriplearg@gmail.com` (11/11); no publicada
 - Tienda nueva: funnel post-compra creado (upsell 12.990, sin descuento; el downsell quedó en 0 % hasta que los dueños lo borren en el panel), checkout sin barra de compradores ni reloj de bumps, píxel «velas» cargado y verificado. Detalle e ids en `tienda.md`
 - Revisión de la landing publicada de la tienda nueva: lista de lo falso o que no es de la oferta (testimonios, garantía, cuenta regresiva, cupos, bonos inventados, precio) en `tienda.md`. No se arregló todavía
 
@@ -70,8 +71,7 @@ Público: emprendedores y negocios chicos que venden por WhatsApp e Instagram. H
 |---|---|---|---|---|
 | 1 | Pagar los ~USD 7 pendientes en Meta (cuenta «Velas arg» en período de gracia desde el 9/11) | Dueños | 9 | Meta Business Suite → Facturación y pagos → Pagar ahora. Si falla: habilitar la tarjeta para el exterior o cargar otra. **Lo pagan el 11/11** (ARS ~11.200) |
 | 5 | Probar la planilla en Google Sheets (colores y listas) y la instrucción maestra en ChatGPT gratis | Dueños | — | Antes de vender |
-| 6 | Terminar la tienda nueva: precio del principal a 7.990 y sacar el tachado inventado (84.950) (**decidido: se hace al publicar el HTML propio, en el mismo paso**), HTML propio de landing y upsell, entregables, funnel post-compra, imágenes en Recursos | Claude, con aprobación | 7 | Tienda y productos ya creados (`tienda.md`). PDF y HTML listos (tarea 4 hecha): subir a Recursos los archivos de `landing/assets/` (15 fotos IMG-xx.jpg + tapas y páginas .png), cargar sus direcciones en `imagenes/urls.json` y volver a armar con `python3 scripts/armar_landing.py`. Borrar a mano en el panel los 3 bonos que inventó la IA de Impultienda. Revisar que no queden testimonios, contadores ni cupos |
-| 6b | Pasar el mail de contacto para la garantía | Dueños | 6 | Lo agregan el 11/11. Después sumar la garantía y el mail a `landing/landing.html`, al checkout y al mail de entrega |
+| 6 | Terminar la tienda nueva: precio del principal a 7.990 y sacar el tachado inventado (84.950) (**decidido: se hace al publicar el HTML propio, en el mismo paso**), HTML propio de landing y upsell, entregables, funnel post-compra, imágenes en Recursos | Claude, con aprobación | 7 | Tienda y productos ya creados (`tienda.md`). Sumar la garantía con el mail `tallertriplearg@gmail.com` como bloque de texto en el checkout y en el mail de entrega. PDF y HTML listos (tarea 4 hecha): subir a Recursos los archivos de `landing/assets/` (15 fotos IMG-xx.jpg + tapas y páginas .png), cargar sus direcciones en `imagenes/urls.json` y volver a armar con `python3 scripts/armar_landing.py`. Borrar a mano en el panel los 3 bonos que inventó la IA de Impultienda. Revisar que no queden testimonios, contadores ni cupos |
 | 6c | Borrar en el panel el downsell del funnel post-compra (está en 0 %), los 3 bonos inventados, y revisar en Diseño de checkout los sellos y que «Días de garantía» diga 7 | Dueños | 6 | Links en `tienda.md` |
 | 6d | Conectar Mercado Pago en la tienda nueva | Dueños | 7 | https://impultienda.ar/dashboard/la-ia-hace/configuracion?tab=pagos |
 | 7 | Compra de prueba + evento Compra visible en el Administrador de eventos | Dueños + Claude | 9 | El píxel ya está cargado y verificado (10/11). Espera Mercado Pago (6d) y los entregables |

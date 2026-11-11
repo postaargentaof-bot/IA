@@ -67,7 +67,7 @@ Casi todo esto desaparece al publicar el HTML propio (`landing/landing.html`), s
 
 ### Hecho en el repo
 - `landing/landing.html` (y `landing/preview/`): garantía de 7 días sin preguntas en «Lo que tenés que saber», en la FAQ
-  («¿Y si no me sirve?») y en la nota del botón final. El mail queda como **[MAIL]**: se completa en `MAIL = '[MAIL]'` de
+  («¿Y si no me sirve?») y en la nota del botón final. El mail es **tallertriplearg@gmail.com** (11/11), en `MAIL` de
   `scripts/armar_landing.py` y se vuelve a armar (`python3 scripts/armar_landing.py`). No se publicó.
 - `landing/postcompra.html`: el texto está bien (sin descuentos ni urgencias, botones `data-pp-accept` / `data-pp-decline`,
   precio con `{price}`). **No se sube todavía:** tiene el recuadro de IMG-31 y la tapa como `RECURSO:tapa-200.png`, que hay
@@ -106,5 +106,5 @@ Casi todo esto desaparece al publicar el HTML propio (`landing/landing.html`), s
 - Entregables: los PDF de `pdf/` ya están completos con las imágenes (10/11); falta subirlos.
 - Funnel post-compra: decidido sin descuento y sin downsell (10/11). Ver «Propuesto» arriba.
 - Mercado Pago (lo conectan los dueños, link arriba), píxel (propuesto arriba), compra de prueba.
-- Cuando llegue el mail (11/11): completar [MAIL] en la landing, sumar un bloque de texto con la garantía al checkout y revisar el mail de entrega.
+- Mail de la garantía: `tallertriplearg@gmail.com` (ya en la landing, 11/11). Falta sumar un bloque de texto con la garantía al checkout y revisar el mail de entrega.
 - Revisar en el panel (Diseño de checkout) que «Días de garantía» diga 7.

@@ -193,8 +193,8 @@ DIAS = [
 ]
 NEG = [('IMG-02', 'Caro', 'Ropa por Instagram · Lanús'), ('IMG-03', 'Mati', 'Tortas por encargo · Morón'),
        ('IMG-04', 'Sol', 'Uñas y pestañas · Rosario'), ('IMG-05', 'Fede', 'Entrenador personal · Córdoba')]
-# Mail de contacto para la garantía: lo pasan los dueños el 11/11. Reemplazar acá y volver a armar.
-MAIL = '[MAIL]'
+# Mail de contacto para la garantía (decidido 11/11: el mismo de Taller Triple).
+MAIL = 'tallertriplearg@gmail.com'
 GARANTIA = f'Si no te sirve, escribinos a {MAIL} dentro de los 7 días y te devolvemos la plata. Sin preguntas.'
 
 FAQ = [
