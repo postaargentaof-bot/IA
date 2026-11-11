@@ -7,10 +7,17 @@
 > - **D:** «IA vos vendes - varon rioplatense» (`xe2v2RJBS57Ng34Bek9n`, la muestra 3).
 >
 > D va con voz de varón a propósito: con una voz de mujer se podría creer que habla Sol, y eso la convierte en testimonio.
->
-> **Sin música:** no había una pista CC0 a mano y la regla de música de fondo es vieja (20/6/2026). Si se quiere, se suma después con una pista CC0 que se diga de dónde sale.
->
-> Cómo se rearman: `python3 scripts/armar_videos_html.py` → `node scripts/render_anuncios.js anuncios/src/video-a.html <carpeta>` → `python3 scripts/armar_videos.py anuncios/src/video-a.json <carpeta> anuncios/audio/ia1-precio-voz.mp3 anuncios/img/ia1-precio` (igual con `video-d` y `anuncios/audio/ia4-sol-voz.mp3`; los de reserva usan los cuadros de `video-a` con `video-ia1b-precios-primero.json` / `video-ia1c-2340.json` y sus voces en `anuncios/audio/`). Los tiempos de cada plano están en `anuncios/src/video-*.json`. Las voces ya están grabadas: rearmar no gasta créditos.
+
+## Cómo están hechos (versión 2, 11/11)
+
+- **Animados con código** (estilo de los videos de referencia que pasaron los dueños): cada video es una página (`anuncios/src/video2/`) que se dibuja cuadro por cuadro a 30 por segundo y se arma con ffmpeg.
+- **Subtítulos karaoke:** la frase en pantalla, con la palabra que se dice resaltada en un recuadro, sincronizada con los tiempos que devuelve ElevenLabs (`voz-*.json`).
+- **Movimiento todo el tiempo:** burbujas que aparecen con rebote, texto que se tipea, `/precios` que se escribe con el teclado, sacudidas en el gancho, flash y zoom en cada corte, tapa que entra volando, botón que late con un toque.
+- **Música y efectos generados por código** (`scripts/musica.py`): propios, sin licencias de terceros. A y sus reservas, «pop» a 112 BPM; D, «lofi» a 88 BPM. La música baja ~8 dB sola cuando habla la voz. Efectos: pop de burbuja, whoosh de corte, tecleo, toque y «ding» de respuesta enviada. No se pudo bajar música CC0: la red de este entorno bloquea los bancos de música (YouTube, FreePD, Wikimedia, archive.org).
+- **D tiene su propia estética:** Sol de fondo todo el video (desenfocada), paleta ciruela y rosa, tarjetas flotantes. A es beige y verde, con el celular. Así Meta no los agrupa.
+- Volumen final −14 LUFS (medido); 3–5 MB por archivo.
+
+**Cómo se rearman (no gasta créditos):** `./scripts/armar_videos2.sh` (los 8 archivos). Para revisar cuadros sueltos: `node scripts/render_video.js a v --capturas <carpeta> 0.5,3,8`.
 
 ---
 
@@ -20,12 +27,12 @@ Negocio del ejemplo: Caro · Malva Indumentaria (ropa, Lanús). El $18.500 del b
 
 | Seg. | Paso | Voz | En pantalla (texto grande) | Plano |
 |---|---|---|---|---|
-| 0,0 | 1 · Gancho | «¿Precio? ¿Precio? ¿Precio?» | ¿Precio? → ¿Precio? ¿Precio? → ¿Precio? ¿Precio? ¿Precio? | Chat que se llena de «¿precio?» (3 → 5 → 8 burbujas) |
+| 0,0 | 1 · Gancho | «¿Precio? ¿Precio? ¿Precio?» | Tres carteles «¿Precio?» que golpean con sacudida | Chat que se llena de «¿precio?» (10 burbujas) y el contador de sin leer que sube |
 | 2,2 | 2 · Re-gancho | «Si vendés por WhatsApp, lo contestás todo el día.» | Lo contestás todo el día | Lista de chats, todos con «¿precio?» sin leer |
 | 4,1 | 3 · Solución | «Esto lo resolvés en una hora.» | Esto lo resolvés en una hora. | Tarjeta verde |
-| 5,5 | 4 · Cómo funciona | «La IA te escribe tus quince respuestas, con tus precios y tu forma de hablar.» | La IA escribe tus 15 respuestas → Con tus precios y tu forma de hablar | Chat con la IA: la instrucción del Día 1 y la lista con atajos |
-| 9,7 | 5 · Prueba (se ve) | «Te escriben ¿precio?, ponés barra precios y sale la respuesta lista.» | Te escriben «¿precio?» → Ponés /precios… → …y sale la respuesta lista | Chat: llega el mensaje, se escribe /precios, sale la respuesta |
-| 13,5 | 6 · Qué es | «Es el Día uno de La IA hace, vos vendés, con ChatGPT gratis.» | DÍA 1 · WhatsApp sin perder la tarde · Una tarea por día, con ChatGPT gratis | Tapa real |
+| 5,5 | 4 · Cómo funciona | «La IA te escribe tus quince respuestas, con tus precios y tu forma de hablar.» | (subtítulos) | Chat con la IA: se tipea la instrucción del Día 1 y salen 6 respuestas con su atajo |
+| 9,7 | 5 · Prueba (se ve) | «Te escriben ¿precio?, ponés barra precios y sale la respuesta lista.» | (subtítulos) | Chat: llega el mensaje, se escribe /precios con el teclado, se elige la respuesta rápida y sale enviada |
+| 13,5 | 6 · Qué es | «Es el Día uno de La IA hace, vos vendés, con ChatGPT gratis.» | DÍA 1 · 15 respuestas listas · ChatGPT gratis (chips que entran) | Tapa real que entra volando, rayos girando |
 | 17,3 | 7 · CTA | «Tocá Comprar.» | La IA hace, vos vendés · Tocá Comprar | Tapa + botón |
 
 Texto completo de la voz (330 caracteres, 59 palabras):

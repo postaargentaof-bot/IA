@@ -1,0 +1,22 @@
+<!doctype html><html lang="es"><head><meta charset="utf-8">
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,700;12..96,800&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="estilos.css">
+</head><body>
+<div id="frame"><div id="bg"></div><div id="stage"></div><div id="flash"></div></div>
+<script src="motor.js"></script>
+<script src="escenas-a.js"></script>
+<script src="escenas-d.js"></script>
+<script>
+// Carga la voz (palabras con tiempos) y arma el video pedido.
+(async () => {
+  const name = { a: 'a', d: 'd', r2: 'ia1b-precios-primero', r3: 'ia1c-2340' }[VID];
+  const words = await (await fetch('voz-' + name + '.json')).json();
+  if (VID === 'd') armarD(words); else armarA(words, VID);
+  await document.fonts.ready;
+  await Promise.all([...document.images].map(i => i.complete ? 0 : new Promise(r => { i.onload = i.onerror = r; })));
+  window.DUR = words[words.length - 1][2] + 0.55;
+  setTime(Number(Q.get('t') || 0));
+  window.LISTO = true;
+})();
+</script>
+</body></html>

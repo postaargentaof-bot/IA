@@ -2,7 +2,7 @@
 
 5 anuncios en un conjunto de una CBO. Las ideas y por qué se eligieron están en `anuncios/ideas.md`; los guiones de los videos, en `anuncios/guiones.md`.
 Piezas en `anuncios/img/`: cada una en **4:5 (1080×1350) para Feed** y en **9:16 (1080×1920) para Stories, Reels y Estados**, con 250 px libres arriba y abajo.
-Fuentes editables: `anuncios/src/creativos.html` (B, C y E) y `scripts/armar_videos_html.py` (A y D). Se rearman con `node scripts/render_anuncios.js anuncios/src/creativos.html anuncios/img` y lo que dice `anuncios/guiones.md`.
+Fuentes editables: `anuncios/src/creativos.html` (B, C y E) y `anuncios/src/video2/` (A, D y las reservas, animados con código). Se rearman con `node scripts/render_anuncios.js anuncios/src/creativos.html anuncios/img` y `./scripts/armar_videos2.sh` (no gasta créditos).
 
 ## Estructura de la campaña (propuesta, NO creada)
 
@@ -24,10 +24,10 @@ Fuentes editables: `anuncios/src/creativos.html` (B, C y E) y `scripts/armar_vid
 
 | Anuncio | Formato | Feed (4:5) | Stories, Reels y Estados (9:16) |
 |---|---|---|---|
-| `IA1 · Precio (video)` | Video con voz, 18,5 s | `ia1-precio-4x5.mp4` | `ia1-precio-9x16.mp4` |
+| `IA1 · Precio (video)` | Video animado con voz y música, 18,6 s | `ia1-precio-4x5.mp4` | `ia1-precio-9x16.mp4` |
 | `IA2 · Así es tu semana (carrusel)` | Carrusel de 6 tarjetas | `ia2-semana-1-4x5.png` … `-6-4x5.png` | `ia2-semana-1-9x16.png` … `-6-9x16.png` |
 | `IA3 · No suena a vos` | Imagen antes/después | `ia3-nosuena-4x5.png` | `ia3-nosuena-9x16.png` |
-| `IA4 · Sol (video)` | Persona IA, video con voz, 21,3 s | `ia4-sol-4x5.mp4` | `ia4-sol-9x16.mp4` |
+| `IA4 · Sol (video)` | Persona IA, video animado con voz y música, 21,3 s | `ia4-sol-4x5.mp4` | `ia4-sol-9x16.mp4` |
 | `IA5 · El audio` | Solo texto | `ia5-audio-4x5.png` | `ia5-audio-9x16.png` |
 
 > Si el carrusel no deja personalizar por ubicación, se sube con las tarjetas 4:5 y Meta lo muestra igual en Stories y Reels. Las 9:16 quedan para un carrusel aparte de Stories si se quiere más adelante.
@@ -58,7 +58,7 @@ Fuentes editables: `anuncios/src/creativos.html` (B, C y E) y `scripts/armar_vid
 **Ángulo:** el producto por dentro, con páginas reales del PDF (el formato con mejor CTR del test anterior).
 
 **Texto principal:**
-> Así es tu semana con «La IA hace, vos vendés» 👇
+> ¿Le pedís algo a la IA y no sabés qué escribirle? Así es tu semana con «La IA hace, vos vendés» 👇
 >
 > Día 0: la ficha de tu negocio
 > Día 1: tus respuestas de WhatsApp listas
@@ -74,7 +74,7 @@ Fuentes editables: `anuncios/src/creativos.html` (B, C y E) y `scripts/armar_vid
 > 📘 Ebook en PDF · $7.990
 
 **Título del anuncio (y de cada tarjeta):**
-1. Así es tu semana con la IA
+1. ¿No sabés qué pedirle a la IA?
 2. Día 0 · La ficha de tu negocio
 3. Día 1 · WhatsApp sin perder la tarde
 4. 40 instrucciones para copiar y pegar

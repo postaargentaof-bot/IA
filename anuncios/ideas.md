@@ -99,3 +99,12 @@ Lo decidido se respetó. Ajustes y detalles que no estaban definidos:
 - **Voces:** diseñadas en ElevenLabs con acento rioplatense (la llave no deja ver la biblioteca de voces); las eligieron los dueños entre 7 muestras.
 - **Sin música** en los videos: no había una pista CC0 a mano y la regla es vieja (20/6/2026).
 - **Ganchos de reserva de A:** A2 «Escribís barra precios y la respuesta sale sola» (idea #2) y A3 «Son las once y media de la noche…» (idea #5). Quedan en `anuncios/img/reserva/`.
+
+## 7 · Versión 2 de los creativos (11/11, a pedido de los dueños)
+
+Después de la autocrítica del chat de producción, los dueños pidieron aplicar todo:
+- **A y D animados con código** (referencia: 2 videos que pasaron los dueños): subtítulos karaoke, movimiento todo el tiempo, cortes con flash y zoom. Música y efectos generados por código (propios).
+- **D rediseñado:** Sol de fondo todo el video y paleta ciruela y rosa, para que Meta no lo vea parecido a A.
+- **B:** la tarjeta 1 ahora abre con un dolor («Le pedís algo a la IA y no sabés qué escribirle») y las páginas de Día 0, Día 1 y Día 4 llevan un recuadro «Así queda» con el resultado del ejemplo del libro (ficha de Sol, /precios de Caro, la torta de Mati).
+- **C:** la respuesta «sin ficha» ahora es realista (amable, correcta, pero de cualquier negocio) y en la de «con tu ficha» se resaltan los datos propios.
+- **E:** pasa a fondo amarillo para no parecerse al verde de A.
