@@ -14,6 +14,8 @@ Testear un ebook propio sobre cómo usar la IA en un emprendimiento, después de
 
 | Pieza | Nombre | Precio | Archivo |
 |---|---|---|---|
+| 11/11 | Creativos del lanzamiento: los 5 de `anuncios/ideas.md` (A video «¿Precio?», B carrusel «Así es tu semana» con páginas reales, C imagen «No suena a vos», D persona IA «Sol», E solo texto «El audio»). Los 3 anuncios viejos de `anuncios/` quedan descartados. Todas las piezas en 4:5 y 9:16, hechas con IA (sin personas reales). La producción va en un chat aparte | Análisis del test de Taller Triple: 5 videos parecidos, 63 % del gasto en vertical y retención de 5–6 s (detalle en `anuncios/ideas.md`) |
+| 11/11 | Los anuncios del ebook de IA salen de una página nueva de Facebook e Instagram, «La IA hace, vos vendés» (la crean los dueños). Propuesta para la campaña: botón «Comprar», título en todos y sin Audience Network | La de velas desconcierta; en Taller Triple, Audience Network trajo clics que no llegaban a la landing |
 | 11/11 | Diseño de la landing y la página del upsell: estilo «chat» (propuesta C de `landing/propuestas/`), publicado. Mismos textos, FAQ completa | A los dueños no les gustaba el diseño anterior (se veía como «landing hecha con IA»); eligieron entre 3 propuestas |
 | 11/11 | La planilla se entrega con un link de Google Sheets terminado en `/copy`, compartido como Lector (Impultienda solo acepta PDF como archivo) | No hay otra forma de entregar un .xlsx |
 | 11/11 | El mail de entrega no se edita en Impultienda (no hay campo): la garantía va en la landing y en un bloque de texto debajo del botón de pagar del checkout. El email de contacto de la tienda (pie del mail) no se tocó | Limitación de Impultienda; el cambio del email de contacto no se aprobó |
@@ -59,7 +61,8 @@ Público: emprendedores y negocios chicos que venden por WhatsApp e Instagram. H
 - Upsell: `upsell/` → PDF. Instrucción maestra probada con la ficha de Sol: `upsell/prueba-instruccion-maestra-sol.md`
 - Textos de la landing y el checkout: `landing/textos.md` (los escribió el chat «landing»)
 - Landing con diseño (HTML propio para Impultienda): `landing/landing.html` + upsell post-compra `landing/postcompra.html`. Vista previa: `landing/preview/`
-- 3 anuncios con imágenes y textos: `anuncios/anuncios.md` + `anuncios/img/`
+- ~~3 anuncios con imágenes y textos~~ (descartados el 11/11; los reemplazan los 5 de `anuncios/ideas.md`)
+- Análisis de errores del test de Taller Triple y 14 ideas de anuncios, con los 5 elegidos y por qué se descartó el resto: `anuncios/ideas.md` (11/11, chat de creativos, fase 1)
 - Lista de prompts de imágenes: `imagenes/prompts.md`
 - Las 20 imágenes con IA (IMG-01…15, 20…22, 30, 31), aprobadas por Toto el 10/11: `imagenes/IMG-XX.png`
 - Cómo se regeneran PDF, landing y prompts: `scripts/README-imagenes.md`
@@ -85,7 +88,8 @@ Público: emprendedores y negocios chicos que venden por WhatsApp e Instagram. H
 | 6c | En Diseño de checkout: revisar los sellos, que «Días de garantía» diga 7 y cómo se ve el bloque de la garantía. Mirar la tienda en compu y celular y el checkout con los 2 bumps | Dueños | 7 | Los bonos y el downsell ya se borraron (11/11) |
 | 7 | Compra de prueba + evento Compra visible en el Administrador de eventos | Dueños + Claude | 9 | El píxel ya está cargado y verificado (10/11). Mercado Pago ya está (11/11); sin bloqueos en el Diagnóstico desde el 11/11; antes, la revisión de la 6c. La tienda en vivo no se puede abrir desde las sesiones de Claude (Cloudflare frena el navegador automático): la miran los dueños |
 | 8 | Leer todo (ebook, bumps, upsell, landing) y marcar cambios | Dueños | — | Se puede hacer en paralelo |
-| 8b | Creativos: mejorar los 3 actuales y sumar video con voz + solo texto (5 en total) | Claude (chat de creativos) | 9 | Antes de generar la voz, pasar la cuenta de créditos de ElevenLabs |
+| 8b | Producir los 5 creativos elegidos (ver `anuncios/ideas.md`): piezas en `anuncios/img/`, textos en `anuncios/anuncios.md`, guiones en `anuncios/guiones.md` | Claude (chat de producción de creativos) | 9 | Las ideas ya están elegidas (11/11). Antes de generar la voz, pasar guion, caracteres y pruebas, y esperar el OK |
+| 8c | Crear la página de Facebook e Instagram «La IA hace, vos vendés» y conectarla a la cuenta «Velas arg» | Dueños | 9 | Si quieren, Claude arma la foto de perfil y la portada |
 | 9 | Crear la campaña en Meta y prenderla | Claude, con el «sí» de los dueños | 10 | Estructura en `anuncios/anuncios.md`. Marcar que las imágenes son hechas con IA |
 | 10 | Leer el test con el criterio de `plan-ebook-ia.md` y decidir | Chat principal | — | Las ventas se cuentan en Impultienda, no en Meta |
 
