@@ -33,6 +33,7 @@ Público: emprendedores y negocios chicos que venden por WhatsApp e Instagram. H
 
 | Fecha | Decisión | Por qué |
 |---|---|---|
+| 11/11 | Los 5 creativos (versión 2) aprobados por los dueños como **listos para testear**: no vieron errores. Falta confirmar que A y D se escucharon con sonido (voz, acento y música) | Ni los dueños ni Claude revisaron el audio todavía; Claude no puede escuchar |
 | 11/11 | Versión 2 de los creativos: A y D animados con código (subtítulos karaoke, movimiento todo el tiempo), con música y efectos generados por código; D con estética propia (Sol de fondo, ciruela y rosa); B con gancho de dolor y resultados «Así queda»; C con respuesta genérica realista; E en amarillo | Lo pidieron los dueños después de la autocrítica (A y D se parecían y eran diapositivas). La música es propia porque la red de este entorno bloquea los bancos de música CC0 |
 | 11/11 | Los 5 creativos producidos: A y D en video con voz de ElevenLabs (A, mujer rioplatense; D, varón, para que no parezca que habla Sol), B carrusel de 6 tarjetas con páginas reales del PDF, C antes/después con el ejemplo de Caro, E solo texto. Todo en 4:5 y 9:16. Sin música | Lo pedido en `anuncios/ideas.md`; las voces las eligieron los dueños entre 7 muestras. No había música CC0 a mano |
 | 11/11 | En el lanzamiento van solo los 5; los 2 ganchos alternativos de A quedan hechos en `anuncios/img/reserva/` para renovar | Regla 70/30 y «un gancho nuevo, el cuerpo igual» del kit |
@@ -94,7 +95,7 @@ Público: emprendedores y negocios chicos que venden por WhatsApp e Instagram. H
 | 7 | Compra de prueba + evento Compra visible en el Administrador de eventos | Dueños + Claude | 9 | El píxel ya está cargado y verificado (10/11). Mercado Pago ya está (11/11); sin bloqueos en el Diagnóstico desde el 11/11; antes, la revisión de la 6c. La tienda en vivo no se puede abrir desde las sesiones de Claude (Cloudflare frena el navegador automático): la miran los dueños |
 | 8 | Leer todo (ebook, bumps, upsell, landing) y marcar cambios | Dueños | — | Se puede hacer en paralelo |
 | 8c | Crear la página de Facebook e Instagram «La IA hace, vos vendés» y conectarla a la cuenta «Velas arg» | Dueños | 9 | Si quieren, Claude arma la foto de perfil y la portada |
-| 9 | Crear la campaña en Meta y prenderla | Claude, con el «sí» de los dueños | 10 | Estructura, textos y qué archivo va en cada ubicación en `anuncios/anuncios.md`. Antes: mirar los 2 videos con sonido (A y D). Marcar que las imágenes y las voces son hechas con IA |
+| 9 | Crear la campaña en Meta y prenderla | Claude, con el «sí» de los dueños | 10 | Estructura, textos y qué archivo va en cada ubicación en `anuncios/anuncios.md`. Creativos aprobados el 11/11; antes de prender, escuchar A y D con sonido. Marcar que las imágenes y las voces son hechas con IA |
 | 10 | Leer el test con el criterio de `plan-ebook-ia.md` y decidir | Chat principal | — | Las ventas se cuentan en Impultienda, no en Meta |
 
 ## 6 · Datos útiles
