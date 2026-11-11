@@ -144,4 +144,4 @@ Base: `https://aekpgsbqjzqntlbucbts.supabase.co/storage/v1/object/public/store-r
 - Los dueños eligieron la propuesta C de `landing/propuestas/` (A cuaderno, B revista, C chat).
 - Publicado con su «sí»: `landing/landing.html` como landing (23 → 25 KB) y `landing/postcompra.html` en la oferta `624d1055-…` (11 → 13 KB, modo HTML prendido). Vistas previas sin proveedores bloqueados ni avisos. **Las versiones anteriores quedaron guardadas** (landing: `impultienda_restaurar_html`; upsell: `restaurar_version_anterior`).
 - Mismos textos, FAQ completa, garantía con el mail, imágenes de Recursos. El ejemplo del teléfono (Caro, buzo a $18.500) está rotulado «Ejemplo».
-- Falta: que los dueños miren la tienda en compu y celular (desde la sesión no se puede abrir).
+- Los dueños miraron la tienda publicada (11/11): se ve bien. Lo que sigue es la compra de prueba.
