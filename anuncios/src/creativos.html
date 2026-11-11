@@ -1,113 +1,240 @@
 <!doctype html><html lang="es"><head><meta charset="utf-8">
+<!-- Piezas fijas del lanzamiento (B carrusel, C antes/después, E solo texto).
+     Cada <div data-out="..."> se exporta a anuncios/img/<data-out>.png con: node scripts/render_anuncios.js
+     Familia visual: la landing «chat» publicada (landing/landing.html). -->
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,700;12..96,800&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 <style>
-:root{--v:#5B3FD1;--vd:#2E1F73;--am:#FFD84D;--cr:#FFF8EC;--tx:#1E1A2E;--wa:#E7FFDB;--gr:#ECE5DD}
+:root{--fondo:#ECE5DA;--verde:#0B6E5F;--verde-o:#084F45;--yo:#DCF8C6;--ink:#17201D;--mut:#5E6B66;--linea:#D8CFC2;--amar:#FFF4C2;--am2:#FFD84D}
 *{box-sizing:border-box;margin:0;padding:0}
-body{font-family:Inter,sans-serif;background:#888;color:var(--tx)}
-.s{width:1080px;height:1350px;position:relative;overflow:hidden;margin:20px}
-.brand{position:absolute;left:72px;right:72px;bottom:56px;display:flex;justify-content:space-between;align-items:center;font-size:30px;font-weight:700}
-.pill{background:var(--am);color:var(--vd);padding:16px 30px;border-radius:999px;font-weight:800;font-size:32px}
-h1{font-weight:900;letter-spacing:-2px;line-height:1.02}
-/* Anuncio 1 */
-#a1{background:var(--gr)}
-#a1 .top{background:var(--vd);color:#fff;padding:72px 72px 60px}
-#a1 h1{font-size:84px}
-#a1 h1 em{font-style:normal;color:var(--am)}
-#a1 .chat{padding:44px 72px;display:flex;flex-direction:column;gap:18px}
-.b{max-width:640px;background:#fff;border-radius:22px;padding:22px 30px;font-size:36px;box-shadow:0 2px 0 rgba(0,0,0,.08);position:relative}
-.b small{display:block;text-align:right;font-size:22px;color:#8a8a8a;margin-top:6px}
-.b.me{align-self:flex-end;background:var(--wa)}
-#a1 .brand{color:var(--vd)}
-/* Carrusel */
-.c{background:var(--cr)}
-.c .num{font-size:30px;font-weight:800;color:var(--v);letter-spacing:4px;text-transform:uppercase}
-.c .wrap{position:absolute;inset:96px 72px 170px}
-.c h2{font-size:76px;font-weight:900;letter-spacing:-2px;line-height:1.04;margin:24px 0 40px}
-.dia{display:flex;gap:30px;align-items:flex-start;margin-bottom:34px}
-.dia b{flex:none;width:118px;height:118px;border-radius:28px;background:var(--v);color:#fff;font-size:30px;font-weight:800;display:flex;flex-direction:column;align-items:center;justify-content:center;line-height:1}
-.dia b span{font-size:56px;font-weight:900}
-.dia div{font-size:38px;line-height:1.25;padding-top:8px}
-.dia div strong{display:block;font-size:42px}
-.c .brand{color:var(--vd)}
-#c1{background:var(--v);color:#fff}
-#c1 .book{position:absolute;right:-30px;top:660px;width:540px;height:700px;background:var(--cr);border-radius:18px;transform:rotate(-6deg);box-shadow:0 30px 60px rgba(0,0,0,.35);padding:60px 50px;color:var(--vd)}
-#c1 .book h3{font-size:72px;font-weight:900;line-height:1;letter-spacing:-2px}
-#c1 .book p{font-size:28px;margin-top:26px;line-height:1.3}
-#c1 .book .bar{position:absolute;left:0;top:0;bottom:0;width:26px;background:var(--am);border-radius:18px 0 0 18px}
-#c1 .wrap{position:absolute;left:72px;top:96px;width:900px}
-#c1 h1{font-size:104px}
-#c1 .lead{font-size:42px;margin-top:34px;line-height:1.25;opacity:.92;max-width:760px}
-#c1 .brand{color:#fff}
-#c5 ul{list-style:none;font-size:42px;line-height:1.3}
-#c5 li{padding:22px 0;border-bottom:3px solid #E8DFF8;display:flex;gap:22px}
-#c5 li:before{content:"";flex:none;width:40px;height:40px;margin-top:6px;border-radius:10px;background:var(--v)}
-#c5 .precio{margin-top:50px;font-size:44px;font-weight:700}
-#c5 .precio span{font-size:96px;font-weight:900;color:var(--v);display:block;letter-spacing:-2px}
-/* Anuncio 3 */
-#a3{background:var(--am)}
-#a3 .wrap{position:absolute;left:72px;right:72px;top:110px}
-#a3 h1{font-size:110px;color:var(--vd)}
-#a3 h1 u{text-decoration:none;background:#fff;padding:0 14px;border-radius:14px}
-#a3 .audio{margin-top:70px;background:var(--wa);border-radius:28px;padding:30px 36px;display:flex;align-items:center;gap:28px;width:760px;box-shadow:0 4px 0 rgba(0,0,0,.1)}
-#a3 .play{width:76px;height:76px;border-radius:50%;background:#25A35A;flex:none;position:relative}
-#a3 .play:after{content:"";position:absolute;left:30px;top:22px;border-left:26px solid #fff;border-top:16px solid transparent;border-bottom:16px solid transparent}
-#a3 .wave{display:flex;gap:7px;align-items:center;height:70px}
-#a3 .wave i{display:block;width:9px;border-radius:5px;background:#7FB88F}
-#a3 .sub{margin-top:60px;font-size:44px;line-height:1.3;color:var(--vd);font-weight:600}
-#a3 .brand{color:var(--vd)}
-#a3 .pill{background:var(--vd);color:#fff}
+body{background:#777;font-family:"Plus Jakarta Sans",sans-serif;color:var(--ink);-webkit-font-smoothing:antialiased}
+.s{position:relative;overflow:hidden;margin:20px;background:var(--fondo);
+ background-image:radial-gradient(rgba(11,110,95,.08) 2px,transparent 2.2px);background-size:36px 36px}
+.r45{width:1080px;height:1350px}
+.r916{width:1080px;height:1920px}
+h1,h2,.bg{font-family:"Bricolage Grotesque",sans-serif;letter-spacing:-.03em;line-height:1;font-weight:800}
+.marca{display:flex;align-items:center;gap:14px;font-weight:800;font-size:30px;color:var(--verde)}
+.marca i{width:44px;height:44px;border-radius:50%;background:var(--verde);display:inline-flex;align-items:center;justify-content:center;color:#fff;font-style:normal;font-size:22px;font-family:"Bricolage Grotesque"}
+.chip{display:inline-block;background:var(--verde);color:#fff;font-weight:800;font-size:30px;letter-spacing:.06em;padding:12px 24px;border-radius:12px}
+.chip.am{background:var(--am2);color:var(--ink)}
+/* ---------- burbujas ---------- */
+.m{padding:22px 28px 40px;border-radius:26px;position:relative;box-shadow:0 2px 3px rgba(0,0,0,.10);font-size:38px;line-height:1.35}
+.m .h{position:absolute;right:20px;bottom:8px;font-size:22px;color:#7a8a84}
+.ell{background:#fff;align-self:flex-start;border-top-left-radius:6px}
+.yo{background:var(--yo);align-self:flex-end;border-top-right-radius:6px}
+
+/* ================= B · carrusel ================= */
+.b-tapa{background:var(--verde);background-image:none;color:#fff}
+.b-tapa .tit{position:absolute;left:72px;right:72px}
+.b-tapa h1{font-size:118px}
+.b-tapa h1 span{color:var(--am2)}
+.b-tapa p{font-size:40px;line-height:1.3;margin-top:26px;font-weight:600;opacity:.95}
+.b-tapa img{position:absolute;border-radius:6px 18px 18px 6px;box-shadow:0 40px 80px rgba(0,0,0,.45);transform:rotate(-4deg)}
+.b-tapa .pie{position:absolute;left:72px;right:72px;display:flex;justify-content:space-between;align-items:center;font-size:32px;font-weight:700}
+.b-tapa .pie b{background:#fff;color:var(--verde);padding:14px 26px;border-radius:999px}
+.r45.b-tapa .tit{top:80px} .r45.b-tapa img{width:560px;right:70px;top:500px}
+.r45.b-tapa .pie{bottom:64px}
+.r916.b-tapa .tit{top:290px} .r916.b-tapa h1{font-size:128px} .r916.b-tapa img{width:600px;left:240px;top:740px} .r916.b-tapa .pie{display:none}
+.r916.b-tapa .pie{bottom:280px}
+
+.b-pag .cab{position:absolute;left:64px;right:64px;display:flex;flex-direction:column;align-items:flex-start}
+.b-pag h2{font-size:78px;margin-top:20px}
+.b-pag .sub{font-size:36px;line-height:1.3;margin-top:14px;font-weight:600;color:var(--ink)}
+.b-pag .hoja{align-self:center;margin-top:34px;background:#fff;border-radius:14px;box-shadow:0 30px 60px rgba(23,32,29,.22);overflow:hidden}
+.b-pag .hoja img{display:block;width:100%}
+.b-pag .pie{position:absolute;left:64px;right:64px;display:flex;justify-content:space-between;align-items:center;font-size:28px;font-weight:700;color:var(--mut)}
+.r45.b-pag .cab{top:56px} .r45.b-pag .hoja{width:820px}
+.r45.b-pag .pie{bottom:40px}
+.r916.b-pag .cab{top:280px} .r916.b-pag h2{font-size:88px} .r916.b-pag .sub{font-size:40px} .r916.b-pag .hoja{width:940px;margin-top:50px}
+.r916.b-pag .pie{bottom:262px}
+/* copiá y pegá: la hoja ocupa todo el ancho para que se lea */
+.b-copia .hoja{border:4px solid var(--verde)}
+.r45.b-copia .hoja,.r916.b-copia .hoja{width:1040px;border-radius:24px}
+.r45.b-copia h2{font-size:70px}
+.b-copia .flecha{margin-top:30px;font-size:36px;line-height:1.35;font-weight:600}
+.r916.b-copia .flecha{font-size:40px;margin-top:40px}
+.b-copia .flecha b{color:var(--verde)}
+
+.b-fin .cab{position:absolute;left:72px;right:72px}
+.b-fin h2{font-size:92px}
+.b-fin ul{list-style:none;margin-top:40px}
+.b-fin li{display:flex;gap:22px;align-items:center;font-size:42px;font-weight:600;padding:15px 0;border-bottom:2px solid var(--linea)}
+.b-fin li span{flex:none;width:118px;text-align:center;background:var(--verde);color:#fff;font-weight:800;font-size:26px;letter-spacing:.04em;border-radius:10px;padding:8px 0}
+.b-fin .nota{margin-top:30px;font-size:34px;line-height:1.35;color:var(--ink)}
+.b-fin .nota b{background:var(--amar);padding:0 8px;border-radius:6px}
+.r45.b-fin .cab{top:70px}
+.r916.b-fin .cab{top:280px}
+.r916.b-fin li{padding:24px 0;font-size:46px} .r916.b-fin h2{font-size:104px} .r916.b-fin .nota{font-size:40px}
+.r45.b-fin li{padding:17px 0}
+
+/* ================= C · antes / después ================= */
+.c .cab{position:absolute;left:64px;right:64px}
+.c h1{font-size:76px}
+.c .preg{display:flex;flex-direction:column}
+.c .bloque{position:absolute;left:48px;right:48px;border-radius:28px;padding:28px 30px 30px;display:flex;flex-direction:column;gap:18px}
+.c .mal{background:#E4E1DC;border:3px dashed #B9B2A7}
+.c .bien{background:#fff;border:5px solid var(--verde);box-shadow:0 24px 50px rgba(11,110,95,.22)}
+.c .eti{font-size:28px;font-weight:800;letter-spacing:.05em;text-transform:uppercase;display:flex;align-items:center;gap:14px}
+.c .mal .eti{color:#7B746A}
+.c .bien .eti{color:var(--verde)}
+.c .eti em{font-style:normal;font-size:24px;letter-spacing:0;text-transform:none;font-weight:700;background:var(--amar);color:#6b5a12;padding:4px 12px;border-radius:8px}
+.c .mal .m{background:#F2F0EC;color:#5d5850;font-size:33px;box-shadow:none}
+.c .bien .m{font-size:35px}
+.c .m.q{font-size:36px;font-weight:700}
+.c .pie{position:absolute;left:64px;right:64px;font-size:34px;font-weight:600;line-height:1.3}
+.c .pie b{color:var(--verde)}
+.r45.c .cab{top:56px}
+.r45.c .mal{top:270px} .r45.c .bien{top:715px}
+.r45.c .pie{bottom:44px}
+.r916.c .cab{top:270px} .r916.c h1{font-size:88px} .r916.c .mal .m{font-size:37px} .r916.c .bien .m{font-size:40px} .r916.c .m.q{font-size:40px} .r916.c .pie{font-size:40px}
+.r916.c .mal{top:500px} .r916.c .bien{top:950px}
+.r916.c .pie{bottom:270px}
+
+/* ================= E · solo texto ================= */
+.e{background:var(--verde);background-image:none;color:#fff}
+.e .txt{position:absolute;left:80px;right:80px}
+.e h1{font-size:150px;line-height:.98;letter-spacing:-.04em}
+.e h1 span{color:var(--ink);background:var(--am2);padding:0 18px;border-radius:18px;-webkit-box-decoration-break:clone;box-decoration-break:clone}
+.e .pie{position:absolute;left:80px;right:80px;display:flex;justify-content:space-between;align-items:flex-end;font-size:34px;font-weight:700;line-height:1.3}
+.e .pie small{display:block;font-weight:500;opacity:.85;font-size:30px}
+.r45.e .txt{top:0;bottom:180px;display:flex;align-items:center}
+.r45.e .pie{bottom:80px}
+.r916.e .txt{top:290px;bottom:520px;display:flex;align-items:center} .r916.e h1{font-size:164px}
+.r916.e .pie{bottom:300px}
 </style></head><body>
 
-<div class="s" id="a1">
-  <div class="top"><h1>Contestás los mismos mensajes <em>todos los días.</em></h1></div>
-  <div class="chat">
-    <div class="b">¿Precio?<small>10:02</small></div>
-    <div class="b me">¡Hola! El precio es…<small>10:05</small></div>
-    <div class="b">Hola, ¿hacés envíos?<small>10:31</small></div>
-    <div class="b me">¡Hola! Sí, hacemos envíos a…<small>10:40</small></div>
-    <div class="b">¿Precio?<small>11:15</small></div>
-    <div class="b">¿Tenés en talle M?<small>11:16</small></div>
-  </div>
-  <div class="brand"><span>La IA hace, vos vendés</span><span class="pill">En 7 días</span></div>
+<!-- ======================= B · «Así es tu semana» (carrusel) ======================= -->
+<!-- tarjeta 1: tapa real -->
+<div class="s r45 b-tapa" data-out="ia2-semana-1-4x5">
+ <div class="tit"><h1>Así es tu semana <span>con la IA</span> 👇</h1>
+ <p>Una tarea por día. Mirá las páginas del libro.</p></div>
+ <img src="paginas/tapa.jpg" alt="">
+ <div class="pie"><span>Deslizá →</span></div>
+</div>
+<div class="s r916 b-tapa" data-out="ia2-semana-1-9x16">
+ <div class="tit"><h1>Así es tu semana <span>con la IA</span> 👇</h1>
+ <p>Una tarea por día. Deslizá y mirá las páginas del libro →</p></div>
+ <img src="paginas/tapa.jpg" alt="">
+ <div class="pie"><span>Deslizá →</span></div>
 </div>
 
-<div class="s" id="c1">
-  <div class="wrap"><h1>Tu negocio con IA en 7 días</h1>
-  <p class="lead">Para emprendedores que venden por WhatsApp e Instagram. Aunque no sepas nada de tecnología.</p></div>
-  <div class="book"><div class="bar"></div><h3>La IA hace, vos vendés</h3><p>Cómo usar la IA en tu emprendimiento en 7 días, aunque no sepas nada de tecnología</p></div>
-  <div class="brand"><span>Deslizá para ver qué trae →</span></div>
+<!-- tarjeta 2: Día 0 -->
+<div class="s r45 b-pag" data-out="ia2-semana-2-4x5">
+ <div class="cab"><span class="chip">DÍA 0</span><h2>La ficha de tu negocio</h2><p class="sub">La armás una vez. Desde ahí la IA usa tus precios y tu forma de hablar.</p>
+ <div class="hoja"><img src="paginas/dia0.jpg" alt=""></div>
+ </div>
+ <div class="pie"><span>La IA hace, vos vendés</span><span>Página real del libro · 2/6</span></div>
+</div>
+<div class="s r916 b-pag" data-out="ia2-semana-2-9x16">
+ <div class="cab"><span class="chip">DÍA 0</span><h2>La ficha de tu negocio</h2><p class="sub">La armás una vez. Desde ahí la IA usa tus precios y tu forma de hablar.</p>
+ <div class="hoja"><img src="paginas/dia0.jpg" alt=""></div>
+ </div>
+ <div class="pie"><span>La IA hace, vos vendés</span><span>Página real del libro · 2/6</span></div>
 </div>
 
-<div class="s c" id="c2"><div class="wrap">
-  <div class="num">Lo que vas a hacer</div><h2>Una hora por día.<br>Una tarea por día.</h2>
-  <div class="dia"><b>DÍA<span>0</span></b><div><strong>La ficha de tu negocio</strong>Para que la IA hable como vos, con tus precios.</div></div>
-  <div class="dia"><b>DÍA<span>1</span></b><div><strong>WhatsApp</strong>Tus 15 respuestas listas, se mandan con dos toques.</div></div>
-  <div class="dia"><b>DÍA<span>2</span></b><div><strong>Instagram</strong>30 ideas y una semana de posteos escritos.</div></div>
-</div><div class="brand"><span>La IA hace, vos vendés</span><span>2/5</span></div></div>
+<!-- tarjeta 3: Día 1 -->
+<div class="s r45 b-pag" data-out="ia2-semana-3-4x5">
+ <div class="cab"><span class="chip">DÍA 1</span><h2>WhatsApp sin perder la tarde</h2><p class="sub">Tus 15 respuestas listas, para mandar con dos toques.</p>
+ <div class="hoja"><img src="paginas/dia1.jpg" alt=""></div>
+ </div>
+ <div class="pie"><span>La IA hace, vos vendés</span><span>Página real del libro · 3/6</span></div>
+</div>
+<div class="s r916 b-pag" data-out="ia2-semana-3-9x16">
+ <div class="cab"><span class="chip">DÍA 1</span><h2>WhatsApp sin perder la tarde</h2><p class="sub">Tus 15 respuestas listas, para mandar con dos toques.</p>
+ <div class="hoja"><img src="paginas/dia1.jpg" alt=""></div>
+ </div>
+ <div class="pie"><span>La IA hace, vos vendés</span><span>Página real del libro · 3/6</span></div>
+</div>
 
-<div class="s c" id="c3"><div class="wrap">
-  <div class="num">Lo que vas a hacer</div><h2>Vender más con lo que ya tenés</h2>
-  <div class="dia"><b>DÍA<span>3</span></b><div><strong>Recuperar ventas</strong>Qué escribirle al que preguntó y no compró.</div></div>
-  <div class="dia"><b>DÍA<span>4</span></b><div><strong>Tus números</strong>Cuánto te cuesta de verdad y a cuánto venderlo.</div></div>
-  <div class="dia"><b>DÍA<span>5</span></b><div><strong>Clientes difíciles</strong>Reclamos, cancelaciones y el que regatea.</div></div>
-</div><div class="brand"><span>La IA hace, vos vendés</span><span>3/5</span></div></div>
+<!-- tarjeta 4: COPIÁ Y PEGÁ -->
+<div class="s r45 b-pag b-copia" data-out="ia2-semana-4-4x5">
+ <div class="cab"><span class="chip am">COPIÁ Y PEGÁ</span><h2>No tenés que inventar qué pedirle</h2><p class="sub">40 instrucciones listas en el libro. Esta es la del Día 1:</p>
+ <div class="hoja"><img src="paginas/copia.jpg" alt=""></div>
+ <div class="flecha">La pegás en <b>ChatGPT gratis</b>, con tu ficha, y te devuelve tus 15 respuestas con su atajo: <b>/precios</b>, <b>/envios</b>, <b>/seña</b>…</div>
+ </div>
+ <div class="pie"><span>La IA hace, vos vendés</span><span>Página real del libro · 4/6</span></div>
+</div>
+<div class="s r916 b-pag b-copia" data-out="ia2-semana-4-9x16">
+ <div class="cab"><span class="chip am">COPIÁ Y PEGÁ</span><h2>No tenés que inventar qué pedirle</h2><p class="sub">40 instrucciones listas en el libro. Esta es la del Día 1:</p>
+ <div class="hoja"><img src="paginas/copia.jpg" alt=""></div>
+ <div class="flecha">La pegás en <b>ChatGPT gratis</b>, con tu ficha, y te devuelve tus 15 respuestas con su atajo: <b>/precios</b>, <b>/envios</b>, <b>/seña</b>…</div>
+ </div>
+ <div class="pie"><span>La IA hace, vos vendés</span><span>Página real del libro · 4/6</span></div>
+</div>
 
-<div class="s c" id="c4"><div class="wrap">
-  <div class="num">Lo que vas a hacer</div><h2>Y que se vuelva costumbre</h2>
-  <div class="dia"><b>DÍA<span>6</span></b><div><strong>Promos e ideas</strong>Tu calendario del año y promos que no te hacen perder plata.</div></div>
-  <div class="dia"><b>DÍA<span>7</span></b><div><strong>Tu semana en orden</strong>Pedidos, agenda y una rutina de 20 minutos por día.</div></div>
-</div><div class="brand"><span>La IA hace, vos vendés</span><span>4/5</span></div></div>
+<!-- tarjeta 5: Día 4 -->
+<div class="s r45 b-pag" data-out="ia2-semana-5-4x5">
+ <div class="cab"><span class="chip">DÍA 4</span><h2>Los números sin dolor de cabeza</h2><p class="sub">Cuánto te cuesta de verdad lo que vendés, con tus horas incluidas.</p>
+ <div class="hoja"><img src="paginas/dia4.jpg" alt=""></div>
+ </div>
+ <div class="pie"><span>La IA hace, vos vendés</span><span>Página real del libro · 5/6</span></div>
+</div>
+<div class="s r916 b-pag" data-out="ia2-semana-5-9x16">
+ <div class="cab"><span class="chip">DÍA 4</span><h2>Los números sin dolor de cabeza</h2><p class="sub">Cuánto te cuesta de verdad lo que vendés, con tus horas incluidas.</p>
+ <div class="hoja"><img src="paginas/dia4.jpg" alt=""></div>
+ </div>
+ <div class="pie"><span>La IA hace, vos vendés</span><span>Página real del libro · 5/6</span></div>
+</div>
 
-<div class="s c" id="c5"><div class="wrap">
-  <div class="num">Qué trae</div><h2>Todo listo para copiar y pegar</h2>
-  <ul><li>Ebook en PDF de más de 50 páginas</li><li>Te llega por mail apenas pagás</li><li>Instrucciones para copiar y pegar en cada día</li><li>Con ChatGPT gratis: no pagás nada más</li></ul>
-  <p class="precio">Todo por<span>$7.990</span></p>
-</div><div class="brand"><span>La IA hace, vos vendés</span><span class="pill">Lo quiero</span></div></div>
+<!-- tarjeta 6: la semana entera -->
+<div class="s r45 b-fin" data-out="ia2-semana-6-4x5">
+ <div class="cab"><h2>Los 8 días, de un vistazo</h2>
+ <ul>
+  <li><span>DÍA 0</span>La ficha de tu negocio</li>
+  <li><span>DÍA 1</span>WhatsApp: tus 15 respuestas</li>
+  <li><span>DÍA 2</span>Instagram: 30 ideas y tus posteos</li>
+  <li><span>DÍA 3</span>Vender más con lo que ya tenés</li>
+  <li><span>DÍA 4</span>Tus números y tu precio</li>
+  <li><span>DÍA 5</span>Clientes difíciles</li>
+  <li><span>DÍA 6</span>Promos e ideas</li>
+  <li><span>DÍA 7</span>Tu semana en orden</li>
+ </ul>
+ <p class="nota"><b>Una hora por día, con ChatGPT gratis.</b> Ebook en PDF, te llega por mail.</p></div>
+</div>
+<div class="s r916 b-fin" data-out="ia2-semana-6-9x16">
+ <div class="cab"><h2>Los 8 días, de un vistazo</h2>
+ <ul>
+  <li><span>DÍA 0</span>La ficha de tu negocio</li>
+  <li><span>DÍA 1</span>WhatsApp: tus 15 respuestas</li>
+  <li><span>DÍA 2</span>Instagram: 30 ideas y tus posteos</li>
+  <li><span>DÍA 3</span>Vender más con lo que ya tenés</li>
+  <li><span>DÍA 4</span>Tus números y tu precio</li>
+  <li><span>DÍA 5</span>Clientes difíciles</li>
+  <li><span>DÍA 6</span>Promos e ideas</li>
+  <li><span>DÍA 7</span>Tu semana en orden</li>
+ </ul>
+ <p class="nota"><b>Una hora por día, con ChatGPT gratis.</b> Ebook en PDF, te llega por mail.</p></div>
+</div>
 
-<div class="s" id="a3"><div class="wrap">
-  <h1>Si sabés mandar un <u>audio</u>, sabés usar la IA.</h1>
-  <div class="audio"><div class="play"></div><div class="wave">
-  <i style="height:20px"></i><i style="height:44px"></i><i style="height:30px"></i><i style="height:62px"></i><i style="height:38px"></i><i style="height:54px"></i><i style="height:24px"></i><i style="height:48px"></i><i style="height:66px"></i><i style="height:32px"></i><i style="height:52px"></i><i style="height:22px"></i><i style="height:44px"></i><i style="height:60px"></i><i style="height:28px"></i><i style="height:40px"></i><i style="height:18px"></i><i style="height:50px"></i><i style="height:34px"></i><i style="height:56px"></i><i style="height:26px"></i><i style="height:42px"></i><i style="height:20px"></i><i style="height:36px"></i>
-  </div></div>
-  <p class="sub">Le contás tu negocio, ella te escribe las respuestas de WhatsApp, los posteos y los presupuestos. Vos revisás y mandás.</p>
-</div><div class="brand"><span>La IA hace, vos vendés</span><span class="pill">7 días · $7.990</span></div></div>
+<!-- ======================= C · «No suena a vos» ======================= -->
+<div class="s r45 c" data-out="ia3-nosuena-4x5">
+ <div class="cab"><h1>¿La IA te devuelve un texto que no suena a vos?</h1></div>
+ <div class="bloque mal"><div class="eti">✕ Sin ficha</div>
+  <div class="m ell q">¿Hacés envíos?</div>
+  <div class="m yo">Estimado cliente: gracias por su consulta. Sí, realizamos envíos. Los costos y plazos pueden variar según la ubicación. Por favor, indíquenos su dirección.</div></div>
+ <div class="bloque bien"><div class="eti">✓ Con tu ficha <em>Ejemplo del libro: Caro, ropa</em></div>
+  <div class="m ell q">¿Hacés envíos?</div>
+  <div class="m yo">¡Hola! Sí 😊 Mando por correo a todo el país, y si estás cerca te lo llevo en el día por moto. También podés retirar en Lanús. ¿Para qué zona sería?</div></div>
+ <div class="pie">La diferencia es <b>la ficha de tu negocio</b>: el Día 0 de «La IA hace, vos vendés».</div>
+</div>
+<div class="s r916 c" data-out="ia3-nosuena-9x16">
+ <div class="cab"><h1>¿La IA te devuelve un texto que no suena a vos?</h1></div>
+ <div class="bloque mal"><div class="eti">✕ Sin ficha</div>
+  <div class="m ell q">¿Hacés envíos?</div>
+  <div class="m yo">Estimado cliente: gracias por su consulta. Sí, realizamos envíos. Los costos y plazos pueden variar según la ubicación. Por favor, indíquenos su dirección.</div></div>
+ <div class="bloque bien"><div class="eti">✓ Con tu ficha <em>Ejemplo del libro: Caro, ropa</em></div>
+  <div class="m ell q">¿Hacés envíos?</div>
+  <div class="m yo">¡Hola! Sí 😊 Mando por correo a todo el país, y si estás cerca te lo llevo en el día por moto. También podés retirar en Lanús. ¿Para qué zona sería?</div></div>
+ <div class="pie">La diferencia es <b>la ficha de tu negocio</b>: el Día 0 de «La IA hace, vos vendés».</div>
+</div>
+
+<!-- ======================= E · «El audio» (solo texto) ======================= -->
+<div class="s r45 e" data-out="ia5-audio-4x5">
+ <div class="txt"><h1>Si sabés mandar un <span>audio</span>, sabés usar la IA.</h1></div>
+ <div class="pie"><span>La IA hace, vos vendés<small>Ebook · 7 días · ChatGPT gratis</small></span></div>
+</div>
+<div class="s r916 e" data-out="ia5-audio-9x16">
+ <div class="txt"><h1>Si sabés mandar un <span>audio</span>, sabés usar la IA.</h1></div>
+ <div class="pie"><span>La IA hace, vos vendés<small>Ebook · 7 días · ChatGPT gratis</small></span></div>
+</div>
+
 </body></html>

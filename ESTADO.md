@@ -2,7 +2,7 @@
 
 > Archivo principal del proyecto. **Todo chat lo lee al arrancar y lo actualiza al terminar.**
 > Rama de trabajo: `claude/dazzling-euler-7bk40o` (no `main`). Siempre `git pull --rebase` antes de `git push`: hay varios chats subiendo a la misma rama.
-> Última actualización: 11/11/2026.
+> Última actualización: 11/11/2026 (chat de producción de creativos: tarea 8b hecha).
 
 ## 1 · Qué estamos haciendo
 
@@ -33,6 +33,9 @@ Público: emprendedores y negocios chicos que venden por WhatsApp e Instagram. H
 
 | Fecha | Decisión | Por qué |
 |---|---|---|
+| 11/11 | Los 5 creativos producidos: A y D en video con voz de ElevenLabs (A, mujer rioplatense; D, varón, para que no parezca que habla Sol), B carrusel de 6 tarjetas con páginas reales del PDF, C antes/después con el ejemplo de Caro, E solo texto. Todo en 4:5 y 9:16. Sin música | Lo pedido en `anuncios/ideas.md`; las voces las eligieron los dueños entre 7 muestras. No había música CC0 a mano |
+| 11/11 | En el lanzamiento van solo los 5; los 2 ganchos alternativos de A quedan hechos en `anuncios/img/reserva/` para renovar | Regla 70/30 y «un gancho nuevo, el cuerpo igual» del kit |
+| 11/11 | Los videos no dicen el precio del libro ni fechas; el precio ($7.990) va solo en el texto del anuncio | Regla 07-creativos del kit: el video sirve aunque cambie el precio |
 | 11/11 | 5 anuncios para el lanzamiento: los 3 de `anuncios/` mejorados (tapa real, fotos, 9:16) + 1 video con voz (ElevenLabs, sin precio en el video) + 1 solo texto. Todo en un conjunto, una CBO | Bilbao (vía el kit, oct. 2026): 5–10 anuncios con formatos distintos; con USD 25, más anuncios no llegan a gastar |
 | 10/11 | En los PDF las imágenes van como copias JPEG livianas (1400 px, calidad 80); las PNG originales quedan en `imagenes/` sin tocar | Con las PNG (~2,2 MB cada una) el ebook pasaba los 15 MB; así pesa 3,3 MB |
 | 10/11 | En `landing/landing.html` y `postcompra.html` (versión Impultienda) las fotos ya van como `<img>` con `src="RECURSO:IMG-xx.jpg"`, igual que las tapas (`RECURSO:tapa-ebook.png`). Los archivos a subir a Recursos están en `landing/assets/`. Al subirlos se cargan las direcciones en `imagenes/urls.json` y se vuelve a armar | Las imágenes existen: no tiene sentido dejar recuadros; falta solo la dirección pública |
@@ -61,7 +64,8 @@ Público: emprendedores y negocios chicos que venden por WhatsApp e Instagram. H
 - Upsell: `upsell/` → PDF. Instrucción maestra probada con la ficha de Sol: `upsell/prueba-instruccion-maestra-sol.md`
 - Textos de la landing y el checkout: `landing/textos.md` (los escribió el chat «landing»)
 - Landing con diseño (HTML propio para Impultienda): `landing/landing.html` + upsell post-compra `landing/postcompra.html`. Vista previa: `landing/preview/`
-- ~~3 anuncios con imágenes y textos~~ (descartados el 11/11; los reemplazan los 5 de `anuncios/ideas.md`)
+- ~~3 anuncios con imágenes y textos~~ (descartados el 11/11; los reemplazan los 5 de `anuncios/ideas.md`; las imágenes viejas se borraron)
+- **Tarea 8b (11/11): los 5 creativos producidos.** Piezas en `anuncios/img/` (`ia1-precio` video, `ia2-semana-1…6` carrusel, `ia3-nosuena`, `ia4-sol` video, `ia5-audio`; cada una en 4:5 y 9:16), textos y estructura de campaña en `anuncios/anuncios.md`, guiones en `anuncios/guiones.md`, 2 ganchos de reserva de A en `anuncios/img/reserva/`. Videos: 18,5 s y 21,3 s, −14 LUFS, menos de 5 MB, texto entre los 290 y los 1.290 px. Voces guardadas en ElevenLabs y en `anuncios/audio/` (rearmar no gasta). Revisados con capturas, también a tamaño de celular
 - Análisis de errores del test de Taller Triple y 14 ideas de anuncios, con los 5 elegidos y por qué se descartó el resto: `anuncios/ideas.md` (11/11, chat de creativos, fase 1)
 - Lista de prompts de imágenes: `imagenes/prompts.md`
 - Las 20 imágenes con IA (IMG-01…15, 20…22, 30, 31), aprobadas por Toto el 10/11: `imagenes/IMG-XX.png`
@@ -88,9 +92,8 @@ Público: emprendedores y negocios chicos que venden por WhatsApp e Instagram. H
 | 6c | En Diseño de checkout: revisar los sellos, que «Días de garantía» diga 7 y cómo se ve el bloque de la garantía. Mirar la tienda en compu y celular y el checkout con los 2 bumps | Dueños | 7 | Los bonos y el downsell ya se borraron (11/11) |
 | 7 | Compra de prueba + evento Compra visible en el Administrador de eventos | Dueños + Claude | 9 | El píxel ya está cargado y verificado (10/11). Mercado Pago ya está (11/11); sin bloqueos en el Diagnóstico desde el 11/11; antes, la revisión de la 6c. La tienda en vivo no se puede abrir desde las sesiones de Claude (Cloudflare frena el navegador automático): la miran los dueños |
 | 8 | Leer todo (ebook, bumps, upsell, landing) y marcar cambios | Dueños | — | Se puede hacer en paralelo |
-| 8b | Producir los 5 creativos elegidos (ver `anuncios/ideas.md`): piezas en `anuncios/img/`, textos en `anuncios/anuncios.md`, guiones en `anuncios/guiones.md` | Claude (chat de producción de creativos) | 9 | Las ideas ya están elegidas (11/11). Los créditos de ElevenLabs no son problema (11/11), pero **antes de cada gasto se avisa y se pregunta** (guion, caracteres, cantidad de pruebas) y se espera el OK |
 | 8c | Crear la página de Facebook e Instagram «La IA hace, vos vendés» y conectarla a la cuenta «Velas arg» | Dueños | 9 | Si quieren, Claude arma la foto de perfil y la portada |
-| 9 | Crear la campaña en Meta y prenderla | Claude, con el «sí» de los dueños | 10 | Estructura en `anuncios/anuncios.md`. Marcar que las imágenes son hechas con IA |
+| 9 | Crear la campaña en Meta y prenderla | Claude, con el «sí» de los dueños | 10 | Estructura, textos y qué archivo va en cada ubicación en `anuncios/anuncios.md`. Antes: mirar los 2 videos con sonido (A y D). Marcar que las imágenes y las voces son hechas con IA |
 | 10 | Leer el test con el criterio de `plan-ebook-ia.md` y decidir | Chat principal | — | Las ventas se cuentan en Impultienda, no en Meta |
 
 ## 6 · Datos útiles

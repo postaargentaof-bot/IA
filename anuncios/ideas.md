@@ -87,3 +87,15 @@ Gasto USD 22,75 · 1.976 impresiones · 45 clics en el enlace · 35 visitas a la
 ## 5 · Tanda 2 (si el test da señal)
 
 70/30 del kit: variar el ganador (un gancho nuevo del mismo ángulo, con el cuerpo igual) y sumar ideas nuevas. Primeras candidatas: #2 y #5 (variaciones de A), #6 y #13 (ángulos nuevos en video).
+
+## 6 · Cambios en la producción (11/11, chat de producción)
+
+Lo decidido se respetó. Ajustes y detalles que no estaban definidos:
+
+- **B (carrusel):** 6 tarjetas: tapa real, Día 0, Día 1, el «COPIÁ Y PEGÁ» del Día 1 (el recuadro a casi todo el ancho para que se lea en el celular), Día 4 y los 8 días de un vistazo. Las páginas se recortaron de `pdf/la-ia-hace-vos-vendes.pdf` (título + foto; el texto chico no se lee en el celular y lo cuenta la tarjeta).
+- **C:** el negocio del ejemplo es Caro (envíos por correo, moto en el día y retiro en Lanús, como dice el libro). No se inventaron costos de envío.
+- **D:** la voz es de varón, para que nadie crea que habla Sol (sería un testimonio). La etiqueta dice «Ejemplo del libro · no es una clienta».
+- **A:** voz de mujer. A y D quedan con voces distintas: así se parecen menos entre sí.
+- **Voces:** diseñadas en ElevenLabs con acento rioplatense (la llave no deja ver la biblioteca de voces); las eligieron los dueños entre 7 muestras.
+- **Sin música** en los videos: no había una pista CC0 a mano y la regla es vieja (20/6/2026).
+- **Ganchos de reserva de A:** A2 «Escribís barra precios y la respuesta sale sola» (idea #2) y A3 «Son las once y media de la noche…» (idea #5). Quedan en `anuncios/img/reserva/`.
