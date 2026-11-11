@@ -74,13 +74,15 @@ Gasto USD 22,75 · 1.976 impresiones · 45 clics en el enlace · 35 visitas a la
 |---|---|
 | 2 · /precios | Mismo ángulo que A (WhatsApp): Meta los agruparía. Queda como **variación de gancho de A** para la tanda 2 |
 | 5 · 23:40 | El mensaje de ausencia es una parte del mismo dolor de WhatsApp que A. Buena variación para la tanda 2 |
-| 6 · Instagram | Sería un segundo video con la misma estructura que A, y gasta créditos de voz. Es el candidato más fuerte del 30 % nuevo de la tanda 2 |
+| 6 · Instagram | Sería un segundo video con la misma estructura que A (chat/pantalla + voz): Meta los vería parecidos. Es el candidato más fuerte del 30 % nuevo de la tanda 2 |
 | 7 · Números | Hablar de plata roza la política de atributos personales y el Día 4 es el más pesado del libro: no es la mejor puerta de entrada |
 | 8 · 7 y 3 | Compite con B por el lugar del carrusel y no muestra el producto: B prueba más con lo mismo |
 | 10 · Repetido | Es otro «solo texto»: E tiene el gancho más claro, que ya estaba en el plan |
 | 12 · 4 rubros | Se pisa con D. Una persona con su historia engancha más que 4 caras chicas en el celular |
-| 13 · Mensaje feo | Buen ángulo emocional, pero sería el tercer video con voz. Tanda 2 |
+| 13 · Mensaje feo | Buen ángulo emocional, pero sería un tercer video de chat con voz, parecido a A. Tanda 2 |
 | 14 · Cursos | Compararse con «cursos de 40 horas» es una afirmación sobre otros que no podemos mostrar. Débil |
+
+> 11/11: los dueños aclararon que los créditos de ElevenLabs no son problema. No cambia la elección (el motivo era que no se parezcan entre sí), pero en producción se prueban 3 voces y se dejan hechos, sin publicar, 2 ganchos alternativos de A para renovar.
 
 ## 5 · Tanda 2 (si el test da señal)
 
