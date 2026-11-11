@@ -82,7 +82,7 @@ Gasto USD 22,75 · 1.976 impresiones · 45 clics en el enlace · 35 visitas a la
 | 13 · Mensaje feo | Buen ángulo emocional, pero sería un tercer video de chat con voz, parecido a A. Tanda 2 |
 | 14 · Cursos | Compararse con «cursos de 40 horas» es una afirmación sobre otros que no podemos mostrar. Débil |
 
-> 11/11: los dueños aclararon que los créditos de ElevenLabs no son problema. No cambia la elección (el motivo era que no se parezcan entre sí), pero en producción se prueban 3 voces y se dejan hechos, sin publicar, 2 ganchos alternativos de A para renovar.
+> 11/11: los dueños aclararon que los créditos de ElevenLabs no son problema. No cambia la elección (el motivo era que no se parezcan entre sí), pero en producción se prueban 3 voces y se dejan hechos, sin publicar, 2 ganchos alternativos de A para renovar. Igual, antes de gastar créditos se avisa y se espera el OK de los dueños.
 
 ## 5 · Tanda 2 (si el test da señal)
 
