@@ -119,3 +119,22 @@ Casi todo esto desaparece al publicar el HTML propio (`landing/landing.html`), s
 - Post-compra: HTML propio guardado en la oferta `624d1055-…` y modo HTML prendido.
 - **No se pudo:** desactivar los 3 bonos inventados (el conector no lo permite en tiendas clásicas). Siguen pendientes de borrar en el panel, junto con el downsell `07de2e4b-…`.
 - Falta: bloque de texto de la garantía en el checkout, revisar el mail de entrega, compra de prueba.
+
+## 11/11 · Cierre de la tarea 6 (segunda sesión)
+
+- **Checkout:** bloque de texto debajo del botón de pagar (con el «sí» de los dueños): «Garantía de 7 días, sin preguntas: si no te sirve, escribinos a tallertriplearg@gmail.com dentro de los 7 días desde la compra y te devolvemos la plata.» Antes no había bloques.
+- **Mail de entrega:** no se puede editar en Impultienda (no hay campo para el asunto ni para el cuerpo). Al pie muestra el email de contacto de la tienda; se ofreció cambiarlo a `tallertriplearg@gmail.com` y no se aprobó.
+- **Verificado con el conector:** landing con HTML propio (23.055 caracteres, igual a `landing/landing.html`); principal 7.990 sin tachado; oferta post-compra `624d1055-…` con HTML propio y modo HTML prendido; PDF cargados en el libro, el bump de fotos y Las 200 instrucciones.
+- **Diagnóstico:** puede cobrar y listo para anunciar. Advertencia: 4 de 7 ebooks sin entregable (planilla + 3 bonos inventados).
+- **Planilla:** link de Google Sheets que pasaron los dueños: `https://docs.google.com/spreadsheets/d/1GT_vbcGeA4MZggf-DmbHiSuA2XI8920jEMPbOEASzY4/` — **todavía no cargado**, espera el «sí».
+- **Tienda en vivo:** no se pudo abrir desde la sesión. Se sumaron `la-ia-hace.impultienda.ar` y `challenges.cloudflare.com` a la red del entorno, pero Cloudflare frena al navegador automático («Un momento…»). Se miró el mismo HTML con las imágenes reales de Recursos, en compu y celular: ninguna imagen rota, nada se sale de la pantalla, sin testimonios, relojes, cupos ni tachado. El checkout con los 2 bumps lo tienen que mirar los dueños.
+
+### Recursos (direcciones públicas)
+
+Base: `https://aekpgsbqjzqntlbucbts.supabase.co/storage/v1/object/public/store-resources/e36e2cbd-c356-48a0-85cb-259a02de2282/`. La lista completa archivo → dirección está en `imagenes/urls.json` (15 fotos IMG-xx.jpg, tapa-ebook.png, tapa-200.png, pagina-ficha.png, pagina-whatsapp.png, pagina-numeros.png).
+
+### Qué falta para la compra de prueba
+
+1. Cargar la planilla (link de Sheets, con el «sí»).
+2. Dueños, en el panel: borrar los 3 bonos inventados (`2ed41ee7-…`, `15dbebb7-…`, `1312a1bd-…`) y el downsell `07de2e4b-…`; en Diseño de checkout, revisar los sellos, «Días de garantía» = 7 y el bloque de la garantía.
+3. Dueños: abrir la tienda en compu y celular y el checkout con los 2 bumps; «Enviar mail de prueba» en Emails al comprador para ver qué PDF baja cada producto.
