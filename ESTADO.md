@@ -14,7 +14,7 @@ Testear un ebook propio sobre cómo usar la IA en un emprendimiento, después de
 
 | Pieza | Nombre | Precio | Archivo |
 |---|---|---|---|
-| 11/11 | La planilla se entrega con un link de Google Sheets (Impultienda solo acepta PDF como archivo); link pasado por los dueños el 11/11 | No hay otra forma de entregar un .xlsx |
+| 11/11 | La planilla se entrega con un link de Google Sheets terminado en `/copy`, compartido como Lector (Impultienda solo acepta PDF como archivo) | No hay otra forma de entregar un .xlsx |
 | 11/11 | El mail de entrega no se edita en Impultienda (no hay campo): la garantía va en la landing y en un bloque de texto debajo del botón de pagar del checkout. El email de contacto de la tienda (pie del mail) no se tocó | Limitación de Impultienda; el cambio del email de contacto no se aprobó |
 | 11/11 | Los 3 bonos inventados no se pueden desactivar desde el conector (en tiendas clásicas no se puede): los borran los dueños en el panel | Limitación de Impultienda |
 | 11/11 | Mail de contacto de la garantía: `tallertriplearg@gmail.com` (el mismo de Taller Triple / velas) | Lo eligieron los dueños; ya lo leen. Se aceptó que muestre otra marca |
@@ -67,7 +67,8 @@ Público: emprendedores y negocios chicos que venden por WhatsApp e Instagram. H
 - Mercado Pago conectado en la tienda nueva (11/11, verificado con el conector: «Lista para cobrar»). **Ojo:** desde ahora la tienda puede cobrar, pero sigue con la landing de plantilla (16.990, tachado y testimonios inventados) y sin entregables: hacer la tarea 6 antes de mandar a nadie a la tienda
 - **Tarea 6 (11/11), con el «sí» de los dueños:** los 3 PDF cargados como entregables (libro, bump de fotos, 200 instrucciones). Fotos y tapas en Recursos (direcciones en `imagenes/urls.json`). **Landing propia publicada** (`landing/landing.html`). **Precio del libro: 7.990 sin tachado** (antes 16.990 con 84.950). **Página propia de la oferta post-compra guardada y prendida** (`landing/postcompra.html`). No se pudo mirar la tienda en vivo desde acá (la red la bloquea): la tienen que abrir los dueños
 - Garantía de 7 días sin preguntas con el mail `tallertriplearg@gmail.com`: publicada en la landing y, desde el 11/11, como bloque de texto debajo del botón de pagar del checkout
-- Diagnóstico de Impultienda (11/11): «Puede cobrar» y «Listo para anunciar» en sí. Única advertencia: 4 de 7 ebooks sin entregable (la planilla y los 3 bonos inventados)
+- Planilla cargada como entregable (11/11, con el «sí» de los dueños): link de Google Sheets con `/copy` (cada comprador se hace su copia; el original está compartido como Lector). Con eso la tarea 6 queda hecha; lo que sigue es la 6c de los dueños
+- Diagnóstico de Impultienda (11/11): «Puede cobrar» y «Listo para anunciar» en sí. Única advertencia: 4 de 7 ebooks sin entregable (la planilla, ya cargada después, y los 3 bonos inventados)
 - Tienda nueva: funnel post-compra creado (upsell 12.990, sin descuento; el downsell quedó en 0 % hasta que los dueños lo borren en el panel), checkout sin barra de compradores ni reloj de bumps, píxel «velas» cargado y verificado. Detalle e ids en `tienda.md`
 - Revisión de la landing de plantilla (10/11): lo falso que tenía (testimonios, cuenta regresiva, cupos, tachado) quedó afuera al publicar el HTML propio el 11/11. Siguen los 3 bonos inventados (tarea 6c)
 
@@ -77,9 +78,8 @@ Público: emprendedores y negocios chicos que venden por WhatsApp e Instagram. H
 |---|---|---|---|---|
 | 1 | Pagar los ~USD 7 pendientes en Meta (cuenta «Velas arg» en período de gracia desde el 9/11) | Dueños | 9 | Meta Business Suite → Facturación y pagos → Pagar ahora. Si falla: habilitar la tarjeta para el exterior o cargar otra. **Lo pagan el 11/11** (ARS ~11.200) |
 | 5 | Probar la planilla en Google Sheets (colores y listas) y la instrucción maestra en ChatGPT gratis | Dueños | — | Antes de vender |
-| 6 | Cargar la planilla como entregable (link de Google Sheets que pasaron los dueños el 11/11) | Claude, con el «sí» de los dueños | 7 | Es lo único que falta de la tarea 6. El resto quedó hecho el 11/11 (ver «Hecho» y `tienda.md`) |
 | 6c | Borrar en el panel el downsell del funnel post-compra (está en 0 %), los 3 bonos inventados, y revisar en Diseño de checkout los sellos, que «Días de garantía» diga 7 y cómo se ve el bloque de la garantía. **Antes de la compra de prueba:** los bonos están activos y sin archivo, así que hoy se entregan vacíos | Dueños | 7 | Links en `tienda.md` |
-| 7 | Compra de prueba + evento Compra visible en el Administrador de eventos | Dueños + Claude | 9 | El píxel ya está cargado y verificado (10/11). Mercado Pago ya está (11/11); espera la planilla (6) y el borrado de los bonos (6c). La tienda en vivo no se puede abrir desde las sesiones de Claude (Cloudflare frena el navegador automático): la miran los dueños |
+| 7 | Compra de prueba + evento Compra visible en el Administrador de eventos | Dueños + Claude | 9 | El píxel ya está cargado y verificado (10/11). Mercado Pago ya está (11/11); espera el borrado de los bonos (6c). La tienda en vivo no se puede abrir desde las sesiones de Claude (Cloudflare frena el navegador automático): la miran los dueños |
 | 8 | Leer todo (ebook, bumps, upsell, landing) y marcar cambios | Dueños | — | Se puede hacer en paralelo |
 | 9 | Crear la campaña en Meta y prenderla | Claude, con el «sí» de los dueños | 10 | Estructura en `anuncios/anuncios.md` |
 | 10 | Leer el test con el criterio de `plan-ebook-ia.md` y decidir | Chat principal | — | Las ventas se cuentan en Impultienda, no en Meta |
