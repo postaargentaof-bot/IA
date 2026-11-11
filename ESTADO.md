@@ -14,6 +14,7 @@ Testear un ebook propio sobre cómo usar la IA en un emprendimiento, después de
 
 | Pieza | Nombre | Precio | Archivo |
 |---|---|---|---|
+| 11/11 | Los 3 bonos inventados no se pueden desactivar desde el conector (en tiendas clásicas no se puede): los borran los dueños en el panel | Limitación de Impultienda |
 | 11/11 | Mail de contacto de la garantía: `tallertriplearg@gmail.com` (el mismo de Taller Triple / velas) | Lo eligieron los dueños; ya lo leen. Se aceptó que muestre otra marca |
 | Principal | La IA hace, vos vendés | ARS 7.990 | `pdf/la-ia-hace-vos-vendes.pdf` (69 págs.) |
 | Bump 1 | Fotos de producto con el celular + IA | ARS 4.990 | `pdf/bump-fotos-con-celular-e-ia.pdf` |
@@ -62,7 +63,7 @@ Público: emprendedores y negocios chicos que venden por WhatsApp e Instagram. H
 - **Peso de los PDF (10/11):** `la-ia-hace-vos-vendes.pdf` 3,3 MB (69 págs.) · `bump-fotos-con-celular-e-ia.pdf` 0,7 MB (14 págs.) · `las-200-instrucciones.pdf` 1,0 MB (68 págs.). Todos lejos de los 15 MB
 - Tienda nueva en Impultienda creada (parte de la tarea 6): `la-ia-hace.impultienda.ar`, 4 productos cargados con sus ids. Detalle y pendientes en `tienda.md`
 - Mercado Pago conectado en la tienda nueva (11/11, verificado con el conector: «Lista para cobrar»). **Ojo:** desde ahora la tienda puede cobrar, pero sigue con la landing de plantilla (16.990, tachado y testimonios inventados) y sin entregables: hacer la tarea 6 antes de mandar a nadie a la tienda
-- **Tarea 6 en curso (11/11):** los 3 PDF cargados como entregables en Impultienda (libro, bump de fotos, 200 instrucciones). 15 fotos + tapas y páginas subidas a Recursos; direcciones en `imagenes/urls.json`, y `landing/landing.html` / `postcompra.html` rearmados con ellas. Vista previa del HTML propio aceptada por Impultienda (sin proveedores bloqueados). **Esperando el «sí» de los dueños** para: publicar la landing, precio 7.990 sin tachado, desactivar los 3 bonos inventados y publicar la página post-compra. **Falta el link de Drive de la planilla** (Impultienda solo acepta PDF como archivo)
+- **Tarea 6 (11/11), con el «sí» de los dueños:** los 3 PDF cargados como entregables (libro, bump de fotos, 200 instrucciones). Fotos y tapas en Recursos (direcciones en `imagenes/urls.json`). **Landing propia publicada** (`landing/landing.html`). **Precio del libro: 7.990 sin tachado** (antes 16.990 con 84.950). **Página propia de la oferta post-compra guardada y prendida** (`landing/postcompra.html`). No se pudo mirar la tienda en vivo desde acá (la red la bloquea): la tienen que abrir los dueños
 - Garantía de 7 días sin preguntas en `landing/landing.html`, con el mail `tallertriplearg@gmail.com` (11/11); no publicada
 - Tienda nueva: funnel post-compra creado (upsell 12.990, sin descuento; el downsell quedó en 0 % hasta que los dueños lo borren en el panel), checkout sin barra de compradores ni reloj de bumps, píxel «velas» cargado y verificado. Detalle e ids en `tienda.md`
 - Revisión de la landing publicada de la tienda nueva: lista de lo falso o que no es de la oferta (testimonios, garantía, cuenta regresiva, cupos, bonos inventados, precio) en `tienda.md`. No se arregló todavía

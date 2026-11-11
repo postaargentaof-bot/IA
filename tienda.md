@@ -108,3 +108,14 @@ Casi todo esto desaparece al publicar el HTML propio (`landing/landing.html`), s
 - Mercado Pago (lo conectan los dueños, link arriba), píxel (propuesto arriba), compra de prueba.
 - Mail de la garantía: `tallertriplearg@gmail.com` (ya en la landing, 11/11). Falta sumar un bloque de texto con la garantía al checkout y revisar el mail de entrega.
 - Revisar en el panel (Diseño de checkout) que «Días de garantía» diga 7.
+
+## 11/11 · Tarea 6 aplicada (con el «sí» de los dueños)
+
+- Entregables: PDF cargados y confirmados en «La IA hace, vos vendés» (3,1 MB), «Fotos de producto con el celular + IA» (0,7 MB) y «Las 200 instrucciones» (0,9 MB).
+- **Falta la planilla**: Impultienda solo acepta PDF como archivo; necesita un link público de Drive (lo pasan los dueños).
+- Recursos: 15 fotos (IMG-xx.jpg) + tapa-ebook, tapa-200 y 3 páginas del libro. Direcciones en `imagenes/urls.json`.
+- Landing: HTML propio publicado (era la plantilla; Impultienda dice que no guardó versión anterior porque no había HTML propio, la plantilla sigue en el panel).
+- Precio del principal: 7.990 sin tachado (antes 16.990 / 84.950).
+- Post-compra: HTML propio guardado en la oferta `624d1055-…` y modo HTML prendido.
+- **No se pudo:** desactivar los 3 bonos inventados (el conector no lo permite en tiendas clásicas). Siguen pendientes de borrar en el panel, junto con el downsell `07de2e4b-…`.
+- Falta: bloque de texto de la garantía en el checkout, revisar el mail de entrega, compra de prueba.
