@@ -138,3 +138,10 @@ Base: `https://aekpgsbqjzqntlbucbts.supabase.co/storage/v1/object/public/store-r
 1. ~~Cargar la planilla~~ (hecho 11/11). En la compra de prueba, abrir el link de la planilla sin sesión de Google para confirmar que copia bien.
 2. ~~Borrar los 3 bonos inventados y el downsell~~ (hecho por los dueños el 11/11; verificado: 4 productos, funnel con una sola oferta, Diagnóstico sin errores ni advertencias). En Diseño de checkout, revisar los sellos, «Días de garantía» = 7 y el bloque de la garantía.
 3. Dueños: abrir la tienda en compu y celular y el checkout con los 2 bumps; «Enviar mail de prueba» en Emails al comprador para ver qué PDF baja cada producto.
+
+## 11/11 · Landing y upsell rediseñados (estilo «chat»)
+
+- Los dueños eligieron la propuesta C de `landing/propuestas/` (A cuaderno, B revista, C chat).
+- Publicado con su «sí»: `landing/landing.html` como landing (23 → 25 KB) y `landing/postcompra.html` en la oferta `624d1055-…` (11 → 13 KB, modo HTML prendido). Vistas previas sin proveedores bloqueados ni avisos. **Las versiones anteriores quedaron guardadas** (landing: `impultienda_restaurar_html`; upsell: `restaurar_version_anterior`).
+- Mismos textos, FAQ completa, garantía con el mail, imágenes de Recursos. El ejemplo del teléfono (Caro, buzo a $18.500) está rotulado «Ejemplo».
+- Falta: que los dueños miren la tienda en compu y celular (desde la sesión no se puede abrir).
