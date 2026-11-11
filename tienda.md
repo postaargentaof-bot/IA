@@ -15,7 +15,7 @@
 | Calendario de publicaciones de 30 días | bono (inventado) | — | `15dbebb7-d05e-4651-a3bd-5eb94b9b1079` | Borrar en el panel |
 | Plantillas de presupuestos y precios | bono (inventado) | — | `1312a1bd-d4a2-47e3-8975-4dae1305e527` | Borrar en el panel |
 
-Hoy la tienda **no puede cobrar** (no hay Mercado Pago conectado) y ningún producto tiene entregable: nadie puede comprar.
+**11/11: Mercado Pago conectado** (verificado: «Lista para cobrar»). La tienda ya puede cobrar, pero ningún producto tiene entregable y la landing sigue siendo la plantilla: no mandar a nadie hasta terminar la tarea 6.
 
 ### El precio tachado del principal
 
