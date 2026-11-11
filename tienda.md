@@ -136,5 +136,5 @@ Base: `https://aekpgsbqjzqntlbucbts.supabase.co/storage/v1/object/public/store-r
 ### Qué falta para la compra de prueba
 
 1. ~~Cargar la planilla~~ (hecho 11/11). En la compra de prueba, abrir el link de la planilla sin sesión de Google para confirmar que copia bien.
-2. Dueños, en el panel: borrar los 3 bonos inventados (`2ed41ee7-…`, `15dbebb7-…`, `1312a1bd-…`) y el downsell `07de2e4b-…`; en Diseño de checkout, revisar los sellos, «Días de garantía» = 7 y el bloque de la garantía.
+2. ~~Borrar los 3 bonos inventados y el downsell~~ (hecho por los dueños el 11/11; verificado: 4 productos, funnel con una sola oferta, Diagnóstico sin errores ni advertencias). En Diseño de checkout, revisar los sellos, «Días de garantía» = 7 y el bloque de la garantía.
 3. Dueños: abrir la tienda en compu y celular y el checkout con los 2 bumps; «Enviar mail de prueba» en Emails al comprador para ver qué PDF baja cada producto.

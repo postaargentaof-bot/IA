@@ -68,9 +68,10 @@ Público: emprendedores y negocios chicos que venden por WhatsApp e Instagram. H
 - **Tarea 6 (11/11), con el «sí» de los dueños:** los 3 PDF cargados como entregables (libro, bump de fotos, 200 instrucciones). Fotos y tapas en Recursos (direcciones en `imagenes/urls.json`). **Landing propia publicada** (`landing/landing.html`). **Precio del libro: 7.990 sin tachado** (antes 16.990 con 84.950). **Página propia de la oferta post-compra guardada y prendida** (`landing/postcompra.html`). No se pudo mirar la tienda en vivo desde acá (la red la bloquea): la tienen que abrir los dueños
 - Garantía de 7 días sin preguntas con el mail `tallertriplearg@gmail.com`: publicada en la landing y, desde el 11/11, como bloque de texto debajo del botón de pagar del checkout
 - Planilla cargada como entregable (11/11, con el «sí» de los dueños): link de Google Sheets con `/copy` (cada comprador se hace su copia; el original está compartido como Lector). Con eso la tarea 6 queda hecha; lo que sigue es la 6c de los dueños
-- Diagnóstico de Impultienda (11/11): «Puede cobrar» y «Listo para anunciar» en sí. Única advertencia: 4 de 7 ebooks sin entregable (la planilla, ya cargada después, y los 3 bonos inventados)
+- Bonos inventados y downsell borrados por los dueños en el panel (11/11, verificado con el conector): quedan 4 productos (principal, 2 bumps, upsell) y el funnel con una sola oferta (si rechaza, va al agradecimiento). Diagnóstico: sin errores ni advertencias; próximo paso, la compra de prueba
+- Diagnóstico de Impultienda (11/11, antes del borrado): «Puede cobrar» y «Listo para anunciar» en sí. Única advertencia: 4 de 7 ebooks sin entregable (la planilla, ya cargada después, y los 3 bonos inventados)
 - Tienda nueva: funnel post-compra creado (upsell 12.990, sin descuento; el downsell quedó en 0 % hasta que los dueños lo borren en el panel), checkout sin barra de compradores ni reloj de bumps, píxel «velas» cargado y verificado. Detalle e ids en `tienda.md`
-- Revisión de la landing de plantilla (10/11): lo falso que tenía (testimonios, cuenta regresiva, cupos, tachado) quedó afuera al publicar el HTML propio el 11/11. Siguen los 3 bonos inventados (tarea 6c)
+- Revisión de la landing de plantilla (10/11): lo falso que tenía (testimonios, cuenta regresiva, cupos, tachado) quedó afuera al publicar el HTML propio el 11/11. Los 3 bonos inventados se borraron el 11/11
 
 ## 5 · Falta ⏳ (en orden)
 
@@ -78,8 +79,8 @@ Público: emprendedores y negocios chicos que venden por WhatsApp e Instagram. H
 |---|---|---|---|---|
 | 1 | Pagar los ~USD 7 pendientes en Meta (cuenta «Velas arg» en período de gracia desde el 9/11) | Dueños | 9 | Meta Business Suite → Facturación y pagos → Pagar ahora. Si falla: habilitar la tarjeta para el exterior o cargar otra. **Lo pagan el 11/11** (ARS ~11.200) |
 | 5 | Probar la planilla en Google Sheets (colores y listas) y la instrucción maestra en ChatGPT gratis | Dueños | — | Antes de vender |
-| 6c | Borrar en el panel el downsell del funnel post-compra (está en 0 %), los 3 bonos inventados, y revisar en Diseño de checkout los sellos, que «Días de garantía» diga 7 y cómo se ve el bloque de la garantía. **Antes de la compra de prueba:** los bonos están activos y sin archivo, así que hoy se entregan vacíos | Dueños | 7 | Links en `tienda.md` |
-| 7 | Compra de prueba + evento Compra visible en el Administrador de eventos | Dueños + Claude | 9 | El píxel ya está cargado y verificado (10/11). Mercado Pago ya está (11/11); espera el borrado de los bonos (6c). La tienda en vivo no se puede abrir desde las sesiones de Claude (Cloudflare frena el navegador automático): la miran los dueños |
+| 6c | En Diseño de checkout: revisar los sellos, que «Días de garantía» diga 7 y cómo se ve el bloque de la garantía. Mirar la tienda en compu y celular y el checkout con los 2 bumps | Dueños | 7 | Los bonos y el downsell ya se borraron (11/11) |
+| 7 | Compra de prueba + evento Compra visible en el Administrador de eventos | Dueños + Claude | 9 | El píxel ya está cargado y verificado (10/11). Mercado Pago ya está (11/11); sin bloqueos en el Diagnóstico desde el 11/11; antes, la revisión de la 6c. La tienda en vivo no se puede abrir desde las sesiones de Claude (Cloudflare frena el navegador automático): la miran los dueños |
 | 8 | Leer todo (ebook, bumps, upsell, landing) y marcar cambios | Dueños | — | Se puede hacer en paralelo |
 | 9 | Crear la campaña en Meta y prenderla | Claude, con el «sí» de los dueños | 10 | Estructura en `anuncios/anuncios.md` |
 | 10 | Leer el test con el criterio de `plan-ebook-ia.md` y decidir | Chat principal | — | Las ventas se cuentan en Impultienda, no en Meta |
