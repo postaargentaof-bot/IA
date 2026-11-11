@@ -30,6 +30,7 @@ Público: emprendedores y negocios chicos que venden por WhatsApp e Instagram. H
 
 | Fecha | Decisión | Por qué |
 |---|---|---|
+| 11/11 | 5 anuncios para el lanzamiento: los 3 de `anuncios/` mejorados (tapa real, fotos, 9:16) + 1 video con voz (ElevenLabs, sin precio en el video) + 1 solo texto. Todo en un conjunto, una CBO | Bilbao (vía el kit, oct. 2026): 5–10 anuncios con formatos distintos; con USD 25, más anuncios no llegan a gastar |
 | 10/11 | En los PDF las imágenes van como copias JPEG livianas (1400 px, calidad 80); las PNG originales quedan en `imagenes/` sin tocar | Con las PNG (~2,2 MB cada una) el ebook pasaba los 15 MB; así pesa 3,3 MB |
 | 10/11 | En `landing/landing.html` y `postcompra.html` (versión Impultienda) las fotos ya van como `<img>` con `src="RECURSO:IMG-xx.jpg"`, igual que las tapas (`RECURSO:tapa-ebook.png`). Los archivos a subir a Recursos están en `landing/assets/`. Al subirlos se cargan las direcciones en `imagenes/urls.json` y se vuelve a armar | Las imágenes existen: no tiene sentido dejar recuadros; falta solo la dirección pública |
 | 10/11 | La vista previa (`landing/preview/`) usa rutas relativas (`../assets/`) | Antes eran rutas `file://` de la compu donde se armó y no se veían en otra |
@@ -82,7 +83,8 @@ Público: emprendedores y negocios chicos que venden por WhatsApp e Instagram. H
 | 6c | En Diseño de checkout: revisar los sellos, que «Días de garantía» diga 7 y cómo se ve el bloque de la garantía. Mirar la tienda en compu y celular y el checkout con los 2 bumps | Dueños | 7 | Los bonos y el downsell ya se borraron (11/11) |
 | 7 | Compra de prueba + evento Compra visible en el Administrador de eventos | Dueños + Claude | 9 | El píxel ya está cargado y verificado (10/11). Mercado Pago ya está (11/11); sin bloqueos en el Diagnóstico desde el 11/11; antes, la revisión de la 6c. La tienda en vivo no se puede abrir desde las sesiones de Claude (Cloudflare frena el navegador automático): la miran los dueños |
 | 8 | Leer todo (ebook, bumps, upsell, landing) y marcar cambios | Dueños | — | Se puede hacer en paralelo |
-| 9 | Crear la campaña en Meta y prenderla | Claude, con el «sí» de los dueños | 10 | Estructura en `anuncios/anuncios.md` |
+| 8b | Creativos: mejorar los 3 actuales y sumar video con voz + solo texto (5 en total) | Claude (chat de creativos) | 9 | Antes de generar la voz, pasar la cuenta de créditos de ElevenLabs |
+| 9 | Crear la campaña en Meta y prenderla | Claude, con el «sí» de los dueños | 10 | Estructura en `anuncios/anuncios.md`. Marcar que las imágenes son hechas con IA |
 | 10 | Leer el test con el criterio de `plan-ebook-ia.md` y decidir | Chat principal | — | Las ventas se cuentan en Impultienda, no en Meta |
 
 ## 6 · Datos útiles
