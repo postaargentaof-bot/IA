@@ -94,14 +94,14 @@ Público: emprendedores y negocios chicos que venden por WhatsApp e Instagram. H
 | 6c | En Diseño de checkout: revisar los sellos, que «Días de garantía» diga 7 y cómo se ve el bloque de la garantía. Mirar la tienda en compu y celular y el checkout con los 2 bumps | Dueños | 7 | Los bonos y el downsell ya se borraron (11/11) |
 | 7 | Compra de prueba + evento Compra visible en el Administrador de eventos | Dueños + Claude | 9 | El píxel ya está cargado y verificado (10/11). Mercado Pago ya está (11/11); sin bloqueos en el Diagnóstico desde el 11/11; antes, la revisión de la 6c. La tienda en vivo no se puede abrir desde las sesiones de Claude (Cloudflare frena el navegador automático): la miran los dueños |
 | 8 | Leer todo (ebook, bumps, upsell, landing) y marcar cambios | Dueños | — | Se puede hacer en paralelo |
-| 8c | Crear la página de Facebook e Instagram «La IA hace, vos vendés» y conectarla a la cuenta «Velas arg» | Dueños | 9 | Si quieren, Claude arma la foto de perfil y la portada |
+| 8c | Instagram de la página nueva: crear la cuenta profesional y conectarla a la página. Opcional: sumar la página al portfolio «Ecom Manu» y a «Velas arg» | Dueños | — | La página de Facebook ya existe (12/11, `1492900110562845`) y se puede usar en anuncios. Sin Instagram, los anuncios de IG salen con el nombre de la página de Facebook. Datos en `pagina-meta/datos.md` |
 | 9 | Crear la campaña en Meta y prenderla | Claude, con el «sí» de los dueños | 10 | Estructura, textos y qué archivo va en cada ubicación en `anuncios/anuncios.md`. Creativos aprobados el 11/11, también con sonido. Marcar que las imágenes y las voces son hechas con IA |
 | 10 | Leer el test con el criterio de `plan-ebook-ia.md` y decidir | Chat principal | — | Las ventas se cuentan en Impultienda, no en Meta |
 
 ## 6 · Datos útiles
 
 - **Vencimientos (revisado 12/11):** Impultienda plan Max en prueba gratis hasta el **21/12/2026** (después cobra; comisión 2 % por venta). ElevenLabs: el chat «Creativos tanda 1» (Taller Triple) dejó anotado cancelarlo antes del **6/12** si no se usa más.
-- Meta 12/11: «Velas arg» sigue en período de gracia (deuda sin pagar) y la única página conectada es la de Taller Triple.
+- Meta 12/11: «Velas arg» sigue en período de gracia (deuda sin pagar). Página nueva «La IA hace, vos vendés» `1492900110562845` (con permiso para anunciar; todavía sin Instagram).
 
 - Impultienda: tienda nueva «La IA hace» (`e36e2cbd-c356-48a0-85cb-259a02de2282`, `la-ia-hace.impultienda.ar`). Tienda vieja «Taller Triple» (`2839f946-6210-4e03-a620-44aa105606b1`), plan Max, ARS, Mercado Pago — no usar para esto.
 - Meta: cuenta publicitaria «Velas arg» (`1611303950747523`), en USD.
