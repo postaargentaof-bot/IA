@@ -33,6 +33,7 @@ Público: emprendedores y negocios chicos que venden por WhatsApp e Instagram. H
 
 | Fecha | Decisión | Por qué |
 |---|---|---|
+| 12/11 | El test se anuncia desde «Velas arg» con el píxel «velas» y la página nueva. Si el test da bien y se escala: píxel propio (y evaluar cuenta propia) para el ebook, como pide el kit | La deuda se paga igual; la cuenta tiene historial y ya está conectada; con USD 25 lo aprendido de Taller Triple no pesa |
 | 11/11 | Los 5 creativos (versión 2) aprobados por los dueños como **listos para testear**: los vieron y escucharon con sonido (voz, acento y música) y no encontraron errores | Revisión de los dueños; Claude no puede escuchar el audio |
 | 11/11 | Versión 2 de los creativos: A y D animados con código (subtítulos karaoke, movimiento todo el tiempo), con música y efectos generados por código; D con estética propia (Sol de fondo, ciruela y rosa); B con gancho de dolor y resultados «Así queda»; C con respuesta genérica realista; E en amarillo | Lo pidieron los dueños después de la autocrítica (A y D se parecían y eran diapositivas). La música es propia porque la red de este entorno bloquea los bancos de música CC0 |
 | 11/11 | Los 5 creativos producidos: A y D en video con voz de ElevenLabs (A, mujer rioplatense; D, varón, para que no parezca que habla Sol), B carrusel de 6 tarjetas con páginas reales del PDF, C antes/después con el ejemplo de Caro, E solo texto. Todo en 4:5 y 9:16. Sin música | Lo pedido en `anuncios/ideas.md`; las voces las eligieron los dueños entre 7 muestras. No había música CC0 a mano |
