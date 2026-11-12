@@ -22,9 +22,9 @@ Testear un ebook propio sobre cómo usar la IA en un emprendimiento, después de
 | 11/11 | Los 3 bonos inventados no se pueden desactivar desde el conector (en tiendas clásicas no se puede): los borran los dueños en el panel | Limitación de Impultienda |
 | 11/11 | Mail de contacto de la garantía: `tallertriplearg@gmail.com` (el mismo de Taller Triple / velas) | Lo eligieron los dueños; ya lo leen. Se aceptó que muestre otra marca |
 | Principal | La IA hace, vos vendés | ARS 9.990 (desde el 12/11) | `pdf/la-ia-hace-vos-vendes.pdf` (69 págs.) |
-| Bump 1 | Fotos de producto con el celular + IA | ARS 4.990 | `pdf/bump-fotos-con-celular-e-ia.pdf` |
-| Bump 2 | La planilla lista para usar | ARS 3.990 | `bumps/planilla-de-tu-negocio.xlsx` |
-| Upsell post-compra | Las 200 instrucciones | ARS 12.990 | `pdf/las-200-instrucciones.pdf` |
+| Bump 1 | Fotos de producto con el celular + IA | ARS 5.990 (desde el 12/11) | `pdf/bump-fotos-con-celular-e-ia.pdf` |
+| Bump 2 | La planilla lista para usar | ARS 4.990 (desde el 12/11) | `bumps/planilla-de-tu-negocio.xlsx` |
+| Upsell post-compra | Las 200 instrucciones | ARS 16.990 en el producto (desde el 12/11; confirmar el precio de la oferta del funnel) | `pdf/las-200-instrucciones.pdf` |
 
 Subtítulo: «Cómo usar la IA en tu emprendimiento en 7 días, aunque no sepas nada de tecnología».
 Público: emprendedores y negocios chicos que venden por WhatsApp e Instagram. Herramienta: ChatGPT gratis.
@@ -72,6 +72,7 @@ Público: emprendedores y negocios chicos que venden por WhatsApp e Instagram. H
 - **Tarea 8b (11/11): los 5 creativos producidos.** Piezas en `anuncios/img/` (`ia1-precio` video, `ia2-semana-1…6` carrusel, `ia3-nosuena`, `ia4-sol` video, `ia5-audio`; cada una en 4:5 y 9:16), textos y estructura de campaña en `anuncios/anuncios.md`, guiones en `anuncios/guiones.md`, 2 ganchos de reserva de A en `anuncios/img/reserva/`. Videos: 18,6 s y 21,3 s, −14 LUFS, menos de 5 MB, texto entre los 290 y los 1.290 px. **Versión 2 (11/11): animados con código, con música y efectos propios** (`anuncios/src/video2/`, `./scripts/armar_videos2.sh`). Voces guardadas en ElevenLabs y en `anuncios/audio/` (rearmar no gasta). Revisados con capturas, también a tamaño de celular
 - Análisis de errores del test de Taller Triple y 14 ideas de anuncios, con los 5 elegidos y por qué se descartó el resto: `anuncios/ideas.md` (11/11, chat de creativos, fase 1)
 - Lista de prompts de imágenes: `imagenes/prompts.md`
+- Fotos de los 4 productos en Impultienda (12/11): tapas cuadradas en `landing/assets/productos/` (la de la planilla se armó nueva: `landing/assets/tapa-planilla.png`). Se ven en el checkout y en los bumps
 - Las 20 imágenes con IA (IMG-01…15, 20…22, 30, 31), aprobadas por Toto el 10/11: `imagenes/IMG-XX.png`
 - Cómo se regeneran PDF, landing y prompts: `scripts/README-imagenes.md`
 - **Tarea 4 (10/11):** PDF y landing rearmados con las 20 imágenes. Sin ningún recuadro IMG-xx ni FOTO-xx en los 3 PDF ni en los 4 HTML. Revisados con capturas (páginas con imágenes, tapas, landing en compu y celular, post-compra): sin imágenes cortadas, deformadas ni tapando texto. Se arregló: la última página del ebook y del bump quedaba con una sola frase suelta, y el subtítulo de la tapa del bump estaba pegado a la línea de abajo. Los mockups de la landing salen ahora de páginas buscadas por texto (las páginas se habían corrido). `[MAIL]` sigue sin completar (lo pasan el 11/11)
