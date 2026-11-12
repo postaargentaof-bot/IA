@@ -2,6 +2,12 @@
 
 > La más nueva arriba. Cada una dice la fecha, qué se decidió, por qué y quién decidió. Las decisiones no se borran: si una cambia, se suma la nueva arriba y se nombra la que reemplaza.
 
+## 12/11/2026 · El upsell 2 queda para después del test
+
+- **Qué:** «El mes resuelto» (30 días de posteos y WhatsApp) está hecho, pero no se carga todavía.
+- **Por qué:** el plan Max permite 3 upsells por tienda y ya se usan los 3. Se sale al test con lo que hay; si la oferta valida, se compra el upsell extra y se carga.
+- **Quién:** {{NOMBRE}}.
+
 ## 12/11/2026 · Precios nuevos de «La IA hace»
 
 - **Qué:**

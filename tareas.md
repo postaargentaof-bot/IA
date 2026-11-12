@@ -23,6 +23,7 @@
 | Compra de prueba real con los 2 bumps y el upsell, y confirmar la Compra en Resumen | landing | {{NOMBRE}} | Antes de pautar | — | Después se reembolsa desde Mercado Pago |
 | Producir la tanda 1 (5 piezas) | creativos | {{NOMBRE}} + Claude | Antes de pautar | — | `areas/creativos/tandas/tanda-1/guiones.md`. Presupuesto de generación antes |
 | Armar la CBO en borrador y lanzarla con el sí | campanas | Claude + {{NOMBRE}} | Después de lo anterior | — | `reglas/08`: 1 conjunto, 5 anuncios, 2–3 tickets por día |
+| Cargar el upsell 2 «El mes resuelto» (12.990, downsell 50%) cuando la oferta valide. Hace falta 1 upsell extra en el plan | oferta | {{NOMBRE}} + Claude | Después del test | — | PDF listo en `areas/oferta/upsell-2-mes-resuelto/` |
 | Dominio propio, verificación en Meta y Brevo para los carritos | landing | {{NOMBRE}} | Semana 1 | — | Riesgo 🟡, no frena la salida |
 | Entrevista de arranque | general | Claude | Día 1 | — | `/arranque` |
 | Bajar el cerebro de Bilbao y subirlo al repo | sistema | {{NOMBRE}} | Día 1 | — | `EMPEZA-ACA.md`, paso 3 |
