@@ -73,6 +73,7 @@ Público: emprendedores y negocios chicos que venden por WhatsApp e Instagram. H
 - **Tarea 8b (11/11): los 5 creativos producidos.** Piezas en `anuncios/img/` (`ia1-precio` video, `ia2-semana-1…6` carrusel, `ia3-nosuena`, `ia4-sol` video, `ia5-audio`; cada una en 4:5 y 9:16), textos y estructura de campaña en `anuncios/anuncios.md`, guiones en `anuncios/guiones.md`, 2 ganchos de reserva de A en `anuncios/img/reserva/`. Videos: 18,6 s y 21,3 s, −14 LUFS, menos de 5 MB, texto entre los 290 y los 1.290 px. **Versión 2 (11/11): animados con código, con música y efectos propios** (`anuncios/src/video2/`, `./scripts/armar_videos2.sh`). Voces guardadas en ElevenLabs y en `anuncios/audio/` (rearmar no gasta). Revisados con capturas, también a tamaño de celular
 - Análisis de errores del test de Taller Triple y 14 ideas de anuncios, con los 5 elegidos y por qué se descartó el resto: `anuncios/ideas.md` (11/11, chat de creativos, fase 1)
 - Lista de prompts de imágenes: `imagenes/prompts.md`
+- **12/11:** deuda de Meta pagada («Velas arg» ACTIVA). Instagram `@laiahacevosvendes` creado, conectado a la página y disponible para anunciar; 3 posteos subidos. Compra de prueba #3089352 (ARS 1.000, Mercado Pago, aprobada). Precio del libro de nuevo en 9.990
 - Downsell post-compra (12/11, verificado con el conector): si rechaza Las 200 instrucciones a 16.990, se le ofrece a 8.495 (50 %). Oferta `1bba764b-1066-41b4-9cf6-d2587b22d44b`, creada en el panel. Usa el diseño de plantilla, no `landing/postcompra.html`: revisarla en la compra de prueba
 - Fotos de los 4 productos en Impultienda (12/11): tapas cuadradas en `landing/assets/productos/` (la de la planilla se armó nueva: `landing/assets/tapa-planilla.png`). Se ven en el checkout y en los bumps
 - Las 20 imágenes con IA (IMG-01…15, 20…22, 30, 31), aprobadas por Toto el 10/11: `imagenes/IMG-XX.png`
@@ -94,19 +95,17 @@ Público: emprendedores y negocios chicos que venden por WhatsApp e Instagram. H
 
 | # | Tarea | Quién | Bloquea a | Notas |
 |---|---|---|---|---|
-| 1 | Pagar los ~USD 7 pendientes en Meta (cuenta «Velas arg» en período de gracia desde el 9/11) | Dueños | 9 | Meta Business Suite → Facturación y pagos → Pagar ahora. Si falla: habilitar la tarjeta para el exterior o cargar otra. **Lo pagan el 11/11** (ARS ~11.200) |
 | 5 | Probar la planilla en Google Sheets (colores y listas) y la instrucción maestra en ChatGPT gratis | Dueños | — | Antes de vender |
 | 6c | En Diseño de checkout: revisar los sellos, que «Días de garantía» diga 7 y cómo se ve el bloque de la garantía. Mirar la tienda en compu y celular y el checkout con los 2 bumps | Dueños | 7 | Los bonos y el downsell viejo se borraron (11/11) |
-| 7 | Compra de prueba + evento Compra visible en el Administrador de eventos | Dueños + Claude | 9 | El píxel ya está cargado y verificado (10/11). Mercado Pago ya está (11/11); sin bloqueos en el Diagnóstico desde el 11/11; antes, la revisión de la 6c. La tienda en vivo no se puede abrir desde las sesiones de Claude (Cloudflare frena el navegador automático): la miran los dueños. **12/11: principal en ARS 1.000 para la prueba; después volver a 9.990** |
+| 7 | Ver el evento Compra de la prueba (#3089352) en el Administrador de eventos | Claude | 9 | La venta está aprobada en Impultienda. El píxel ya recibe PageView, AddToCart e InitiateCheckout de la tienda nueva; la Compra sale por el servidor al terminar el post-compra o 15 min después. Revisar de nuevo |
 | 8 | Leer todo (ebook, bumps, upsell, landing) y marcar cambios | Dueños | — | Se puede hacer en paralelo |
-| 8c | Subir los 3 posteos a Instagram y a la página de Facebook | Dueños | — | Instagram creado (12/11). Imágenes y textos en `pagina-meta/posteos/posteos.md`. Falta verificar desde Meta que el Instagram aparezca para anunciar |
 | 9 | Crear la campaña en Meta y prenderla | Claude, con el «sí» de los dueños | 10 | Estructura, textos y qué archivo va en cada ubicación en `anuncios/anuncios.md`. Creativos aprobados el 11/11, también con sonido. Marcar que las imágenes y las voces son hechas con IA |
 | 10 | Leer el test con el criterio de `plan-ebook-ia.md` y decidir | Chat principal | — | Las ventas se cuentan en Impultienda, no en Meta |
 
 ## 6 · Datos útiles
 
 - **Vencimientos (revisado 12/11):** Impultienda plan Max en prueba gratis hasta el **21/12/2026** (después cobra; comisión 2 % por venta). ElevenLabs: el chat «Creativos tanda 1» (Taller Triple) dejó anotado cancelarlo antes del **6/12** si no se usa más.
-- Meta 12/11: «Velas arg» sigue en período de gracia (deuda sin pagar). Página nueva «La IA hace, vos vendés» `1492900110562845` (con permiso para anunciar; todavía sin Instagram).
+- Meta 12/11: «Velas arg» activa (deuda pagada). Página nueva «La IA hace, vos vendés» `1492900110562845` (con permiso para anunciar; todavía sin Instagram).
 
 - Impultienda: tienda nueva «La IA hace» (`e36e2cbd-c356-48a0-85cb-259a02de2282`, `la-ia-hace.impultienda.ar`). Tienda vieja «Taller Triple» (`2839f946-6210-4e03-a620-44aa105606b1`), plan Max, ARS, Mercado Pago — no usar para esto.
 - Meta: cuenta publicitaria «Velas arg» (`1611303950747523`), en USD.
