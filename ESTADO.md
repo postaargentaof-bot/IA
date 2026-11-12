@@ -34,6 +34,7 @@ Público: emprendedores y negocios chicos que venden por WhatsApp e Instagram. H
 
 | Fecha | Decisión | Por qué |
 |---|---|---|
+| 12/11 | **El test se hace en 1 día: USD 25 en 24 horas** (no 8,33 por día durante 3 días). Se carga como presupuesto total con fecha de fin, para que no se pase | Lo decidieron los dueños. Riesgo aceptado: un solo día es más ruidoso (Meta todavía está aprendiendo) y no hay «3 días sin tocar» |
 | 12/11 | Los textos de los 5 anuncios pasan de $7.990 a **$9.990** (`anuncios/anuncios.md`). Las piezas no muestran el precio, así que no hay que rearmarlas | El precio de la tienda cambió; un precio distinto en el anuncio y en la landing trae rechazos y reclamos |
 | 12/11 | El upsell 2 «El mes resuelto» (30 días de Instagram y WhatsApp) queda hecho pero sin cargar: se carga si la oferta valida (hace falta 1 upsell extra en el plan) | El plan Max permite 3 upsells por tienda y ya se usan los 3. PDF en `areas/oferta/upsell-2-mes-resuelto/` |
 | 12/11 | **Precios nuevos:** libro 9.990, Fotos 5.990, Planilla 4.990, upsell 16.990. Reemplaza la decisión del 10/11 de testear a 7.990 | A 7.990, lo máximo que se puede pagar por venta (~USD 6,6) obliga a convertir cerca del 10% con el costo por visita de Taller Triple. Mejor testear al precio con el que se escalaría. Lo aprobaron los dueños («dale») |

@@ -11,7 +11,7 @@ Fuentes editables: `anuncios/src/creativos.html` (B, C y E) y `anuncios/src/vide
 | Cuenta | Velas arg (`1611303950747523`), con el pago pendiente ya regularizado |
 | Página | **«La IA hace, vos vendés»**, nueva, en Facebook e Instagram (la crean los dueños, tarea 8c). No se usa la de velas |
 | Campaña | `IA · Ventas · CBO` · objetivo Ventas · presupuesto de campaña |
-| Presupuesto | USD 25 en total: **USD 8,33 por día durante 3 días**, sin tocar nada en esos 3 días (decidido el 10/11) |
+| Presupuesto | **USD 25 en 24 horas**, con presupuesto total y fecha de fin (decidido el 12/11; reemplaza los USD 8,33 por día durante 3 días del 10/11) |
 | Conjunto | `Test 1 · Argentina abierto` · Argentina · 25–55 · Advantage+ audience |
 | Ubicaciones | Automáticas (Advantage+), **sin Audience Network** (en Taller Triple trajo clics que no llegaban a la landing) |
 | Optimización | Compra (píxel «velas» `1439230865058805`, cargado en la tienda nueva) |

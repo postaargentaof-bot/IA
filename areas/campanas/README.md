@@ -9,8 +9,8 @@
 | Qué | Valor |
 |---|---|
 | Cuenta | Velas arg `1611303950747523` |
-| Objetivo | Ventas · CBO · USD 8,33 por día · puja de volumen más alto |
-| Tope | USD 25: al publicar se pone fecha de fin a los 3 días (el tope de gasto de Meta exige un mínimo de USD 100) |
+| Objetivo | Ventas · CBO · puja de volumen más alto · en el borrador figura USD 8,33 por día, **pero se publica con presupuesto total de USD 25 en 24 horas** (decisión del 12/11) |
+| Tope | Presupuesto **total** de USD 25, con inicio y fin a las 24 horas, que se carga al publicar. No va como presupuesto diario: Meta puede pasarse hasta un 75% del diario en un día |
 | Conjunto | «Test 1 · Argentina abierto» `52619163277535` · Argentina · 25–55 como sugerencia (Advantage+ audience) · Facebook, Instagram y Messenger (sin Audience Network) · optimiza por Compra en el píxel «velas» `1439230865058805` |
 | Identidad | Página «La IA hace, vos vendés» `1492900110562845` · Instagram @laiahacevosvendes `17841452836464057` |
 | Botón | Comprar · marcado «hecho con IA» · mejoras automáticas de Advantage+ creative apagadas |
