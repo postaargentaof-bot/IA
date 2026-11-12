@@ -16,11 +16,11 @@
 
 | Tarea | Área | Quién | Para cuándo | Chat | Nota |
 |---|---|---|---|---|---|
-| Pagar la cuenta de Meta «Velas arg» (está en período de gracia) | campanas | {{NOMBRE}} | Hoy | — | Sin esto no se lanza nada |
 | En el panel: downsell de «Las 200 instrucciones» al 50% (rama «rechazado» del upsell) y «La planilla» como primer bump (Diseño de ebooks → ⋮ → Mover antes) | oferta | {{NOMBRE}} | Hoy | — | El conector no puede hacer estas dos. Después, Claude verifica |
 | Crear un mail de la marca y cambiarlo en la landing (hoy aparece el de Taller Triple) | landing | {{NOMBRE}} + Claude | Antes de pautar | — | Aparece 3 veces en el HTML |
 | Píxel nuevo para «La IA hace» y cargarlo en la tienda con su token | campanas | {{NOMBRE}} + Claude | Antes de pautar | — | Hoy hay un solo píxel («velas») para las dos tiendas |
 | Compra de prueba real con los 2 bumps y el upsell, y confirmar la Compra en Resumen | landing | {{NOMBRE}} | Antes de pautar | — | Después se reembolsa desde Mercado Pago |
+| Instagram de la marca: perfil, 9 publicaciones y destacadas, conectado a la página y al portfolio | creativos | Toto | Antes de pautar | — | `areas/creativos/instagram-perfil.md` |
 | Producir la tanda 1 (5 piezas) | creativos | {{NOMBRE}} + Claude | Antes de pautar | — | `areas/creativos/tandas/tanda-1/guiones.md`. Presupuesto de generación antes |
 | Armar la CBO en borrador y lanzarla con el sí | campanas | Claude + {{NOMBRE}} | Después de lo anterior | — | `reglas/08`: 1 conjunto, 5 anuncios, 2–3 tickets por día |
 | Cargar el upsell 2 «El mes resuelto» (12.990, downsell 50%) cuando la oferta valide. Hace falta 1 upsell extra en el plan | oferta | {{NOMBRE}} + Claude | Después del test | — | PDF listo en `areas/oferta/upsell-2-mes-resuelto/` |
@@ -34,6 +34,7 @@
 
 | Tarea | Área | Quién | Hecho el | Nota |
 |---|---|---|---|---|
+| Pagar la deuda de la cuenta de Meta «Velas arg» | campanas | {{NOMBRE}} | 12/11/2026 | Claude verificó: la cuenta está ACTIVA |
 | Auditoría completa antes de pautar | oferta | Claude | 12/11/2026 | `areas/oferta/auditoria-2026-11-12.md` |
 | Precios nuevos: front 9.990, planilla 4.990, fotos 5.990 y upsell 16.990 | oferta | Claude | 12/11/2026 | La landing toma el precio sola (`{{price}}`). La oferta post-compra ya muestra 16.990 |
 | Ocultar la barra «personas comprando» en los checkouts de las dos tiendas | landing | Claude | 12/11/2026 | Era un contador falso. Los timers de los bumps ya estaban apagados |

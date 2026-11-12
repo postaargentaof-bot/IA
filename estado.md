@@ -1,10 +1,10 @@
-# Estado · 12/11/2026 · Precios nuevos aplicados; faltan 3 bloqueos
+# Estado · 12/11/2026 · Cuenta de Meta al día; falta preparar la salida
 
 > Una página. Se reescribe al final de cada tarea; no se acumula. Lo viejo va a `decisiones.md` o se borra. Las tareas viven en `tareas.md`, no acá.
 
 ## En una línea
 
-**«La IA hace, vos vendés» está armada y la landing está bien.** Antes de pautar faltan 3 cosas: sacar la cuenta de Meta del período de gracia, darle su propio píxel y hacer la compra de prueba. Los precios nuevos ya están cargados. El detalle está en `areas/oferta/auditoria-2026-11-12.md`.
+**«La IA hace, vos vendés» está armada y la landing está bien.** La cuenta de Meta ya está activa. Antes de pautar faltan: el píxel propio, el downsell y el orden de los bumps, el mail de la marca, el Instagram (lo hace Toto), la compra de prueba y los 5 creativos. Los precios nuevos ya están cargados. El detalle está en `areas/oferta/auditoria-2026-11-12.md`.
 
 ## Números
 
@@ -19,11 +19,11 @@
 
 ## Campañas
 
-Ninguna activa. La cuenta «Velas arg» está **en período de gracia**: hay un pago pendiente.
+Ninguna activa. La cuenta «Velas arg» está **activa** (la deuda se pagó el 12/11).
 
 ## Esta semana, lo que más importa
 
-1. Pagar la cuenta de Meta.
+1. Instagram de la marca (Toto): `areas/creativos/instagram-perfil.md`.
 2. En el panel: armar el downsell al 50% y poner la planilla como primer bump (2 minutos).
 3. Píxel nuevo para «La IA hace» y la compra de prueba completa.
 4. Tanda 1 (5 creativos): los guiones están en `areas/creativos/tandas/tanda-1/`.
