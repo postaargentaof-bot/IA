@@ -1,0 +1,61 @@
+<!doctype html><html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>A · Cuaderno</title><link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght,SOFT,WONK@9..144,600..700,100,1&family=Instrument+Sans:wght@400;600;700&family=Caveat:wght@500&display=swap" rel="stylesheet"><style>*{box-sizing:border-box;margin:0;padding:0}img{display:block;max-width:100%}
+:root{--p:#F3EDE2;--ink:#1D2433;--mut:#5B5F6B;--red:#D9482B;--hl:#FFE36B;--line:#D9CFBE}
+body{background:var(--p);color:var(--ink);font:17px/1.6 "Instrument Sans",system-ui,sans-serif}
+.w{max-width:1080px;margin:0 auto;padding:0 22px}
+h1,h2{font-family:Fraunces,Georgia,serif;font-weight:700;letter-spacing:-.015em;line-height:1.02;font-variation-settings:"SOFT" 100,"WONK" 1}
+.mano{font-family:Caveat,cursive;color:var(--red);font-size:26px;line-height:1.1}
+mark{background:linear-gradient(transparent 55%,var(--hl) 55%,var(--hl) 92%,transparent 92%);color:inherit;padding:0 .08em}
+.btn{display:inline-block;background:var(--ink);color:var(--p);font-weight:700;font-size:18px;padding:17px 28px;text-decoration:none;border-radius:4px;box-shadow:5px 5px 0 var(--red)}
+.top{padding:22px 0;border-bottom:1.5px solid var(--ink)}
+.top .w{display:flex;justify-content:space-between;align-items:center;font-weight:700}
+.top span{font-family:Caveat;font-size:24px;color:var(--red);font-weight:400}
+.hero{padding:56px 0 70px}
+.hero .w{display:grid;grid-template-columns:1.15fr .85fr;gap:56px;align-items:center}
+.hero h1{font-size:clamp(50px,8.4vw,96px)}
+.hero .sub{font-size:clamp(20px,2.6vw,24px);margin:22px 0 12px;font-weight:600}
+.hero .apoyo{color:var(--mut);max-width:520px;margin-bottom:30px}
+.nota{font-size:14px;color:var(--mut);margin-top:16px}
+.foto{position:relative;transform:rotate(2deg);background:#fff;padding:12px 12px 52px;box-shadow:0 14px 30px rgba(29,36,51,.18)}
+.foto img{aspect-ratio:4/5;object-fit:cover;width:100%}
+.foto .mano{position:absolute;bottom:10px;left:16px;color:var(--ink)}
+.cinta{position:absolute;top:-14px;left:50%;width:110px;height:30px;background:rgba(255,227,107,.8);transform:translateX(-50%) rotate(-4deg)}
+.flecha{position:absolute;left:-118px;top:30%;width:130px}
+.hoja{background:#FFFDF8;border:1.5px solid var(--ink);border-radius:6px;padding:46px 0 30px;margin:0 0 70px;
+ background-image:repeating-linear-gradient(transparent 0 37px,var(--line) 37px 38px);position:relative}
+.hoja:before{content:"";position:absolute;left:78px;top:0;bottom:0;border-left:2px solid #EFA79A}
+.hoja h2{font-size:clamp(34px,5vw,52px);padding:0 30px 0 104px;margin-bottom:6px}
+.hoja .intro{padding:0 30px 0 104px;color:var(--mut);margin-bottom:22px}
+.item{display:grid;grid-template-columns:58px 1fr 150px;gap:22px;align-items:center;padding:14px 30px 14px 30px}
+.chk{width:30px;height:30px;border:2px solid var(--ink);border-radius:4px;position:relative;justify-self:end}
+.chk:after{content:"✓";position:absolute;left:3px;top:-14px;font-family:Caveat;font-size:44px;color:var(--red)}
+.item .n{font-family:Caveat;font-size:24px;color:var(--red)}
+.item h3{font-family:Fraunces,serif;font-size:22px;font-weight:600;line-height:1.15}
+.item p{color:var(--mut);font-size:15.5px}
+.item img{width:150px;aspect-ratio:3/2;object-fit:cover;border-radius:3px;transform:rotate(-1.5deg);box-shadow:0 4px 10px rgba(0,0,0,.12)}
+.item:nth-child(even) img{transform:rotate(1.5deg)}
+.precio{border-top:1.5px solid var(--ink);padding:64px 0 90px}
+.precio .w{display:grid;grid-template-columns:1fr 1fr;gap:50px;align-items:start}
+.precio h2{font-size:clamp(36px,5vw,56px)}
+.ticket{background:#fff;border:1.5px solid var(--ink);padding:30px;border-radius:6px;box-shadow:8px 8px 0 var(--ink)}
+.ticket ul{list-style:none;margin:6px 0 22px}.ticket li{padding:9px 0 9px 30px;border-bottom:1px dashed var(--line);position:relative}
+.ticket li:before{content:"→";position:absolute;left:0;color:var(--red);font-weight:700}
+.monto{font-family:Fraunces,serif;font-size:58px;font-weight:700;line-height:1}
+.sello{display:flex;gap:12px;align-items:center;margin-top:20px;font-size:14px;color:var(--mut)}
+.sello b{flex:none;width:64px;height:64px;border:2px solid var(--red);border-radius:50%;display:grid;place-items:center;color:var(--red);font-family:Caveat;font-size:22px;transform:rotate(-10deg);line-height:.9;text-align:center}
+@media(max-width:820px){body{font-size:16px}.hero{padding:30px 0 50px}.hero .w,.precio .w{grid-template-columns:1fr;gap:34px}
+.foto{width:72%;margin:0 auto}.flecha{display:none}.btn{display:block;text-align:center}
+.hoja:before{left:40px}.hoja h2,.hoja .intro{padding:0 18px 0 56px}.item{grid-template-columns:34px 1fr;padding:12px 16px 12px 8px;gap:14px}.item img{display:none}.item h3{font-size:19px}}
+</style></head><body>
+<div class="top"><div class="w">La IA hace, vos vendés <span>ebook · 7 días</span></div></div>
+<section class="hero"><div class="w"><div>
+<div class="mano">para emprendedores que venden por WhatsApp e Instagram</div>
+<h1>La IA hace,<br><mark>vos vendés.</mark></h1>
+<p class="sub">Cómo usar la IA en tu emprendimiento en 7 días, aunque no sepas nada de tecnología.</p><p class="apoyo">Una tarea por día, una hora por día. Al final de la semana, la IA te contesta WhatsApp, te escribe los posteos y te ayuda con los precios, con tus datos y tu forma de hablar.</p>
+<a class="btn" href="/checkout">Quiero el libro · $ 7.990</a><p class="nota">PDF por mail apenas se acredita el pago · Garantía de 7 días</p></div>
+<div class="foto"><span class="cinta"></span><img src="../assets/IMG-01.jpg" alt=""><span class="mano">una hora por día, con el mate al lado</span></div>
+</div></section>
+<div class="w"><div class="hoja"><h2>Tu semana, día por día</h2><p class="intro">Cada día termina con algo hecho y funcionando. Lo tildás y seguís.</p><div class="item"><span class="chk"></span><div><div class="n">Día 0</div><h3>La ficha de tu negocio</h3><p>La página que le cuenta a la IA quién sos. La armás una vez y la usás siempre.</p></div><img src="../assets/IMG-07.jpg" alt=""></div><div class="item"><span class="chk"></span><div><div class="n">Día 1</div><h3>WhatsApp sin perder la tarde</h3><p>Tus 15 respuestas más usadas, cargadas como respuestas rápidas.</p></div><img src="../assets/IMG-08.jpg" alt=""></div><div class="item"><span class="chk"></span><div><div class="n">Día 2</div><h3>Instagram sin quedarte en blanco</h3><p>30 ideas, una semana de posteos en tu voz y tu biografía renovada.</p></div><img src="../assets/IMG-09.jpg" alt=""></div><div class="item"><span class="chk"></span><div><div class="n">Día 3</div><h3>Vender más con lo que ya tenés</h3><p>Descripciones que venden y mensajes para el que preguntó y no compró.</p></div><img src="../assets/IMG-10.jpg" alt=""></div><div class="item"><span class="chk"></span><div><div class="n">Día 4</div><h3>Los números sin dolor de cabeza</h3><p>Cuánto te cuesta de verdad, con tus horas, y un precio que te cierre.</p></div><img src="../assets/IMG-11.jpg" alt=""></div><div class="item"><span class="chk"></span><div><div class="n">Día 5</div><h3>Clientes difíciles</h3><p>El reclamo, el que regatea, el que cancela y la mala reseña.</p></div><img src="../assets/IMG-12.jpg" alt=""></div><div class="item"><span class="chk"></span><div><div class="n">Día 6</div><h3>Promos e ideas</h3><p>Tu calendario del año y promos que no te hacen perder plata.</p></div><img src="../assets/IMG-13.jpg" alt=""></div><div class="item"><span class="chk"></span><div><div class="n">Día 7</div><h3>Tu semana en orden</h3><p>Pedidos, agenda y una rutina de 20 minutos por día.</p></div><img src="../assets/IMG-14.jpg" alt=""></div></div></div>
+<section class="precio"><div class="w"><div><div class="mano">lo que te llevás</div><h2>Todo listo para usar, por $ 7.990</h2><p class="apoyo" style="margin-top:18px">Sin suscripción ni cuotas: pagás una vez con Mercado Pago y el PDF es tuyo.</p></div>
+<div class="ticket"><ul><li>El libro completo: Día 0, los 7 días y qué hacer la semana 2</li><li>40 instrucciones para copiar y pegar en ChatGPT</li><li>La plantilla de la ficha de tu negocio</li><li>Ejemplos en 4 rubros en cada día</li><li>Una tarea para tildar al final de cada día</li></ul><div class="monto">$ 7.990</div>
+<a class="btn" style="margin-top:20px" href="/checkout">Quiero el libro</a><div class="sello"><b>7 días<br>garantía</b><span>Garantía de 7 días, sin preguntas. Si no te sirve, escribinos a tallertriplearg@gmail.com y te devolvemos la plata.</span></div></div></div></section></body></html>

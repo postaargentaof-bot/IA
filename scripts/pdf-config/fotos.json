@@ -1,0 +1,28 @@
+{
+ "out": "pdf/bump-fotos-con-celular-e-ia.pdf",
+ "meta_title": "Fotos de producto con el celular + IA",
+ "footer": "Fotos de producto con el celular + IA",
+ "chapters": [
+  "bumps/fotos-con-celular-e-ia.md"
+ ],
+ "strip": [
+  [
+   "\\A# Fotos de producto con el celular \\+ IA\\n\\n### .*?\\n\\n\\*Bonus.*?\\*\\n\\n---\\n\\n## Antes de empezar: la regla de oro",
+   "# Antes de empezar: la regla de oro"
+  ]
+ ],
+ "cover": {
+  "bg": "#2E1F73",
+  "kicker": "Bonus de «La IA hace, vos vendés»",
+  "title": "Fotos de producto con el celular + IA",
+  "fs": "30",
+  "stop": "156",
+  "sub": "Que tus productos se vean como de estudio, con el celular que ya tenés y herramientas gratis",
+  "bottom": "La IA puede cambiar el fondo, la luz y el ambiente. Nunca el producto.",
+  "image": "IMG-20"
+ },
+ "openers": {
+  "Parte 1 · Sacar la foto": "IMG-21",
+  "Parte 2 · Editarla": "IMG-22"
+ }
+}
