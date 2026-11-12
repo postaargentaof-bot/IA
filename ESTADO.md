@@ -73,6 +73,7 @@ Público: emprendedores y negocios chicos que venden por WhatsApp e Instagram. H
 - **Tarea 8b (11/11): los 5 creativos producidos.** Piezas en `anuncios/img/` (`ia1-precio` video, `ia2-semana-1…6` carrusel, `ia3-nosuena`, `ia4-sol` video, `ia5-audio`; cada una en 4:5 y 9:16), textos y estructura de campaña en `anuncios/anuncios.md`, guiones en `anuncios/guiones.md`, 2 ganchos de reserva de A en `anuncios/img/reserva/`. Videos: 18,6 s y 21,3 s, −14 LUFS, menos de 5 MB, texto entre los 290 y los 1.290 px. **Versión 2 (11/11): animados con código, con música y efectos propios** (`anuncios/src/video2/`, `./scripts/armar_videos2.sh`). Voces guardadas en ElevenLabs y en `anuncios/audio/` (rearmar no gasta). Revisados con capturas, también a tamaño de celular
 - Análisis de errores del test de Taller Triple y 14 ideas de anuncios, con los 5 elegidos y por qué se descartó el resto: `anuncios/ideas.md` (11/11, chat de creativos, fase 1)
 - Lista de prompts de imágenes: `imagenes/prompts.md`
+- **Tarea 7 hecha (12/11):** el evento Compra de la prueba #3089352 llegó al píxel «velas» (visto el 12/11 a las 9 ART; tardó varias horas en aparecer)
 - **Campaña prendida (12/11, 00:00 ART):** «IA · Ventas · CBO» `52619163206735` en «Velas arg», conjunto «Test 1 · Argentina abierto», 5 anuncios, optimiza Compra con el píxel «velas». **Presupuesto total USD 45** (no los 25 del plan) del 12/11 al 15/11. No la creó este chat
 - **12/11:** deuda de Meta pagada («Velas arg» ACTIVA). Instagram `@laiahacevosvendes` creado, conectado a la página y disponible para anunciar; 3 posteos subidos. Compra de prueba #3089352 (ARS 1.000, Mercado Pago, aprobada). Precio del libro de nuevo en 9.990
 - Downsell post-compra (12/11, verificado con el conector): si rechaza Las 200 instrucciones a 16.990, se le ofrece a 8.495 (50 %). Oferta `1bba764b-1066-41b4-9cf6-d2587b22d44b`, creada en el panel. Usa el diseño de plantilla, no `landing/postcompra.html`: revisarla en la compra de prueba
@@ -98,7 +99,6 @@ Público: emprendedores y negocios chicos que venden por WhatsApp e Instagram. H
 |---|---|---|---|---|
 | 5 | Probar la planilla en Google Sheets (colores y listas) y la instrucción maestra en ChatGPT gratis | Dueños | — | Antes de vender |
 | 6c | En Diseño de checkout: revisar los sellos, que «Días de garantía» diga 7 y cómo se ve el bloque de la garantía. Mirar la tienda en compu y celular y el checkout con los 2 bumps | Dueños | 7 | Los bonos y el downsell viejo se borraron (11/11) |
-| 7 | Ver el evento Compra de la prueba (#3089352) en el Administrador de eventos | Claude | 9 | La venta está aprobada en Impultienda. El píxel ya recibe PageView, AddToCart e InitiateCheckout de la tienda nueva; la Compra sale por el servidor al terminar el post-compra o 15 min después. Revisar de nuevo |
 | 8 | Leer todo (ebook, bumps, upsell, landing) y marcar cambios | Dueños | — | Se puede hacer en paralelo |
 | 10 | Leer el test con el criterio de `plan-ebook-ia.md` y decidir | Chat principal | — | Las ventas se cuentan en Impultienda, no en Meta |
 
