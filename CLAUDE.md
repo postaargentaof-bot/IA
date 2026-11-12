@@ -1,6 +1,6 @@
 # Cortex · {{NEGOCIO}}
 
-> **Si `estado.md` dice «SIN ARRANCAR», antes de cualquier otra cosa hacé la entrevista de arranque: `.claude/skills/arranque/SKILL.md`.**
+> **El estado principal está en `ESTADO.md`.** La entrevista de arranque (`.claude/skills/arranque/SKILL.md`) todavía no se hizo, por eso quedan `{{NOMBRE}}` y otros huecos sin completar.
 
 Sos el **orquestador** de {{NEGOCIO}}, el negocio de {{NOMBRE}}: productos digitales low ticket (ebooks y PDF) vendidos con Meta Ads en {{PAÍS}}. Oferta activa: **{{OFERTA}}**. Si todavía no hay ninguna, se elige con `reglas/03-oferta.md`.
 
@@ -21,7 +21,7 @@ Este repo es **la única fuente de verdad**. Lo que no está acá no existe. Los
 
 ## Al empezar cualquier tarea (siempre, en este orden)
 
-1. Leé `estado.md`: qué pasa hoy.
+1. Leé `ESTADO.md`: qué pasa hoy.
 2. Mirá `tareas.md`.
    - Si el pedido es una de esas tareas, pasala a «en curso» y anotá el nombre de este chat.
    - Si es trabajo nuevo de más de un paso, creá la tarea.
@@ -32,7 +32,7 @@ Este repo es **la única fuente de verdad**. Lo que no está acá no existe. Los
 ## Al terminar cualquier tarea (siempre)
 
 1. **Tarea:** pasala a «hecho» en `tareas.md`, con una línea en la nota: qué hiciste y dónde quedó. Lo que quedó para {{NOMBRE}} va como tarea nueva con quién = {{NOMBRE}}.
-2. Reescribí `estado.md`. Máximo una página: se reescribe, no se acumula.
+2. Reescribí `ESTADO.md`. Máximo una página: se reescribe, no se acumula.
 3. Si hubo una decisión, sumala arriba de `decisiones.md`, con la fecha, qué se decidió, por qué y quién lo decidió.
 4. Si cambió una regla, seguí `aprendizajes/COMO-APRENDE.md`: **una regla nunca se pisa sin el OK de {{NOMBRE}}.**
 5. Guardá todo:
@@ -45,7 +45,7 @@ Este repo es **la única fuente de verdad**. Lo que no está acá no existe. Los
 ## Varios chats a la vez
 
 - **Cada chat trabaja una tarea**, y solo en los archivos de su área.
-- **`estado.md` y `decisiones.md` los toca solo el chat principal o `/cierre`.** Un chat paralelo:
+- **`ESTADO.md` y `decisiones.md` los toca solo el chat principal o `/cierre`.** Un chat paralelo:
   - deja lo suyo en sus archivos y en la nota de su tarea, en `tareas.md`;
   - si {{NOMBRE}} decidió algo, lo marca en esa nota con «para decisiones.md».
 - En `tareas.md`, cada chat edita solo la fila de su tarea. Si `git pull --rebase` da conflicto ahí, se resuelve dejando las dos versiones.
@@ -70,7 +70,7 @@ Detalle completo: `reglas/`.
 
 | Dónde | Qué hay |
 |---|---|
-| `estado.md` | Qué pasa hoy (una página) |
+| `ESTADO.md` | Qué pasa hoy (una página) |
 | `tareas.md` | El tablero de tareas |
 | `decisiones.md` | Registro de decisiones, la más nueva arriba |
 | `reglas/` | El playbook vivo, partido por tema |
@@ -121,6 +121,6 @@ Delegá en ellos para que el contexto de esta conversación quede limpio. Pasale
 
 Se completa cuando se arma cada cosa.
 
-- Cuenta publicitaria: «Velas arg» `1611303950747523` (USD, en período de gracia al 12/11/2026). También hay una cuenta en ARS, `1373471201259121`, sin método de pago
-- Business Manager: «Ecom Manu» `2686565661799086` · Página: — · Instagram: — · Píxel o conjunto de datos: «velas» `1439230865058805` (hoy compartido; falta uno propio para «La IA hace»)
+- Cuenta publicitaria: «Velas arg» `1611303950747523` (USD, activa desde el 12/11/2026). También hay una cuenta en ARS, `1373471201259121`, sin método de pago
+- Business Manager: «Ecom Manu» `2686565661799086` · Página: «La IA hace, vos vendés» `1492900110562845` · Instagram: en armado · Píxel: «velas» `1439230865058805` (compartido; decisión de los dueños para el test, el píxel propio va si se escala)
 - Plataforma de venta: Impultienda + Mercado Pago · Tiendas: «La IA hace, vos vendés» `e36e2cbd-c356-48a0-85cb-259a02de2282` y Taller Triple `2839f946-6210-4e03-a620-44aa105606b1`

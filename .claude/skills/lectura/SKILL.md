@@ -17,4 +17,4 @@ description: Lectura del día - cómo viene Meta contra las ventas reales, qué 
    1. ejecutalo con el conector de Meta;
    2. verificá que quedó publicado y no en borrador;
    3. anotalo en `areas/campanas/registro.md`.
-5. **Cerrá:** `estado.md` si cambió algo, commit y push.
+5. **Cerrá:** `ESTADO.md` si cambió algo, commit y push.

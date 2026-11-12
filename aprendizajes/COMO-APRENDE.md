@@ -24,7 +24,7 @@ El agente `cerebro` clasifica cada aprendizaje en uno de estos tipos:
 | Tipo | Qué es | Qué pasa |
 |---|---|---|
 | **Cambia una regla** | Contradice o mejora algo de `reglas/` | Una propuesta de cambio, con el antes y el después |
-| **Táctica a probar** | Algo que hay que testear antes de que sea regla | Va como prueba a `estado.md`, con su criterio de éxito |
+| **Táctica a probar** | Algo que hay que testear antes de que sea regla | Va como prueba a `ESTADO.md`, con su criterio de éxito |
 | **Conocimiento** | Contexto útil que todavía no cambia nada | Se resume en `conocimiento/` |
 | **Ya lo sabíamos** | Repite una regla vigente | Se marca como confirmación: suma evidencia |
 

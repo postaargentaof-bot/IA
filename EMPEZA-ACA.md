@@ -10,7 +10,7 @@ Los chats se olvidan de todo, así que la memoria la lleva **un repo de GitHub**
 
 ```
               REPO EN GITHUB = la memoria del negocio
-   CLAUDE.md · estado.md · tareas.md · decisiones.md · reglas/ · areas/
+   CLAUDE.md · ESTADO.md · tareas.md · decisiones.md · reglas/ · areas/
           ▲                    ▲                     ▲
      lee y guarda         lee y guarda          lee y guarda
           │                    │                     │
@@ -84,7 +84,7 @@ Abrí un chat nuevo sobre el repo y escribí:
 
 > Hola, arranquemos. Haceme la entrevista de arranque.
 
-Claude te va a hacer unas 14 preguntas: quién sos, tu país, cuánta plata tenés para pautar, cuántas horas le dedicás, qué herramientas tenés y qué querés lograr. Con eso completa `CLAUDE.md`, `estado.md`, `tareas.md` y la ecuación. **Desde ahí, el sistema ya es tuyo.**
+Claude te va a hacer unas 14 preguntas: quién sos, tu país, cuánta plata tenés para pautar, cuántas horas le dedicás, qué herramientas tenés y qué querés lograr. Con eso completa `CLAUDE.md`, `ESTADO.md`, `tareas.md` y la ecuación. **Desde ahí, el sistema ya es tuyo.**
 
 ### 5 · Los conectores (cuando llegues a pautar)
 
@@ -155,7 +155,7 @@ El tope de pérdida por oferta lo definís en la entrevista. Axel usa USD 200.
 | Dónde | Qué hay |
 |---|---|
 | `CLAUDE.md` | Las instrucciones del orquestador. Las lee cada chat al arrancar |
-| `estado.md` | Qué pasa hoy, en una página |
+| `ESTADO.md` | Qué pasa hoy, en una página |
 | `tareas.md` | El tablero de tareas: quién hace qué y para cuándo |
 | `decisiones.md` | Cada decisión, con su fecha y su porqué. La más nueva va arriba |
 | `reglas/` | El playbook: ecuación, ofertas, producto, landing, Meta, creativos, testeo y reglas de juego |

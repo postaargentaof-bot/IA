@@ -2,7 +2,8 @@
 
 > Archivo principal del proyecto. **Todo chat lo lee al arrancar y lo actualiza al terminar.**
 > Rama de trabajo: `claude/dazzling-euler-7bk40o` (no `main`). Siempre `git pull --rebase` antes de `git push`: hay varios chats subiendo a la misma rama.
-> Última actualización: 11/11/2026 (chat de producción de creativos: tarea 8b hecha).
+> Última actualización: 12/11/2026 (chat de la auditoría: precios nuevos, deuda de Meta pagada, textos de los anuncios corregidos, kit instalado).
+> **Desde el 12/11 el kit está instalado:** este archivo sigue siendo el estado principal. Además están `tareas.md`, `decisiones.md`, `reglas/` y `areas/` (la auditoría completa está en `areas/oferta/auditoria-2026-11-12.md`).
 
 ## 1 · Qué estamos haciendo
 
@@ -21,10 +22,10 @@ Testear un ebook propio sobre cómo usar la IA en un emprendimiento, después de
 | 11/11 | El mail de entrega no se edita en Impultienda (no hay campo): la garantía va en la landing y en un bloque de texto debajo del botón de pagar del checkout. El email de contacto de la tienda (pie del mail) no se tocó | Limitación de Impultienda; el cambio del email de contacto no se aprobó |
 | 11/11 | Los 3 bonos inventados no se pueden desactivar desde el conector (en tiendas clásicas no se puede): los borran los dueños en el panel | Limitación de Impultienda |
 | 11/11 | Mail de contacto de la garantía: `tallertriplearg@gmail.com` (el mismo de Taller Triple / velas) | Lo eligieron los dueños; ya lo leen. Se aceptó que muestre otra marca |
-| Principal | La IA hace, vos vendés | ARS 7.990 | `pdf/la-ia-hace-vos-vendes.pdf` (69 págs.) |
-| Bump 1 | Fotos de producto con el celular + IA | ARS 4.990 | `pdf/bump-fotos-con-celular-e-ia.pdf` |
-| Bump 2 | La planilla lista para usar | ARS 3.990 | `bumps/planilla-de-tu-negocio.xlsx` |
-| Upsell post-compra | Las 200 instrucciones | ARS 12.990 | `pdf/las-200-instrucciones.pdf` |
+| Principal | La IA hace, vos vendés | ARS 9.990 (desde el 12/11) | `pdf/la-ia-hace-vos-vendes.pdf` (69 págs.) |
+| Bump 1 | Fotos de producto con el celular + IA | ARS 5.990 (desde el 12/11) | `pdf/bump-fotos-con-celular-e-ia.pdf` |
+| Bump 2 | La planilla lista para usar | ARS 4.990 (desde el 12/11) | `bumps/planilla-de-tu-negocio.xlsx` |
+| Upsell post-compra | Las 200 instrucciones | ARS 16.990 (desde el 12/11) | `pdf/las-200-instrucciones.pdf` |
 
 Subtítulo: «Cómo usar la IA en tu emprendimiento en 7 días, aunque no sepas nada de tecnología».
 Público: emprendedores y negocios chicos que venden por WhatsApp e Instagram. Herramienta: ChatGPT gratis.
@@ -33,6 +34,9 @@ Público: emprendedores y negocios chicos que venden por WhatsApp e Instagram. H
 
 | Fecha | Decisión | Por qué |
 |---|---|---|
+| 12/11 | Los textos de los 5 anuncios pasan de $7.990 a **$9.990** (`anuncios/anuncios.md`). Las piezas no muestran el precio, así que no hay que rearmarlas | El precio de la tienda cambió; un precio distinto en el anuncio y en la landing trae rechazos y reclamos |
+| 12/11 | El upsell 2 «El mes resuelto» (30 días de Instagram y WhatsApp) queda hecho pero sin cargar: se carga si la oferta valida (hace falta 1 upsell extra en el plan) | El plan Max permite 3 upsells por tienda y ya se usan los 3. PDF en `areas/oferta/upsell-2-mes-resuelto/` |
+| 12/11 | **Precios nuevos:** libro 9.990, Fotos 5.990, Planilla 4.990, upsell 16.990. Reemplaza la decisión del 10/11 de testear a 7.990 | A 7.990, lo máximo que se puede pagar por venta (~USD 6,6) obliga a convertir cerca del 10% con el costo por visita de Taller Triple. Mejor testear al precio con el que se escalaría. Lo aprobaron los dueños («dale») |
 | 12/11 | El test se anuncia desde «Velas arg» con el píxel «velas» y la página nueva. Si el test da bien y se escala: píxel propio (y evaluar cuenta propia) para el ebook, como pide el kit | La deuda se paga igual; la cuenta tiene historial y ya está conectada; con USD 25 lo aprendido de Taller Triple no pesa |
 | 11/11 | Los 5 creativos (versión 2) aprobados por los dueños como **listos para testear**: los vieron y escucharon con sonido (voz, acento y música) y no encontraron errores | Revisión de los dueños; Claude no puede escuchar el audio |
 | 11/11 | Versión 2 de los creativos: A y D animados con código (subtítulos karaoke, movimiento todo el tiempo), con música y efectos generados por código; D con estética propia (Sol de fondo, ciruela y rosa); B con gancho de dolor y resultados «Así queda»; C con respuesta genérica realista; E en amarillo | Lo pidieron los dueños después de la autocrítica (A y D se parecían y eran diapositivas). La música es propia porque la red de este entorno bloquea los bancos de música CC0 |
@@ -60,6 +64,8 @@ Público: emprendedores y negocios chicos que venden por WhatsApp e Instagram. H
 | 10/11 | Taller Triple cerrado; campaña «TT · Ventas · CBO» pausada | Lo decidieron los dueños |
 
 ## 4 · Hecho ✅
+
+- **12/11:** deuda de Meta pagada (cuenta ACTIVA) · precios nuevos cargados en Impultienda · textos de los anuncios con $9.990 · auditoría completa (`areas/oferta/auditoria-2026-11-12.md`) · upsell 2 hecho sin cargar · kit instalado en el repo
 
 - Ebook completo: `ebook/` (texto) → `pdf/la-ia-hace-vos-vendes.pdf`
 - Bump de fotos: `bumps/fotos-con-celular-e-ia.md` → PDF
@@ -90,19 +96,18 @@ Público: emprendedores y negocios chicos que venden por WhatsApp e Instagram. H
 
 | # | Tarea | Quién | Bloquea a | Notas |
 |---|---|---|---|---|
-| 1 | Pagar los ~USD 7 pendientes en Meta (cuenta «Velas arg» en período de gracia desde el 9/11) | Dueños | 9 | Meta Business Suite → Facturación y pagos → Pagar ahora. Si falla: habilitar la tarjeta para el exterior o cargar otra. **Lo pagan el 11/11** (ARS ~11.200) |
 | 5 | Probar la planilla en Google Sheets (colores y listas) y la instrucción maestra en ChatGPT gratis | Dueños | — | Antes de vender |
 | 6c | En Diseño de checkout: revisar los sellos, que «Días de garantía» diga 7 y cómo se ve el bloque de la garantía. Mirar la tienda en compu y celular y el checkout con los 2 bumps | Dueños | 7 | Los bonos y el downsell ya se borraron (11/11) |
 | 7 | Compra de prueba + evento Compra visible en el Administrador de eventos | Dueños + Claude | 9 | El píxel ya está cargado y verificado (10/11). Mercado Pago ya está (11/11); sin bloqueos en el Diagnóstico desde el 11/11; antes, la revisión de la 6c. La tienda en vivo no se puede abrir desde las sesiones de Claude (Cloudflare frena el navegador automático): la miran los dueños |
 | 8 | Leer todo (ebook, bumps, upsell, landing) y marcar cambios | Dueños | — | Se puede hacer en paralelo |
-| 8c | Instagram de la página nueva: crear la cuenta profesional y conectarla a la página. Opcional: sumar la página al portfolio «Ecom Manu» y a «Velas arg» | Dueños | — | La página de Facebook ya existe (12/11, `1492900110562845`) y se puede usar en anuncios. Sin Instagram, los anuncios de IG salen con el nombre de la página de Facebook. Datos en `pagina-meta/datos.md` |
+| 8c | **En curso (Toto, 12/11).** Guía: `areas/creativos/instagram-perfil.md`. Instagram de la página nueva: crear la cuenta profesional y conectarla a la página. Opcional: sumar la página al portfolio «Ecom Manu» y a «Velas arg» | Dueños | — | La página de Facebook ya existe (12/11, `1492900110562845`) y se puede usar en anuncios. Sin Instagram, los anuncios de IG salen con el nombre de la página de Facebook. Datos en `pagina-meta/datos.md` |
 | 9 | Crear la campaña en Meta y prenderla | Claude, con el «sí» de los dueños | 10 | Estructura, textos y qué archivo va en cada ubicación en `anuncios/anuncios.md`. Creativos aprobados el 11/11, también con sonido. Marcar que las imágenes y las voces son hechas con IA |
 | 10 | Leer el test con el criterio de `plan-ebook-ia.md` y decidir | Chat principal | — | Las ventas se cuentan en Impultienda, no en Meta |
 
 ## 6 · Datos útiles
 
 - **Vencimientos (revisado 12/11):** Impultienda plan Max en prueba gratis hasta el **21/12/2026** (después cobra; comisión 2 % por venta). ElevenLabs: el chat «Creativos tanda 1» (Taller Triple) dejó anotado cancelarlo antes del **6/12** si no se usa más.
-- Meta 12/11: «Velas arg» sigue en período de gracia (deuda sin pagar). Página nueva «La IA hace, vos vendés» `1492900110562845` (con permiso para anunciar; todavía sin Instagram).
+- Meta 12/11: «Velas arg» **ACTIVA** (los dueños pagaron la deuda; Claude lo verificó). Página nueva «La IA hace, vos vendés» `1492900110562845` (con permiso para anunciar; todavía sin Instagram).
 
 - Impultienda: tienda nueva «La IA hace» (`e36e2cbd-c356-48a0-85cb-259a02de2282`, `la-ia-hace.impultienda.ar`). Tienda vieja «Taller Triple» (`2839f946-6210-4e03-a620-44aa105606b1`), plan Max, ARS, Mercado Pago — no usar para esto.
 - Meta: cuenta publicitaria «Velas arg» (`1611303950747523`), en USD.

@@ -14,5 +14,5 @@ Seguí `aprendizajes/COMO-APRENDE.md`.
 5. **Con la respuesta:**
    - **Sí:** editá la regla (con su fecha de actualización) y anotalo en `decisiones.md`.
    - **No:** anotalo como descartado, con el motivo.
-   - **Probar:** sumalo a `estado.md` como prueba, con fecha y criterio de éxito.
+   - **Probar:** sumalo a `ESTADO.md` como prueba, con fecha y criterio de éxito.
 6. **Pasá lo procesado** a `aprendizajes/procesados/AAAA-MM.md`. Commit (`reglas: …`) y push.

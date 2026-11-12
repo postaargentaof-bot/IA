@@ -16,13 +16,9 @@
 
 | Tarea | Área | Quién | Para cuándo | Chat | Nota |
 |---|---|---|---|---|---|
-| En el panel: downsell de «Las 200 instrucciones» al 50% (rama «rechazado» del upsell) y «La planilla» como primer bump (Diseño de ebooks → ⋮ → Mover antes) | oferta | {{NOMBRE}} | Hoy | — | El conector no puede hacer estas dos. Después, Claude verifica |
-| Crear un mail de la marca y cambiarlo en la landing (hoy aparece el de Taller Triple) | landing | {{NOMBRE}} + Claude | Antes de pautar | — | Aparece 3 veces en el HTML |
-| Píxel nuevo para «La IA hace» y cargarlo en la tienda con su token | campanas | {{NOMBRE}} + Claude | Antes de pautar | — | Hoy hay un solo píxel («velas») para las dos tiendas |
-| Compra de prueba real con los 2 bumps y el upsell, y confirmar la Compra en Resumen | landing | {{NOMBRE}} | Antes de pautar | — | Después se reembolsa desde Mercado Pago |
+| Compra de prueba real con los 2 bumps (total 20.970) y el upsell (16.990); confirmar la Compra en Resumen del píxel «velas» | landing | {{NOMBRE}} | Antes de pautar | — | Es la tarea 7 de `ESTADO.md`. Después se reembolsa desde Mercado Pago |
 | Instagram de la marca: perfil, 9 publicaciones y destacadas, conectado a la página y al portfolio | creativos | Toto | Antes de pautar | — | `areas/creativos/instagram-perfil.md` |
-| Producir la tanda 1 (5 piezas) | creativos | {{NOMBRE}} + Claude | Antes de pautar | — | `areas/creativos/tandas/tanda-1/guiones.md`. Presupuesto de generación antes |
-| Armar la CBO en borrador y lanzarla con el sí | campanas | Claude + {{NOMBRE}} | Después de lo anterior | — | `reglas/08`: 1 conjunto, 5 anuncios, 2–3 tickets por día |
+| Armar la CBO y lanzarla con el sí | campanas | Claude + {{NOMBRE}} | Después de la compra de prueba | — | Estructura en `anuncios/anuncios.md` (USD 25 en total, 3 días sin tocar) |
 | Cargar el upsell 2 «El mes resuelto» (12.990, downsell 50%) cuando la oferta valide. Hace falta 1 upsell extra en el plan | oferta | {{NOMBRE}} + Claude | Después del test | — | PDF listo en `areas/oferta/upsell-2-mes-resuelto/` |
 | Dominio propio, verificación en Meta y Brevo para los carritos | landing | {{NOMBRE}} | Semana 1 | — | Riesgo 🟡, no frena la salida |
 | Entrevista de arranque | general | Claude | Día 1 | — | `/arranque` |
@@ -35,7 +31,9 @@
 | Tarea | Área | Quién | Hecho el | Nota |
 |---|---|---|---|---|
 | Pagar la deuda de la cuenta de Meta «Velas arg» | campanas | {{NOMBRE}} | 12/11/2026 | Claude verificó: la cuenta está ACTIVA |
+| Textos de los 5 anuncios: $7.990 → $9.990 | creativos | Claude | 12/11/2026 | `anuncios/anuncios.md`. Las piezas no muestran precio |
+| Juntar las ramas del repo y dejar `ESTADO.md` como único estado (`estado.md` chocaba en Windows y Mac) | sistema | Claude | 12/11/2026 | — |
 | Auditoría completa antes de pautar | oferta | Claude | 12/11/2026 | `areas/oferta/auditoria-2026-11-12.md` |
 | Precios nuevos: front 9.990, planilla 4.990, fotos 5.990 y upsell 16.990 | oferta | Claude | 12/11/2026 | La landing toma el precio sola (`{{price}}`). La oferta post-compra ya muestra 16.990 |
 | Ocultar la barra «personas comprando» en los checkouts de las dos tiendas | landing | Claude | 12/11/2026 | Era un contador falso. Los timers de los bumps ya estaban apagados |
-| Guiones de la tanda 1 | creativos | Claude | 12/11/2026 | `areas/creativos/tandas/tanda-1/guiones.md` |
+| Guiones de la tanda 1 | creativos | Claude | 12/11/2026 | `areas/creativos/tandas/tanda-1/guiones.md`. Superados: los 5 creativos ya los había producido otro chat (`anuncios/`). Quedan como ideas para renovar |

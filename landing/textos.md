@@ -7,10 +7,10 @@
 
 | Qué | Precio |
 |---|---|
-| Ebook «La IA hace, vos vendés» | ARS 7.990 |
-| Bump 1 · Fotos de producto con el celular + IA | ARS 4.990 |
-| Bump 2 · La planilla lista para usar | ARS 3.990 |
-| Upsell post-compra · Las 200 instrucciones | ARS 12.990 |
+| Ebook «La IA hace, vos vendés» | ARS 9.990 (desde el 12/11; antes 7.990) |
+| Bump 1 · Fotos de producto con el celular + IA | ARS 5.990 (desde el 12/11) |
+| Bump 2 · La planilla lista para usar | ARS 4.990 (desde el 12/11) |
+| Upsell post-compra · Las 200 instrucciones | ARS 16.990 (desde el 12/11) |
 
 ---
 

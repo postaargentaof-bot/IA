@@ -1,6 +1,6 @@
 ---
 name: arranque
-description: Entrevista de arranque del Cortex. Completa CLAUDE.md, estado, tareas y la ecuación con los datos del dueño. Usar con "/arranque", "arranquemos", "haceme la entrevista" o cuando estado.md dice SIN ARRANCAR.
+description: Entrevista de arranque del Cortex. Completa CLAUDE.md, estado, tareas y la ecuación con los datos del dueño. Usar con "/arranque", "arranquemos", "haceme la entrevista" o cuando ESTADO.md dice SIN ARRANCAR.
 ---
 
 # /arranque
@@ -59,7 +59,7 @@ Saludá en dos líneas y explicá para qué sirve: con esto, el sistema pasa a s
    Buscalos con `grep -rn "{{NOMBRE}}\|{{NEGOCIO}}\|{{PAÍS}}\|{{OFERTA}}\|{{TONO}}\|{{PLATAFORMA}}\|{{TOPE}}\|{{FECHA}}" .`.
 
    **No toques** `{{campaign.name}}`, `{{adset.name}}`, `{{ad.name}}` ni `{{ad.id}}`: son parámetros de Meta.
-2. **Reescribí `estado.md`:**
+2. **Reescribí `ESTADO.md`:**
    - sacá «SIN ARRANCAR»;
    - en una línea, dónde está y qué sigue;
    - completá los números que haya.

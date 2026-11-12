@@ -11,7 +11,7 @@ description: Cerrar el día - tareas al día, números, estado, decisiones y tod
    - Lo nuevo que salió entra como tarea, con quién y para cuándo.
    - Las de Claude que quedaron «en curso» sin un chat abierto vuelven a «por hacer», con una nota.
    - Las notas con «para decisiones.md» van a `decisiones.md`.
-3. **Estado:** reescribí `estado.md` en una página: qué pasó hoy, qué quedó abierto y qué toca mañana.
+3. **Estado:** reescribí `ESTADO.md` en una página: qué pasó hoy, qué quedó abierto y qué toca mañana.
 4. **Decisiones:** si hubo, van arriba de `decisiones.md`.
 5. **Guardá:** `git pull --rebase`, `git add -A`, commit (`cierre: AAAA-MM-DD`) y push a `main`.
 6. **Terminá con lo primero que hay que hacer mañana**, en una línea.

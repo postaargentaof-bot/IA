@@ -5,7 +5,7 @@
 | Pieza | Qué es | Quién la escribe |
 |---|---|---|
 | `CLAUDE.md` | Las instrucciones del orquestador: cómo hablar, qué leer, cómo cerrar y las reglas que no se rompen | Claude, con el OK de {{NOMBRE}} |
-| `estado.md` | La foto de hoy, en una página | El chat principal o `/cierre` |
+| `ESTADO.md` | La foto de hoy, en una página | El chat principal o `/cierre` |
 | `tareas.md` | El tablero de tareas | Cada chat, solo la fila de su tarea |
 | `decisiones.md` | La historia de las decisiones | El chat principal o `/cierre` |
 | `reglas/` | El cómo de cada cosa | Solo con `/aprender` y un sí |
@@ -33,7 +33,7 @@ Los chats no se hablan entre sí: **se hablan a través del repo.**
    - pasa su tarea a «hecho» y le deja una nota;
    - si decidiste algo, lo marca en la nota con «para decisiones.md»;
    - hace commit y push.
-4. **El chat principal (o `/cierre`)** lee las notas y pasa lo decidido a `estado.md` y a `decisiones.md`.
+4. **El chat principal (o `/cierre`)** lee las notas y pasa lo decidido a `ESTADO.md` y a `decisiones.md`.
 
 **Plantilla del primer mensaje de un chat paralelo:**
 
@@ -41,7 +41,7 @@ Los chats no se hablan entre sí: **se hablan a través del repo.**
 Sos el chat «<nombre>» del Cortex de {{NEGOCIO}}. Tarea: «<título de la tarea en tareas.md>» (pasala a «en curso» con este chat).
 Leé primero CLAUDE.md, <README del área> y <las reglas que tocan>.
 Qué hay que hacer: <qué, con qué criterio y para cuándo>.
-Qué NO tocar: estado.md, decisiones.md y los archivos de otras áreas.
+Qué NO tocar: ESTADO.md, decisiones.md y los archivos de otras áreas.
 Al terminar: tarea en «hecho» con una nota, commit y push a main.
 ```
 
@@ -61,7 +61,7 @@ Cuando tengas ventas, podés pedirle a Claude un tablero propio: «armame un Cen
 - **Ventas**;
 - **Cerebro**.
 
-Usa su propia base de datos. Hasta entonces, `tareas.md` y `estado.md` hacen el mismo trabajo.
+Usa su propia base de datos. Hasta entonces, `tareas.md` y `ESTADO.md` hacen el mismo trabajo.
 
 ## Fase 3: lecturas automáticas (opcional)
 

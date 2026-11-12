@@ -5,6 +5,14 @@
 > **Oferta auditada:** «La IA hace, vos vendés» (tienda `la-ia-hace.impultienda.ar`).
 > **También se miró:** «Taller Triple», porque comparte la cuenta de Meta y el píxel, y es la única fuente de datos reales de pauta.
 
+> **Actualización (12/11, más tarde):** esta auditoría se hizo sin ver la rama del otro chat. Los dueños ya habían decidido 4 de los puntos, y esas decisiones mandan (`ESTADO.md`):
+> - para el test se usa el píxel «velas»; el píxel propio va si se escala;
+> - el mail de contacto es el de Taller Triple;
+> - no hay downsell en el funnel;
+> - el test tiene USD 25 en total: mide el gancho y la llegada al checkout, no si la oferta es rentable.
+>
+> Además, los 5 creativos ya están hechos (`anuncios/`) y la página de Facebook ya existe.
+
 ## 0. Veredicto en una línea
 
 **El producto, el nombre y la landing están bien. Lo que puede hacer que no funcione no es el contenido: es la plata.** Al precio de hoy, cada venta deja muy poco margen para pagar el anuncio. Además hay 3 cosas que frenan la salida: la cuenta de Meta en período de gracia, el píxel compartido y la compra de prueba, que todavía no se hizo.

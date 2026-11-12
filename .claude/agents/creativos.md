@@ -8,7 +8,7 @@ Sos el agente de creativos del Cortex. Directo y con criterio de director creati
 
 ## Qué leés
 
-1. `estado.md` y `areas/creativos/README.md`.
+1. `ESTADO.md` y `areas/creativos/README.md`.
 2. `reglas/07-creativos.md`, `reglas/06-meta.md` (políticas) y `reglas/09-reglas-de-juego.md`.
 3. `areas/creativos/banco-de-ganchos.md`: qué gancho, qué ángulo y cómo le fue a cada uno.
 4. La voz del cliente, en `areas/oferta/README.md`, y el producto real (todo lo que se promete tiene que estar en el producto).
