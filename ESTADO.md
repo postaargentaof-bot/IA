@@ -100,6 +100,9 @@ Público: emprendedores y negocios chicos que venden por WhatsApp e Instagram. H
 
 ## 6 · Datos útiles
 
+- **Vencimientos (revisado 12/11):** Impultienda plan Max en prueba gratis hasta el **21/12/2026** (después cobra; comisión 2 % por venta). ElevenLabs: el chat «Creativos tanda 1» (Taller Triple) dejó anotado cancelarlo antes del **6/12** si no se usa más.
+- Meta 12/11: «Velas arg» sigue en período de gracia (deuda sin pagar) y la única página conectada es la de Taller Triple.
+
 - Impultienda: tienda nueva «La IA hace» (`e36e2cbd-c356-48a0-85cb-259a02de2282`, `la-ia-hace.impultienda.ar`). Tienda vieja «Taller Triple» (`2839f946-6210-4e03-a620-44aa105606b1`), plan Max, ARS, Mercado Pago — no usar para esto.
 - Meta: cuenta publicitaria «Velas arg» (`1611303950747523`), en USD.
 - La carpeta del kit (`kit-ebooks-cortex.zip`, `EMPEZA-ACA.md`) está sin instalar; se puede instalar más adelante.
