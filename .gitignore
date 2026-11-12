@@ -1,0 +1,11 @@
+# Sistema operativo
+.DS_Store
+Thumbs.db
+
+# Los videos, los audios y los PDF pesados no van al repo: van a la PC o a la nube.
+# El repo guarda guiones, fichas y decisiones. Dónde está cada archivo pesado: sistema/carpetas.md
+*.mp4
+*.mov
+*.wav
+*.mp3
+*.zip
