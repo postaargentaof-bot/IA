@@ -17,7 +17,7 @@
 | Tarea | Área | Quién | Para cuándo | Chat | Nota |
 |---|---|---|---|---|---|
 | Pagar la cuenta de Meta «Velas arg» (está en período de gracia) | campanas | {{NOMBRE}} | Hoy | — | Sin esto no se lanza nada |
-| Decidir precios: front 9.990, bumps planilla 4.990 y fotos 5.990, upsell 16.990, downsell 50% | oferta | {{NOMBRE}} | Hoy | — | `areas/oferta/auditoria-2026-11-12.md`, punto 3. Claude lo aplica con el OK |
+| En el panel: downsell de «Las 200 instrucciones» al 50% (rama «rechazado» del upsell) y «La planilla» como primer bump (Diseño de ebooks → ⋮ → Mover antes) | oferta | {{NOMBRE}} | Hoy | — | El conector no puede hacer estas dos. Después, Claude verifica |
 | Crear un mail de la marca y cambiarlo en la landing (hoy aparece el de Taller Triple) | landing | {{NOMBRE}} + Claude | Antes de pautar | — | Aparece 3 veces en el HTML |
 | Píxel nuevo para «La IA hace» y cargarlo en la tienda con su token | campanas | {{NOMBRE}} + Claude | Antes de pautar | — | Hoy hay un solo píxel («velas») para las dos tiendas |
 | Compra de prueba real con los 2 bumps y el upsell, y confirmar la Compra en Resumen | landing | {{NOMBRE}} | Antes de pautar | — | Después se reembolsa desde Mercado Pago |
@@ -34,5 +34,6 @@
 | Tarea | Área | Quién | Hecho el | Nota |
 |---|---|---|---|---|
 | Auditoría completa antes de pautar | oferta | Claude | 12/11/2026 | `areas/oferta/auditoria-2026-11-12.md` |
+| Precios nuevos: front 9.990, planilla 4.990, fotos 5.990 y upsell 16.990 | oferta | Claude | 12/11/2026 | La landing toma el precio sola (`{{price}}`). La oferta post-compra ya muestra 16.990 |
 | Ocultar la barra «personas comprando» en los checkouts de las dos tiendas | landing | Claude | 12/11/2026 | Era un contador falso. Los timers de los bumps ya estaban apagados |
 | Guiones de la tanda 1 | creativos | Claude | 12/11/2026 | `areas/creativos/tandas/tanda-1/guiones.md` |
