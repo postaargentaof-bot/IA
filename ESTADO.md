@@ -33,6 +33,7 @@ Público: emprendedores y negocios chicos que venden por WhatsApp e Instagram. H
 
 | Fecha | Decisión | Por qué |
 |---|---|---|
+| 12/11 | Precio de lanzamiento real: $9.990 hasta el 12/11 a las 23:59 ART (termina junto con el test). Desde el 13/11 el libro cuesta **$14.990**, sin tachado, y no se repite otro «lanzamiento». Se publicó en la landing a las 15:33 ART (barra con cuenta regresiva + notas junto al precio, que se ocultan solas al terminar) | Decisión de los dueños. Se descartó un «50 % OFF» sobre un precio que nunca se cobró (sería falso e ilegal) |
 | 12/11 | Test de 24 h: campaña con presupuesto total USD 25 y fin el 12/11 a las 23:59 ART (antes USD 45 hasta el 15/11). La lectura se hace el 13/11 | Decisión de los dueños: saber hoy si los anuncios enganchan con la misma plata. Contra: casi no aprende a optimizar compras |
 | 12/11 | Funnel post-compra con downsell: si rechaza Las 200 instrucciones (16.990), se le ofrece al 50 % (8.495). Reemplaza a «sin downsell» del 10/11. Sin urgencias inventadas en el texto | Decisión de los dueños |
 | 12/11 | Precio del libro: **ARS 9.990** (reemplaza a 7.990). Los anuncios ya se armaron con 9.990; `anuncios/anuncios.md` actualizado | Decisión de los dueños |
@@ -74,6 +75,7 @@ Público: emprendedores y negocios chicos que venden por WhatsApp e Instagram. H
 - **Tarea 8b (11/11): los 5 creativos producidos.** Piezas en `anuncios/img/` (`ia1-precio` video, `ia2-semana-1…6` carrusel, `ia3-nosuena`, `ia4-sol` video, `ia5-audio`; cada una en 4:5 y 9:16), textos y estructura de campaña en `anuncios/anuncios.md`, guiones en `anuncios/guiones.md`, 2 ganchos de reserva de A en `anuncios/img/reserva/`. Videos: 18,6 s y 21,3 s, −14 LUFS, menos de 5 MB, texto entre los 290 y los 1.290 px. **Versión 2 (11/11): animados con código, con música y efectos propios** (`anuncios/src/video2/`, `./scripts/armar_videos2.sh`). Voces guardadas en ElevenLabs y en `anuncios/audio/` (rearmar no gasta). Revisados con capturas, también a tamaño de celular
 - Análisis de errores del test de Taller Triple y 14 ideas de anuncios, con los 5 elegidos y por qué se descartó el resto: `anuncios/ideas.md` (11/11, chat de creativos, fase 1)
 - Lista de prompts de imágenes: `imagenes/prompts.md`
+- **Ojo para la lectura del test:** desde las 15:33 ART del 12/11 la landing muestra el precio de lanzamiento. Las ventas de antes y de después de esa hora se leen por separado
 - **Primera venta real (12/11 13:35):** orden #3134859, ARS 9.990, Mercado Pago, sin bumps ni upsell. Meta se la atribuye a IA5 · El audio. Al mediodía: 20 visitas a la landing, 1 al checkout (5 %)
 - **Tarea 7 hecha (12/11):** el evento Compra de la prueba #3089352 llegó al píxel «velas» (visto el 12/11 a las 9 ART; tardó varias horas en aparecer)
 - **Campaña prendida (12/11, 00:00 ART):** «IA · Ventas · CBO» `52619163206735` en «Velas arg», conjunto «Test 1 · Argentina abierto», 5 anuncios, optimiza Compra con el píxel «velas». Presupuesto total USD 45 hasta el 15/11; **el 12/11 se pasó a USD 25 con fin el 12/11 a las 23:59 ART** (test de 24 h). No la creó este chat
