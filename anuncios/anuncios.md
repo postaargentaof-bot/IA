@@ -46,10 +46,10 @@ Fuentes editables: `anuncios/src/creativos.html` (B, C y E) y `anuncios/src/vide
 >
 > 7 días, una tarea por día, con ChatGPT gratis. Aunque no sepas nada de tecnología.
 >
-> 📘 Ebook en PDF · te llega por mail · $7.990
+> 📘 Ebook en PDF · te llega por mail · $9.990
 
 **Título:** Tus respuestas de WhatsApp, listas en una hora
-**Descripción:** Ebook · 7 días · $7.990
+**Descripción:** Ebook · 7 días · $9.990
 **Botón:** Comprar
 
 ---
@@ -71,7 +71,7 @@ Fuentes editables: `anuncios/src/creativos.html` (B, C y E) y `anuncios/src/vide
 >
 > Una hora por día, con ChatGPT gratis y 40 instrucciones para copiar y pegar.
 >
-> 📘 Ebook en PDF · $7.990
+> 📘 Ebook en PDF · $9.990
 
 **Título del anuncio (y de cada tarjeta):**
 1. ¿No sabés qué pedirle a la IA?
@@ -79,7 +79,7 @@ Fuentes editables: `anuncios/src/creativos.html` (B, C y E) y `anuncios/src/vide
 3. Día 1 · WhatsApp sin perder la tarde
 4. 40 instrucciones para copiar y pegar
 5. Día 4 · Los números sin dolor de cabeza
-6. Los 8 días por $7.990
+6. Los 8 días por $9.990
 
 **Descripción:** Ebook · una hora por día
 **Botón:** Comprar
@@ -98,10 +98,10 @@ Fuentes editables: `anuncios/src/creativos.html` (B, C y E) y `anuncios/src/vide
 >
 > 7 días, una tarea por día, con ChatGPT gratis.
 >
-> 📘 Ebook en PDF · $7.990
+> 📘 Ebook en PDF · $9.990
 
 **Título:** Que la IA hable como vos
-**Descripción:** Ebook · 7 días · $7.990
+**Descripción:** Ebook · 7 días · $9.990
 **Botón:** Comprar
 
 ---
@@ -116,10 +116,10 @@ Fuentes editables: `anuncios/src/creativos.html` (B, C y E) y `anuncios/src/vide
 >
 > Si das turnos por WhatsApp, eso es el Día 1 de «La IA hace, vos vendés». 7 días, con ChatGPT gratis.
 >
-> 📘 Ebook en PDF · $7.990
+> 📘 Ebook en PDF · $9.990
 
 **Título:** Tus respuestas de turnos, listas
-**Descripción:** Ebook · ejemplos de 4 rubros · $7.990
+**Descripción:** Ebook · ejemplos de 4 rubros · $9.990
 **Botón:** Comprar
 
 ---
@@ -134,10 +134,10 @@ Fuentes editables: `anuncios/src/creativos.html` (B, C y E) y `anuncios/src/vide
 >
 > «La IA hace, vos vendés» te lleva de la mano en 7 días, una hora por día, con ChatGPT gratis y todo listo para copiar y pegar.
 >
-> 📘 Ebook en PDF · $7.990
+> 📘 Ebook en PDF · $9.990
 
 **Título:** La IA explicada para emprendedores
-**Descripción:** Sin saber de tecnología · $7.990
+**Descripción:** Sin saber de tecnología · $9.990
 **Botón:** Comprar
 
 ---
@@ -146,7 +146,7 @@ Fuentes editables: `anuncios/src/creativos.html` (B, C y E) y `anuncios/src/vide
 - Sin promesas de ventas ni de plata, sin urgencias, cupos, contadores ni descuentos.
 - Las personas (Caro, Sol) son ejemplos armados con IA y se dice en la pieza y en el texto: nada de testimonios ni estrellas.
 - Sin atributos personales del que mira («¿estás sin plata?» y similares).
-- Los videos no dicen el precio del libro ni fechas. El precio va solo en el texto y en la landing ($7.990, el de la tienda hoy). Si cambia, se cambia el texto antes de prender.
+- Los videos no dicen el precio del libro ni fechas. El precio va solo en el texto y en la landing ($9.990, el de la tienda desde el 12/11). Si cambia, se cambia el texto antes de prender.
 - Pantallas de chat simuladas, sin logos de WhatsApp ni de OpenAI («ChatGPT gratis» se nombra).
 - No se habla de los bumps en los anuncios.
 

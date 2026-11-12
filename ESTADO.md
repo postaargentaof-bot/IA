@@ -21,7 +21,7 @@ Testear un ebook propio sobre cómo usar la IA en un emprendimiento, después de
 | 11/11 | El mail de entrega no se edita en Impultienda (no hay campo): la garantía va en la landing y en un bloque de texto debajo del botón de pagar del checkout. El email de contacto de la tienda (pie del mail) no se tocó | Limitación de Impultienda; el cambio del email de contacto no se aprobó |
 | 11/11 | Los 3 bonos inventados no se pueden desactivar desde el conector (en tiendas clásicas no se puede): los borran los dueños en el panel | Limitación de Impultienda |
 | 11/11 | Mail de contacto de la garantía: `tallertriplearg@gmail.com` (el mismo de Taller Triple / velas) | Lo eligieron los dueños; ya lo leen. Se aceptó que muestre otra marca |
-| Principal | La IA hace, vos vendés | ARS 7.990 | `pdf/la-ia-hace-vos-vendes.pdf` (69 págs.) |
+| Principal | La IA hace, vos vendés | ARS 9.990 (desde el 12/11) | `pdf/la-ia-hace-vos-vendes.pdf` (69 págs.) |
 | Bump 1 | Fotos de producto con el celular + IA | ARS 4.990 | `pdf/bump-fotos-con-celular-e-ia.pdf` |
 | Bump 2 | La planilla lista para usar | ARS 3.990 | `bumps/planilla-de-tu-negocio.xlsx` |
 | Upsell post-compra | Las 200 instrucciones | ARS 12.990 | `pdf/las-200-instrucciones.pdf` |
@@ -33,6 +33,7 @@ Público: emprendedores y negocios chicos que venden por WhatsApp e Instagram. H
 
 | Fecha | Decisión | Por qué |
 |---|---|---|
+| 12/11 | Precio del libro: **ARS 9.990** (reemplaza a 7.990). Los anuncios ya se armaron con 9.990; `anuncios/anuncios.md` actualizado | Decisión de los dueños |
 | 12/11 | El test se anuncia desde «Velas arg» con el píxel «velas» y la página nueva. Si el test da bien y se escala: píxel propio (y evaluar cuenta propia) para el ebook, como pide el kit | La deuda se paga igual; la cuenta tiene historial y ya está conectada; con USD 25 lo aprendido de Taller Triple no pesa |
 | 11/11 | Los 5 creativos (versión 2) aprobados por los dueños como **listos para testear**: los vieron y escucharon con sonido (voz, acento y música) y no encontraron errores | Revisión de los dueños; Claude no puede escuchar el audio |
 | 11/11 | Versión 2 de los creativos: A y D animados con código (subtítulos karaoke, movimiento todo el tiempo), con música y efectos generados por código; D con estética propia (Sol de fondo, ciruela y rosa); B con gancho de dolor y resultados «Así queda»; C con respuesta genérica realista; E en amarillo | Lo pidieron los dueños después de la autocrítica (A y D se parecían y eran diapositivas). La música es propia porque la red de este entorno bloquea los bancos de música CC0 |
@@ -93,7 +94,7 @@ Público: emprendedores y negocios chicos que venden por WhatsApp e Instagram. H
 | 1 | Pagar los ~USD 7 pendientes en Meta (cuenta «Velas arg» en período de gracia desde el 9/11) | Dueños | 9 | Meta Business Suite → Facturación y pagos → Pagar ahora. Si falla: habilitar la tarjeta para el exterior o cargar otra. **Lo pagan el 11/11** (ARS ~11.200) |
 | 5 | Probar la planilla en Google Sheets (colores y listas) y la instrucción maestra en ChatGPT gratis | Dueños | — | Antes de vender |
 | 6c | En Diseño de checkout: revisar los sellos, que «Días de garantía» diga 7 y cómo se ve el bloque de la garantía. Mirar la tienda en compu y celular y el checkout con los 2 bumps | Dueños | 7 | Los bonos y el downsell ya se borraron (11/11) |
-| 7 | Compra de prueba + evento Compra visible en el Administrador de eventos | Dueños + Claude | 9 | El píxel ya está cargado y verificado (10/11). Mercado Pago ya está (11/11); sin bloqueos en el Diagnóstico desde el 11/11; antes, la revisión de la 6c. La tienda en vivo no se puede abrir desde las sesiones de Claude (Cloudflare frena el navegador automático): la miran los dueños. **12/11: principal en ARS 1.000 para la prueba; volver al precio después** (estaba en 9.990, ver `tienda.md`) |
+| 7 | Compra de prueba + evento Compra visible en el Administrador de eventos | Dueños + Claude | 9 | El píxel ya está cargado y verificado (10/11). Mercado Pago ya está (11/11); sin bloqueos en el Diagnóstico desde el 11/11; antes, la revisión de la 6c. La tienda en vivo no se puede abrir desde las sesiones de Claude (Cloudflare frena el navegador automático): la miran los dueños. **12/11: principal en ARS 1.000 para la prueba; después volver a 9.990** |
 | 8 | Leer todo (ebook, bumps, upsell, landing) y marcar cambios | Dueños | — | Se puede hacer en paralelo |
 | 8c | Instagram de la página nueva: crear la cuenta profesional y conectarla a la página. Opcional: sumar la página al portfolio «Ecom Manu» y a «Velas arg» | Dueños | — | La página de Facebook ya existe (12/11, `1492900110562845`) y se puede usar en anuncios. Sin Instagram, los anuncios de IG salen con el nombre de la página de Facebook. Datos en `pagina-meta/datos.md` |
 | 9 | Crear la campaña en Meta y prenderla | Claude, con el «sí» de los dueños | 10 | Estructura, textos y qué archivo va en cada ubicación en `anuncios/anuncios.md`. Creativos aprobados el 11/11, también con sonido. Marcar que las imágenes y las voces son hechas con IA |

@@ -147,4 +147,4 @@ Base: `https://aekpgsbqjzqntlbucbts.supabase.co/storage/v1/object/public/store-r
 - Los dueños miraron la tienda publicada (11/11): se ve bien. Lo que sigue es la compra de prueba.
 
 ## Precio de prueba (12/11)
-- Principal pasado a **ARS 1.000** para la compra de prueba (pedido de los dueños). Antes estaba en **9.990** (no 7.990: alguien lo cambió en el panel y no quedó anotado). Volver al precio decidido después de la prueba.
+- Principal pasado a **ARS 1.000** para la compra de prueba (pedido de los dueños). Antes estaba en **9.990** (no 7.990: alguien lo cambió en el panel y no quedó anotado). Después de la prueba vuelve a **9.990** (decidido 12/11).
