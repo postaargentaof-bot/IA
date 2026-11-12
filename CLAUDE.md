@@ -122,5 +122,5 @@ Delegá en ellos para que el contexto de esta conversación quede limpio. Pasale
 Se completa cuando se arma cada cosa.
 
 - Cuenta publicitaria: «Velas arg» `1611303950747523` (USD, activa desde el 12/11/2026). También hay una cuenta en ARS, `1373471201259121`, sin método de pago
-- Business Manager: «Ecom Manu» `2686565661799086` · Página: «La IA hace, vos vendés» `1492900110562845` · Instagram: en armado · Píxel: «velas» `1439230865058805` (compartido; decisión de los dueños para el test, el píxel propio va si se escala)
+- Business Manager: «Ecom Manu» `2686565661799086` · Página: «La IA hace, vos vendés» `1492900110562845` · Instagram: @laiahacevosvendes `17841452836464057` (conectado a la página, disponible en «Velas arg») · Píxel: «velas» `1439230865058805` (compartido; decisión de los dueños para el test, el píxel propio va si se escala)
 - Plataforma de venta: Impultienda + Mercado Pago · Tiendas: «La IA hace, vos vendés» `e36e2cbd-c356-48a0-85cb-259a02de2282` y Taller Triple `2839f946-6210-4e03-a620-44aa105606b1`
