@@ -9,7 +9,7 @@
 
 Testear un ebook propio sobre cómo usar la IA en un emprendimiento, después de que el ebook de jabones, velas y sahumerios (Taller Triple) no funcionó: se gastaron USD 22,71 y salió 1 venta.
 
-**Presupuesto del test:** USD 25 en total. Con eso **no se valida si el producto vende**: se mide qué gancho engancha y si la gente llega al checkout. El criterio para leerlo está en `plan-ebook-ia.md` §3.
+**Presupuesto del test:** USD 45 en 3 días (decisión del 12/11; antes eran USD 25). Con eso **no se valida si el producto vende**: se mide qué gancho engancha y si la gente llega al checkout. El criterio para leerlo está en `plan-ebook-ia.md` §3.
 
 ## 2 · La oferta (decidida)
 
@@ -34,7 +34,7 @@ Público: emprendedores y negocios chicos que venden por WhatsApp e Instagram. H
 
 | Fecha | Decisión | Por qué |
 |---|---|---|
-| 12/11 | **El test se hace en 1 día: USD 25 en 24 horas** (no 8,33 por día durante 3 días). Se carga como presupuesto total con fecha de fin, para que no se pase | Lo decidieron los dueños. Riesgo aceptado: un solo día es más ruidoso (Meta todavía está aprendiendo) y no hay «3 días sin tocar» |
+| 12/11 | **Test: USD 45 en 3 días** (unos USD 15 por día, 2 tickets por día), con presupuesto total y fecha de fin a las 72 horas. 3 días sin tocar. Reemplaza los USD 25 | Recomendación de Claude, que aceptaron los dueños: en 3 días Meta sale de la etapa a ciegas, prueba más anuncios y cuenta las compras del día siguiente. Con 45 hay chances reales de ver 2 o 3 ventas |
 | 12/11 | Los textos de los 5 anuncios pasan de $7.990 a **$9.990** (`anuncios/anuncios.md`). Las piezas no muestran el precio, así que no hay que rearmarlas | El precio de la tienda cambió; un precio distinto en el anuncio y en la landing trae rechazos y reclamos |
 | 12/11 | El upsell 2 «El mes resuelto» (30 días de Instagram y WhatsApp) queda hecho pero sin cargar: se carga si la oferta valida (hace falta 1 upsell extra en el plan) | El plan Max permite 3 upsells por tienda y ya se usan los 3. PDF en `areas/oferta/upsell-2-mes-resuelto/` |
 | 12/11 | **Precios nuevos:** libro 9.990, Fotos 5.990, Planilla 4.990, upsell 16.990. Reemplaza la decisión del 10/11 de testear a 7.990 | A 7.990, lo máximo que se puede pagar por venta (~USD 6,6) obliga a convertir cerca del 10% con el costo por visita de Taller Triple. Mejor testear al precio con el que se escalaría. Lo aprobaron los dueños («dale») |
