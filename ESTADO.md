@@ -77,6 +77,7 @@ Público: emprendedores y negocios chicos que venden por WhatsApp e Instagram. H
 - **Tarea 8b (11/11): los 5 creativos producidos.** Piezas en `anuncios/img/` (`ia1-precio` video, `ia2-semana-1…6` carrusel, `ia3-nosuena`, `ia4-sol` video, `ia5-audio`; cada una en 4:5 y 9:16), textos y estructura de campaña en `anuncios/anuncios.md`, guiones en `anuncios/guiones.md`, 2 ganchos de reserva de A en `anuncios/img/reserva/`. Videos: 18,6 s y 21,3 s, −14 LUFS, menos de 5 MB, texto entre los 290 y los 1.290 px. **Versión 2 (11/11): animados con código, con música y efectos propios** (`anuncios/src/video2/`, `./scripts/armar_videos2.sh`). Voces guardadas en ElevenLabs y en `anuncios/audio/` (rearmar no gasta). Revisados con capturas, también a tamaño de celular
 - Análisis de errores del test de Taller Triple y 14 ideas de anuncios, con los 5 elegidos y por qué se descartó el resto: `anuncios/ideas.md` (11/11, chat de creativos, fase 1)
 - Lista de prompts de imágenes: `imagenes/prompts.md`
+- **Lectura final del test 1 (13/11):** USD 41,25, 45 visitas, 2 checkouts, 1 venta. Anuncios bien (CTR > 2 %), falla la landing/precio; la cuenta no cierra (USD 41 por venta de ~USD 6). Detalle: `anuncios/lectura-test1.md`. **Falta decidir el camino** (seguir con cambios, subir el ticket o cerrar)
 - Landing (12/11 ~15:45 ART): subtítulo grande en el hero «Automatizá tu negocio con inteligencia artificial.», pedido por los dueños. Pasado al repo (`scripts/armar_landing.py` → `landing/landing.html`) el 13/11
 - **Cambios de landing del 13/11 publicados en Impultienda el 13/11/2026 a las 00:13:44 ART** (con el «sí» de los dueños; los 7 reemplazos de `landing/cambios/2026-11-13-reemplazos.json`, cada «buscar» encontrado una sola vez): se sacó la barra, el script y las notas del lanzamiento; en el hero «Si sabés mandar un audio, sabés usarla.» y la línea de rubros; sección nueva «Así es el libro por dentro» con 3 páginas reales. La versión anterior quedó guardada en Impultienda para restaurar. Pasados al repo en `scripts/armar_landing.py` (la regla de celular de `.pags` va en el CSS común) y rearmados `landing/landing.html` y `landing/preview/`. Falta que los dueños miren la tienda en compu y celular
 - **Ojo para la lectura del test:** desde las 15:33 ART del 12/11 la landing muestra el precio de lanzamiento. Las ventas de antes y de después de esa hora se leen por separado
@@ -108,7 +109,6 @@ Público: emprendedores y negocios chicos que venden por WhatsApp e Instagram. H
 | 5 | Probar la planilla en Google Sheets (colores y listas) y la instrucción maestra en ChatGPT gratis | Dueños | — | Antes de vender |
 | 6c | En Diseño de checkout: revisar los sellos, que «Días de garantía» diga 7 y cómo se ve el bloque de la garantía. Mirar la tienda en compu y celular y el checkout con los 2 bumps | Dueños | 7 | Los bonos y el downsell viejo se borraron (11/11) |
 | 8 | Leer todo (ebook, bumps, upsell, landing) y marcar cambios | Dueños | — | Se puede hacer en paralelo |
-| 10 | Leer el test con el criterio de `plan-ebook-ia.md` y decidir | Chat principal | — | Las ventas se cuentan en Impultienda, no en Meta |
 
 ## 6 · Datos útiles
 
