@@ -33,6 +33,7 @@ Público: emprendedores y negocios chicos que venden por WhatsApp e Instagram. H
 
 | Fecha | Decisión | Por qué |
 |---|---|---|
+| 13/11 | El libro **sigue a $9.990**: se anula el paso a $14.990 anunciado en el lanzamiento. No se vuelve a hacer un «lanzamiento» ni una cuenta regresiva con este libro. La campaña sigue un día más con los mismos 5 anuncios | Decisión de los dueños. La barra de lanzamiento se ocultó sola a las 23:59 del 12/11; nadie compró con ella visible |
 | 12/11 | Precio de lanzamiento real: $9.990 hasta el 12/11 a las 23:59 ART (termina junto con el test). Desde el 13/11 el libro cuesta **$14.990**, sin tachado, y no se repite otro «lanzamiento». Se publicó en la landing a las 15:33 ART (barra con cuenta regresiva + notas junto al precio, que se ocultan solas al terminar) | Decisión de los dueños. Se descartó un «50 % OFF» sobre un precio que nunca se cobró (sería falso e ilegal) |
 | 12/11 | Test de 24 h: campaña con presupuesto total USD 25 y fin el 12/11 a las 23:59 ART (antes USD 45 hasta el 15/11). La lectura se hace el 13/11 | Decisión de los dueños: saber hoy si los anuncios enganchan con la misma plata. Contra: casi no aprende a optimizar compras |
 | 12/11 | Funnel post-compra con downsell: si rechaza Las 200 instrucciones (16.990), se le ofrece al 50 % (8.495). Reemplaza a «sin downsell» del 10/11. Sin urgencias inventadas en el texto | Decisión de los dueños |
