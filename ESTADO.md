@@ -77,6 +77,7 @@ Público: emprendedores y negocios chicos que venden por WhatsApp e Instagram. H
 - Análisis de errores del test de Taller Triple y 14 ideas de anuncios, con los 5 elegidos y por qué se descartó el resto: `anuncios/ideas.md` (11/11, chat de creativos, fase 1)
 - Lista de prompts de imágenes: `imagenes/prompts.md`
 - Landing (12/11 ~15:45 ART): subtítulo grande en el hero «Automatizá tu negocio con inteligencia artificial.», pedido por los dueños. Publicado solo en Impultienda; falta pasarlo a `landing/landing.html` / `scripts/armar_landing.py` junto con lo del lanzamiento
+- Cambios de landing del 13/11 preparados (mensaje igual al de los anuncios, libro por dentro arriba, limpieza del lanzamiento): `landing/cambios/2026-11-13.md`. **Sin aplicar:** falta reautorizar el conector de Impultienda
 - **Ojo para la lectura del test:** desde las 15:33 ART del 12/11 la landing muestra el precio de lanzamiento. Las ventas de antes y de después de esa hora se leen por separado
 - **Primera venta real (12/11 13:35):** orden #3134859, ARS 9.990, Mercado Pago, sin bumps ni upsell. Meta se la atribuye a IA5 · El audio. Al mediodía: 20 visitas a la landing, 1 al checkout (5 %)
 - **Tarea 7 hecha (12/11):** el evento Compra de la prueba #3089352 llegó al píxel «velas» (visto el 12/11 a las 9 ART; tardó varias horas en aparecer)

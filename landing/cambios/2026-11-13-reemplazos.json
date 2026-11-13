@@ -1,0 +1,30 @@
+[
+ {
+  "buscar": ".lzbar{background:#17201D;color:#fff;text-align:center;font-size:15px;padding:10px 16px;line-height:1.4}\n.lzbar b{color:#FFE066}\n.lznota{font-weight:700;color:var(--verde)}\n",
+  "reemplazar": ""
+ },
+ {
+  "buscar": "<div class=\"lzbar lz\">🚀 <b>Precio de lanzamiento: {{price}}</b> hasta hoy, jueves 12/11, a las 23:59. Después pasa a $14.990. · Termina en <b id=\"lzt\">--:--:--</b></div>\n<script>(function(){var fin=new Date('2026-11-12T23:59:00-03:00').getTime();function t(){var r=fin-Date.now(),els=document.querySelectorAll('.lz');if(r<=0){for(var i=0;i<els.length;i++)els[i].style.display='none';return}var h=Math.floor(r/3600000),m=Math.floor(r%3600000/60000),s=Math.floor(r%60000/1000),e=document.getElementById('lzt');if(e)e.textContent=(h<10?'0':'')+h+':'+(m<10?'0':'')+m+':'+(s<10?'0':'')+s;setTimeout(t,1000)}if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',t);else t()})();</script>\n",
+  "reemplazar": ""
+ },
+ {
+  "buscar": "<span class=\"lz lznota\">Precio de lanzamiento hasta hoy a las 23:59. Después, $14.990.<br></span>",
+  "reemplazar": ""
+ },
+ {
+  "buscar": "<span class=\"lz lznota\">Precio de lanzamiento hasta hoy, jueves 12/11, a las 23:59. Después pasa a $14.990.<br></span>",
+  "reemplazar": ""
+ },
+ {
+  "buscar": "<p class=\"apoyo\">Una tarea por día, una hora por día. Al final de la semana,",
+  "reemplazar": "<p class=\"apoyo\"><b style=\"color:var(--ink)\">Si sabés mandar un audio, sabés usarla.</b> Una tarea por día, una hora por día, con ChatGPT gratis. Al final de la semana,"
+ },
+ {
+  "buscar": "Ebook en PDF por mail apenas se acredita el pago · Garantía de 7 días</p></div>",
+  "reemplazar": "Ebook en PDF por mail apenas se acredita el pago · Garantía de 7 días</p><p class=\"nota\" style=\"margin-top:6px\">Sirve para ropa, comida, uñas y estética, clases, servicios y cualquier negocio que venda por WhatsApp.</p></div>"
+ },
+ {
+  "buscar": "<section class=\"prob\">",
+  "reemplazar": "<section class=\"adentro\" style=\"padding-top:8px\"><div class=\"w\">\n <h2 style=\"font-size:clamp(30px,4.4vw,46px)\">Así es el libro por dentro.</h2>\n <p class=\"intro\">Páginas reales: cada día te dice qué hacer, te da la instrucción para copiar y pegar y un ejemplo resuelto.</p>\n <div style=\"display:grid;grid-template-columns:repeat(3,1fr);gap:18px\" class=\"pags\"><figure style=\"margin:0\"><img src=\"https://aekpgsbqjzqntlbucbts.supabase.co/storage/v1/object/public/store-resources/e36e2cbd-c356-48a0-85cb-259a02de2282/1794395261603_pagina-ficha-a3f60c65.png\" alt=\"Día 0 · La ficha de tu negocio\" style=\"width:100%;border-radius:10px;box-shadow:0 14px 30px rgba(23,32,29,.18);background:#fff\"><figcaption style=\"font-size:14px;color:var(--mut);margin-top:10px;text-align:center\">Día 0 · La ficha de tu negocio</figcaption></figure><figure style=\"margin:0\"><img src=\"https://aekpgsbqjzqntlbucbts.supabase.co/storage/v1/object/public/store-resources/e36e2cbd-c356-48a0-85cb-259a02de2282/1794395263761_pagina-whatsapp-43080c73.png\" alt=\"Día 1 · Tus respuestas de WhatsApp\" style=\"width:100%;border-radius:10px;box-shadow:0 14px 30px rgba(23,32,29,.18);background:#fff\"><figcaption style=\"font-size:14px;color:var(--mut);margin-top:10px;text-align:center\">Día 1 · Tus respuestas de WhatsApp</figcaption></figure><figure style=\"margin:0\"><img src=\"https://aekpgsbqjzqntlbucbts.supabase.co/storage/v1/object/public/store-resources/e36e2cbd-c356-48a0-85cb-259a02de2282/1794395266305_pagina-numeros-b8deb530.png\" alt=\"Día 4 · Tus números y tu precio\" style=\"width:100%;border-radius:10px;box-shadow:0 14px 30px rgba(23,32,29,.18);background:#fff\"><figcaption style=\"font-size:14px;color:var(--mut);margin-top:10px;text-align:center\">Día 4 · Tus números y tu precio</figcaption></figure></div>\n</div></section>\n<style>@media (max-width:820px){.pags{grid-template-columns:1fr 1fr!important}.pags figure:last-child{grid-column:1/-1;max-width:60%;margin:0 auto!important}}</style>\n\n<section class=\"prob\">"
+ }
+]
