@@ -2,7 +2,7 @@
 
 > Archivo principal del proyecto. **Todo chat lo lee al arrancar y lo actualiza al terminar.**
 > Rama de trabajo: `claude/dazzling-euler-7bk40o` (no `main`). Siempre `git pull --rebase` antes de `git push`: hay varios chats subiendo a la misma rama.
-> Última actualización: 11/11/2026 (chat de producción de creativos: tarea 8b hecha).
+> Última actualización: 13/11/2026 00:13 ART (cambios de landing del 13/11 publicados en Impultienda y pasados al repo).
 
 ## 1 · Qué estamos haciendo
 
@@ -76,8 +76,8 @@ Público: emprendedores y negocios chicos que venden por WhatsApp e Instagram. H
 - **Tarea 8b (11/11): los 5 creativos producidos.** Piezas en `anuncios/img/` (`ia1-precio` video, `ia2-semana-1…6` carrusel, `ia3-nosuena`, `ia4-sol` video, `ia5-audio`; cada una en 4:5 y 9:16), textos y estructura de campaña en `anuncios/anuncios.md`, guiones en `anuncios/guiones.md`, 2 ganchos de reserva de A en `anuncios/img/reserva/`. Videos: 18,6 s y 21,3 s, −14 LUFS, menos de 5 MB, texto entre los 290 y los 1.290 px. **Versión 2 (11/11): animados con código, con música y efectos propios** (`anuncios/src/video2/`, `./scripts/armar_videos2.sh`). Voces guardadas en ElevenLabs y en `anuncios/audio/` (rearmar no gasta). Revisados con capturas, también a tamaño de celular
 - Análisis de errores del test de Taller Triple y 14 ideas de anuncios, con los 5 elegidos y por qué se descartó el resto: `anuncios/ideas.md` (11/11, chat de creativos, fase 1)
 - Lista de prompts de imágenes: `imagenes/prompts.md`
-- Landing (12/11 ~15:45 ART): subtítulo grande en el hero «Automatizá tu negocio con inteligencia artificial.», pedido por los dueños. Publicado solo en Impultienda; falta pasarlo a `landing/landing.html` / `scripts/armar_landing.py` junto con lo del lanzamiento
-- Cambios de landing del 13/11 preparados (mensaje igual al de los anuncios, libro por dentro arriba, limpieza del lanzamiento): `landing/cambios/2026-11-13.md`. **Sin aplicar:** falta reautorizar el conector de Impultienda
+- Landing (12/11 ~15:45 ART): subtítulo grande en el hero «Automatizá tu negocio con inteligencia artificial.», pedido por los dueños. Pasado al repo (`scripts/armar_landing.py` → `landing/landing.html`) el 13/11
+- **Cambios de landing del 13/11 publicados en Impultienda el 13/11/2026 a las 00:13:44 ART** (con el «sí» de los dueños; los 7 reemplazos de `landing/cambios/2026-11-13-reemplazos.json`, cada «buscar» encontrado una sola vez): se sacó la barra, el script y las notas del lanzamiento; en el hero «Si sabés mandar un audio, sabés usarla.» y la línea de rubros; sección nueva «Así es el libro por dentro» con 3 páginas reales. La versión anterior quedó guardada en Impultienda para restaurar. Pasados al repo en `scripts/armar_landing.py` (la regla de celular de `.pags` va en el CSS común) y rearmados `landing/landing.html` y `landing/preview/`. Falta que los dueños miren la tienda en compu y celular
 - **Ojo para la lectura del test:** desde las 15:33 ART del 12/11 la landing muestra el precio de lanzamiento. Las ventas de antes y de después de esa hora se leen por separado
 - **Primera venta real (12/11 13:35):** orden #3134859, ARS 9.990, Mercado Pago, sin bumps ni upsell. Meta se la atribuye a IA5 · El audio. Al mediodía: 20 visitas a la landing, 1 al checkout (5 %)
 - **Tarea 7 hecha (12/11):** el evento Compra de la prueba #3089352 llegó al píxel «velas» (visto el 12/11 a las 9 ART; tardó varias horas en aparecer)

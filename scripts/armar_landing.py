@@ -192,6 +192,7 @@ footer{padding:20px 0 110px;font-size:13px;color:var(--mut);text-align:center}
  .libros{height:300px;margin-top:10px}
  .contacto{grid-template-columns:52px 1fr;padding:12px 14px}.contacto .img{width:52px;height:52px}.contacto span{display:none}
  summary,details p{max-width:94%}
+ .pags{grid-template-columns:1fr 1fr!important}.pags figure:last-child{grid-column:1/-1;max-width:60%;margin:0 auto!important}
 }
 """
 DIAS = [
@@ -242,6 +243,8 @@ dias_html = ''.join(f'<div class="dm">{img(i)}<div><div class="n">{n.upper()}</d
 neg_html = ''.join(f'<div class="contacto">{img(i)}<div><h3>{n}</h3><p>{d}</p></div><span>ejemplo</span></div>' for i, n, d in NEG)
 faq_html = ''.join(f'<details><summary>{html.escape(q)}</summary><p>{html.escape(a)}</p></details>' for q, a in FAQ)
 trae_html = ''.join(f'<li><b>{html.escape(a)}</b> {html.escape(b)}</li>' for a, b in TRAE)
+PAGS = [('p1', 'Día 0 · La ficha de tu negocio'), ('p2', 'Día 1 · Tus respuestas de WhatsApp'), ('p3', 'Día 4 · Tus números y tu precio')]
+pags_html = ''.join(f'<figure style="margin:0"><img src="{asset(MOCK[k])}" alt="{t}" style="width:100%;border-radius:10px;box-shadow:0 14px 30px rgba(23,32,29,.18);background:#fff"><figcaption style="font-size:14px;color:var(--mut);margin-top:10px;text-align:center">{t}</figcaption></figure>' for k, t in PAGS)
 FONTS = '<link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,700;12..96,800&family=Plus+Jakarta+Sans:wght@400;600;700&display=swap" rel="stylesheet">'
 
 LANDING = f"""<!doctype html><html lang="es"><head><meta charset="utf-8">
@@ -253,15 +256,22 @@ LANDING = f"""<!doctype html><html lang="es"><head><meta charset="utf-8">
 
 <section class="hero"><div class="w">
  <div><h1>La IA hace, <span>vos vendés.</span></h1>
+  <p class="auto" style="font-family:'Bricolage Grotesque',system-ui,sans-serif;font-weight:800;letter-spacing:-.02em;line-height:1.1;font-size:clamp(28px,3.8vw,42px);color:var(--verde);margin-top:18px">Automatizá tu negocio con inteligencia artificial.</p>
   <p class="sub">Cómo usar la IA en tu emprendimiento en 7 días, aunque no sepas nada de tecnología.</p>
-  <p class="apoyo">Una tarea por día, una hora por día. Al final de la semana, la IA te contesta WhatsApp, te escribe los posteos y te ayuda con los precios, con tus datos y tu forma de hablar.</p>
-  {boton()}<p class="nota">Ebook en PDF por mail apenas se acredita el pago · Garantía de 7 días</p></div>
+  <p class="apoyo"><b style="color:var(--ink)">Si sabés mandar un audio, sabés usarla.</b> Una tarea por día, una hora por día, con ChatGPT gratis. Al final de la semana, la IA te contesta WhatsApp, te escribe los posteos y te ayuda con los precios, con tus datos y tu forma de hablar.</p>
+  {boton()}<p class="nota">Ebook en PDF por mail apenas se acredita el pago · Garantía de 7 días</p><p class="nota" style="margin-top:6px">Sirve para ropa, comida, uñas y estética, clases, servicios y cualquier negocio que venda por WhatsApp.</p></div>
  <div class="tel"><div class="bar"><img src="{src('IMG-02')}" alt=""><div>Ejemplo · Caro, ropa<small>en línea</small></div></div><div class="chat">
   <div class="m ell">Hola!! precio del buzo gris? 🙏<span class="h">21:47</span></div>
   <div class="aviso">Respuesta escrita con IA a partir de tu ficha · la revisás vos</div>
   <div class="m yo">¡Hola! El buzo gris está $18.500. Hay en S, M y L. Envío a todo el país o retiro en Lanús, y aceptamos transferencia o Mercado Pago. ¿Qué talle buscás? 😊<span class="h">21:48 ✓✓</span></div>
   <div class="m ell">M! y llega antes del sábado?<span class="h">21:48</span></div>
  </div></div>
+</div></section>
+
+<section class="adentro" style="padding-top:8px"><div class="w">
+ <h2 style="font-size:clamp(30px,4.4vw,46px)">Así es el libro por dentro.</h2>
+ <p class="intro">Páginas reales: cada día te dice qué hacer, te da la instrucción para copiar y pegar y un ejemplo resuelto.</p>
+ <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:18px" class="pags">{pags_html}</div>
 </div></section>
 
 <section class="prob"><div class="w">
